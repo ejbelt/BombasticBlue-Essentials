@@ -1,0 +1,1331 @@
+--- !ruby/object:RPG::Map
+autoplay_bgm: true
+autoplay_bgs: false
+bgm: !ruby/object:RPG::AudioFile
+  name: Cave
+  pitch: 100
+  volume: 80
+bgs: !ruby/object:RPG::AudioFile
+  name: ''
+  pitch: 100
+  volume: 80
+data: !ruby/object:Table
+  dim: 3
+  x: 34
+  y: 29
+  z: 3
+  data:
+  - 0201 0201 0201 0201 0201 0201 0218 0201 0201 0201 0201 0201 0201 0201 0201 0201
+    0201 0201 0201 0201 0201 0218 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201
+    0201 0201
+  - 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0218 0201 0201
+    0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0218 0201 0201 0201 0201
+    0201 0201
+  - 0201 0201 0201 0201 0218 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201
+    0201 0201 0201 0201 0218 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201
+    0201 0201
+  - 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201
+    0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201
+    0201 0201
+  - 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201
+    0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0218 0201 0201 0201 0201
+    0201 0201
+  - 0201 0201 0201 0201 0201 0201 0201 0201 0201 0262 0262 0262 0262 0262 0262 0262
+    0262 0262 0262 0262 0262 0262 0262 0262 0201 0201 0201 0201 0201 0201 0201 0201
+    0201 0201
+  - 0201 0201 0218 0201 0201 0201 0201 0201 0201 0262 0262 0262 0262 0262 0262 0262
+    0262 0262 0262 0262 0262 0262 0262 0262 0201 0201 0218 0201 0201 0201 0201 0218
+    0201 0201
+  - 0201 0201 0201 0201 0201 0201 0201 0201 0201 0262 0262 0262 0225 0262 0262 0262
+    0261 0262 0262 0262 0262 0263 0262 0262 0201 0201 0201 0201 0201 0201 0201 0201
+    0201 0201
+  - 0201 0201 0201 0201 0201 0201 0201 0201 0201 0262 0262 0262 0262 0262 0262 0262
+    0261 0262 0262 0262 0262 0263 0262 0262 0262 0262 0262 0201 0201 0201 0201 0201
+    0201 0201
+  - 0201 0201 0201 0201 0218 0201 0201 0262 0262 0262 0262 0262 0262 0262 0262 0262
+    0269 026a 026a 026a 026a 026b 0262 0262 0262 0262 0262 0201 0201 0201 0201 0201
+    0201 0201
+  - 0201 0201 0201 0201 0201 0201 0201 0262 0262 0262 0262 0262 0262 0262 0262 0262
+    0262 0262 0262 0262 0262 0262 0262 0262 0262 0262 0262 0201 0201 0218 0201 0201
+    0201 0201
+  - 0201 0201 0201 0201 0201 0201 0201 0292 0292 0293 0262 0262 0262 0262 0262 0262
+    0262 0262 0262 0262 0262 0262 0262 0262 0262 0262 0262 0201 0201 0201 0201 0201
+    0201 0201
+  - 0201 0218 0201 0201 0201 0201 0201 029a 029a 029b 021d 0262 0262 0262 0262 0262
+    0262 0262 0262 0262 0262 021e 021f 0262 0262 0262 0262 0201 0201 0201 0201 0201
+    0201 0201
+  - 0201 0201 0201 0201 0201 0201 0201 029a 029a 02a4 0293 0262 0262 0262 0262 0262
+    0262 0262 0262 0262 0262 0226 0227 0262 0262 0262 0262 0201 0201 0201 0201 0201
+    0201 0201
+  - 0201 0201 0201 0201 0201 0201 0201 029a 029a 029a 029b 0262 0262 0262 0262 0262
+    0262 0262 0262 0262 0262 0262 0262 0262 021d 0262 0262 0201 0201 0201 0201 0218
+    0201 0201
+  - 0201 0201 0201 0201 0201 0201 0201 029a 029a 029a 029b 0262 0262 0262 0262 0262
+    0262 0262 0262 0262 0262 0262 0262 0262 0262 0262 0262 0201 0201 0201 0201 0201
+    0201 0201
+  - 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0262
+    0262 0262 0262 0262 0262 0262 0262 0262 0262 0262 0262 0201 0201 0201 0201 0201
+    0201 0201
+  - 0201 0201 0218 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0292
+    0292 0293 0262 0262 0262 0201 0201 0201 0201 0201 0201 0201 0218 0201 0201 0201
+    0201 0201
+  - 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 029a
+    029a 029b 0262 0262 0262 0201 0201 0201 0201 0201 0201 0218 0201 0201 0201 0201
+    0201 0201
+  - 0201 0201 0201 0201 0201 0201 0201 0201 0218 0201 0201 0201 0201 0201 0201 029a
+    029a 02a4 0293 0262 0262 0201 0218 0201 0201 0201 0201 0201 0201 0201 0201 0201
+    0201 0201
+  - 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201
+    029a 029a 029b 0262 0262 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0218
+    0201 0201
+  - 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201
+    029a 029a 02a4 0292 0292 0201 0201 0201 0201 0201 0201 0218 0201 0201 0201 0201
+    0201 0201
+  - 0218 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201
+    029a 029a 029a 029a 029a 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201
+    0201 0201
+  - 0201 0201 0201 0201 0201 0201 0201 0201 0218 0201 0201 0201 0218 0201 0201 0201
+    029a 029a 029a 029a 029a 0201 0201 0201 0218 0201 0201 0201 0201 0201 0201 0201
+    0201 0201
+  - 0201 0201 0201 0201 0218 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201
+    0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0218
+    0201 0201
+  - 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0218 0201 0201
+    0201 0201 0201 0218 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201
+    0201 0201
+  - 0201 0201 0218 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201
+    0201 0201 0201 0201 0201 0201 0201 0201 0218 0201 0201 0201 0201 0201 0201 0201
+    0201 0201
+  - 0201 0201 0201 0201 0201 0201 0201 0218 0201 0201 0201 0201 0201 0218 0201 0201
+    0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0218 0201 0201 0201
+    0201 0201
+  - 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201
+    0201 0201 0201 0201 0218 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201 0201
+    0201 0218
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 01fe 0209 0209 0209 0209 0209 0209 0209
+    0209 0209 0209 0209 0209 0209 0209 0209 01ff 0000 0000 0000 0000 0000 0000 0000
+    0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0202 01fe 0209 0209 0209 0209 0209 0209
+    0209 0209 0209 0209 0209 0209 0209 01ff 0200 0000 0000 0000 0000 0000 0000 0000
+    0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0202 0202 0235 022d 0000 0000 022d 01f8
+    0259 025a 025a 025a 025a 025b 01fa 0200 0200 0000 0000 0000 0000 0000 0000 0000
+    0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 01fe 020a 0202 0236 0000 0000 0000 0000 0200
+    0000 0000 0000 0000 01c7 0000 0202 0200 0208 0209 0209 01ff 0000 0000 0000 0000
+    0000 0000
+  - 0000 0000 0000 0000 0000 0000 01fe 020a 0235 0202 022f 0000 0000 0000 0000 0200
+    0000 0000 0000 0000 0000 0000 0202 0208 0209 0209 01ff 0200 0000 0000 0000 0000
+    0000 0000
+  - 0000 0000 0000 0000 0000 0000 0202 01fe 0209 020a 0237 0000 0000 0000 0000 0200
+    0000 0000 0000 0000 0000 0000 0202 0000 0000 0000 0200 0200 0000 0000 0000 0000
+    0000 0000
+  - 0000 0000 0000 0000 0000 0000 0202 0202 022d 0000 0000 0000 0000 0000 01bf 0208
+    0209 0209 021b 0209 0209 0209 020a 0000 0000 0000 0200 0200 0000 0000 0000 0000
+    0000 0000
+  - 0000 0000 0000 0000 0000 0000 0202 0202 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0200 0200 0000 0000 0000 0000
+    0000 0000
+  - 0000 0000 0000 0000 0000 0000 0202 0202 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0200 0200 0000 0000 0000 0000
+    0000 0000
+  - 0000 0000 0000 0000 0000 0000 0202 0202 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000 0000 0000 0000 0000 01bf 0000 0200 0200 0000 0000 0000 0000
+    0000 0000
+  - 0000 0000 0000 0000 0000 0000 0202 0202 0235 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0200 0200 0000 0000 0000 0000
+    0000 0000
+  - 0000 0000 0000 0000 0000 0000 0202 0206 01f9 01f9 01f9 01fb 01fc 01fd 01f9 01fa
+    0000 0000 022d 022d 0000 0000 0000 0000 0000 0000 0200 0200 0000 0000 0000 0000
+    0000 0000
+  - 0000 0000 0000 0000 0000 0000 0206 01f9 01f9 01f9 0210 01f9 01f9 01f9 01fa 0202
+    0000 0000 0000 022d 01f8 01f9 01f9 0210 01f9 01f9 0207 0200 0000 0000 0000 0000
+    0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0202 0202
+    0000 0000 0000 0000 0200 01f8 01f9 01f9 01f9 01f9 01f9 0207 0000 0000 0000 0000
+    0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0202 0202
+    0000 0000 0000 0000 0200 0200 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0202 0206
+    01fa 0000 0000 0000 0200 0200 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0206 01fa
+    0202 0000 0000 0000 0203 0200 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0202
+    0202 0000 0000 0000 0200 0200 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0202
+    0202 0000 0000 0000 0200 0200 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0202
+    0206 01f9 01f9 01f9 0207 0200 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0206
+    01f9 01f9 01f9 01f9 01f9 0207 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 022e 0000 0000 0000 0000 0000
+    0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000 0000 0000 0000 01b1 01b2 01b3 0000 0000 0000 0000 0000 0000
+    0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000 0000 0000 0000 01b9 01ba 01bb 0000 0000 0000 0000 0000 0000
+    0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0204 0000 0000 0000
+    0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000
+encounter_list: []
+encounter_step: 30
+events:
+  1: !ruby/object:RPG::Event
+    id: 1
+    name: Exit south
+    pages:
+    - !ruby/object:RPG::Event::Page
+      always_on_top: false
+      condition: !ruby/object:RPG::Event::Page::Condition
+        self_switch_ch: A
+        self_switch_valid: false
+        switch1_id: 1
+        switch1_valid: false
+        switch2_id: 1
+        switch2_valid: false
+        variable_id: 1
+        variable_valid: false
+        variable_value: 0
+      direction_fix: false
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        blend_type: 0
+        character_hue: 0
+        character_name: ''
+        direction: 2
+        opacity: 255
+        pattern: 0
+        tile_id: 0
+      list:
+      - !ruby/object:RPG::EventCommand {c: 250, i: 0, p: [!ruby/object:RPG::AudioFile {
+            name: Door exit, pitch: 100, volume: 80}]}
+      - !ruby/object:RPG::EventCommand {c: 223, i: 0, p: [!ruby/object:Tone {blue: -255.0,
+            gray: 0.0, green: -255.0, red: -255.0}, 6]}
+      - !ruby/object:RPG::EventCommand {c: 106, i: 0, p: [8]}
+      - !ruby/object:RPG::EventCommand {c: 355, i: 0, p: [pbCaveExit]}
+      - !ruby/object:RPG::EventCommand {c: 201, i: 0, p: [0, 47, 46, 11, 0, 1]}
+      - !ruby/object:RPG::EventCommand {c: 223, i: 0, p: [!ruby/object:Tone {blue: 0.0,
+            gray: 0.0, green: 0.0, red: 0.0}, 6]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 0, p: []}
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+        repeat: true
+        skippable: false
+      move_speed: 3
+      move_type: 0
+      step_anime: false
+      through: false
+      trigger: 1
+      walk_anime: true
+    x: 12
+    y: 15
+  2: !ruby/object:RPG::Event
+    id: 2
+    name: Exit right
+    pages:
+    - !ruby/object:RPG::Event::Page
+      always_on_top: false
+      condition: !ruby/object:RPG::Event::Page::Condition
+        self_switch_ch: A
+        self_switch_valid: false
+        switch1_id: 1
+        switch1_valid: false
+        switch2_id: 1
+        switch2_valid: false
+        variable_id: 1
+        variable_valid: false
+        variable_value: 0
+      direction_fix: false
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        blend_type: 0
+        character_hue: 0
+        character_name: ''
+        direction: 2
+        opacity: 255
+        pattern: 0
+        tile_id: 0
+      list:
+      - !ruby/object:RPG::EventCommand {c: 250, i: 0, p: [!ruby/object:RPG::AudioFile {
+            name: Door exit, pitch: 100, volume: 80}]}
+      - !ruby/object:RPG::EventCommand {c: 223, i: 0, p: [!ruby/object:Tone {blue: -255.0,
+            gray: 0.0, green: -255.0, red: -255.0}, 6]}
+      - !ruby/object:RPG::EventCommand {c: 106, i: 0, p: [8]}
+      - !ruby/object:RPG::EventCommand {c: 355, i: 0, p: [pbCaveExit]}
+      - !ruby/object:RPG::EventCommand {c: 201, i: 0, p: [0, 47, 56, 16, 0, 1]}
+      - !ruby/object:RPG::EventCommand {c: 223, i: 0, p: [!ruby/object:Tone {blue: 0.0,
+            gray: 0.0, green: 0.0, red: 0.0}, 6]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 0, p: []}
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+        repeat: true
+        skippable: false
+      move_speed: 3
+      move_type: 0
+      step_anime: false
+      through: false
+      trigger: 1
+      walk_anime: true
+    x: 20
+    y: 20
+  3: !ruby/object:RPG::Event
+    id: 3
+    name: Ladder
+    pages:
+    - !ruby/object:RPG::Event::Page
+      always_on_top: false
+      condition: !ruby/object:RPG::Event::Page::Condition
+        self_switch_ch: A
+        self_switch_valid: false
+        switch1_id: 1
+        switch1_valid: false
+        switch2_id: 1
+        switch2_valid: false
+        variable_id: 1
+        variable_valid: false
+        variable_value: 0
+      direction_fix: false
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        blend_type: 0
+        character_hue: 0
+        character_name: ''
+        direction: 2
+        opacity: 255
+        pattern: 0
+        tile_id: 0
+      list:
+      - !ruby/object:RPG::EventCommand {c: 250, i: 0, p: [!ruby/object:RPG::AudioFile {
+            name: Door exit, pitch: 100, volume: 80}]}
+      - !ruby/object:RPG::EventCommand {c: 223, i: 0, p: [!ruby/object:Tone {blue: -255.0,
+            gray: 0.0, green: -255.0, red: -255.0}, 6]}
+      - !ruby/object:RPG::EventCommand {c: 106, i: 0, p: [8]}
+      - !ruby/object:RPG::EventCommand {c: 201, i: 0, p: [0, 50, 11, 12, 6, 1]}
+      - !ruby/object:RPG::EventCommand {c: 223, i: 0, p: [!ruby/object:Tone {blue: 0.0,
+            gray: 0.0, green: 0.0, red: 0.0}, 6]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 0, p: []}
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+        repeat: true
+        skippable: false
+      move_speed: 3
+      move_type: 0
+      step_anime: false
+      through: false
+      trigger: 1
+      walk_anime: true
+    x: 10
+    y: 12
+  4: !ruby/object:RPG::Event
+    id: 4
+    name: Hole
+    pages:
+    - !ruby/object:RPG::Event::Page
+      always_on_top: false
+      condition: !ruby/object:RPG::Event::Page::Condition
+        self_switch_ch: A
+        self_switch_valid: false
+        switch1_id: 1
+        switch1_valid: false
+        switch2_id: 1
+        switch2_valid: false
+        variable_id: 1
+        variable_valid: false
+        variable_value: 0
+      direction_fix: false
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        blend_type: 0
+        character_hue: 0
+        character_name: ''
+        direction: 2
+        opacity: 255
+        pattern: 0
+        tile_id: 0
+      list:
+      - !ruby/object:RPG::EventCommand {c: 106, i: 0, p: [4]}
+      - !ruby/object:RPG::EventCommand {c: 250, i: 0, p: [!ruby/object:RPG::AudioFile {
+            name: Player fall, pitch: 100, volume: 80}]}
+      - !ruby/object:RPG::EventCommand {c: 208, i: 0, p: [0]}
+      - !ruby/object:RPG::EventCommand {c: 106, i: 0, p: [4]}
+      - !ruby/object:RPG::EventCommand {c: 223, i: 0, p: [!ruby/object:Tone {blue: -255.0,
+            gray: 0.0, green: -255.0, red: -255.0}, 6]}
+      - !ruby/object:RPG::EventCommand {c: 106, i: 0, p: [8]}
+      - !ruby/object:RPG::EventCommand {c: 201, i: 0, p: [0, 50, 12, 7, 0, 1]}
+      - !ruby/object:RPG::EventCommand {c: 208, i: 0, p: [1]}
+      - !ruby/object:RPG::EventCommand {c: 223, i: 0, p: [!ruby/object:Tone {blue: 0.0,
+            gray: 0.0, green: 0.0, red: 0.0}, 6]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 0, p: []}
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+        repeat: true
+        skippable: false
+      move_speed: 3
+      move_type: 0
+      step_anime: false
+      through: true
+      trigger: 1
+      walk_anime: true
+    x: 12
+    y: 7
+  5: !ruby/object:RPG::Event
+    id: 5
+    name: NPC
+    pages:
+    - !ruby/object:RPG::Event::Page
+      always_on_top: false
+      condition: !ruby/object:RPG::Event::Page::Condition
+        self_switch_ch: A
+        self_switch_valid: false
+        switch1_id: 1
+        switch1_valid: false
+        switch2_id: 1
+        switch2_valid: false
+        variable_id: 1
+        variable_valid: false
+        variable_value: 0
+      direction_fix: false
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        blend_type: 0
+        character_hue: 0
+        character_name: NPC 05
+        direction: 2
+        opacity: 255
+        pattern: 0
+        tile_id: 0
+      list:
+      - !ruby/object:RPG::EventCommand {c: 101, i: 0, p: ['\bCan you push that boulder
+            onto the switch?']}
+      - !ruby/object:RPG::EventCommand {c: 111, i: 0, p: [2, A, 0]}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 1, p: [\bOh! The boulder has been
+            moved onto the switch!]}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 1, p: [\bWell done!]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 411, i: 0, p: []}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 1, p: [\bOh. The boulder is not
+            on the switch.]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 412, i: 0, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 0, p: []}
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+        repeat: true
+        skippable: false
+      move_speed: 3
+      move_type: 0
+      step_anime: false
+      through: false
+      trigger: 0
+      walk_anime: true
+    x: 17
+    y: 7
+  6: !ruby/object:RPG::Event
+    id: 6
+    name: StrengthBoulder
+    pages:
+    - !ruby/object:RPG::Event::Page
+      always_on_top: false
+      condition: !ruby/object:RPG::Event::Page::Condition
+        self_switch_ch: A
+        self_switch_valid: false
+        switch1_id: 1
+        switch1_valid: false
+        switch2_id: 1
+        switch2_valid: false
+        variable_id: 1
+        variable_valid: false
+        variable_value: 0
+      direction_fix: false
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        blend_type: 0
+        character_hue: 0
+        character_name: Object boulder
+        direction: 2
+        opacity: 255
+        pattern: 0
+        tile_id: 0
+      list:
+      - !ruby/object:RPG::EventCommand {c: 355, i: 0, p: [pbPushThisBoulder]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 0, p: []}
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+        repeat: true
+        skippable: false
+      move_speed: 2
+      move_type: 0
+      step_anime: false
+      through: false
+      trigger: 1
+      walk_anime: true
+    - !ruby/object:RPG::Event::Page
+      always_on_top: false
+      condition: !ruby/object:RPG::Event::Page::Condition
+        self_switch_ch: A
+        self_switch_valid: false
+        switch1_id: 57
+        switch1_valid: true
+        switch2_id: 1
+        switch2_valid: false
+        variable_id: 1
+        variable_valid: false
+        variable_value: 0
+      direction_fix: false
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        blend_type: 0
+        character_hue: 0
+        character_name: ''
+        direction: 2
+        opacity: 255
+        pattern: 0
+        tile_id: 0
+      list:
+      - !ruby/object:RPG::EventCommand {c: 0, i: 0, p: []}
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+        repeat: true
+        skippable: false
+      move_speed: 3
+      move_type: 0
+      step_anime: false
+      through: false
+      trigger: 0
+      walk_anime: true
+    x: 12
+    y: 9
+  7: !ruby/object:RPG::Event
+    id: 7
+    name: StrengthBoulder
+    pages:
+    - !ruby/object:RPG::Event::Page
+      always_on_top: false
+      condition: !ruby/object:RPG::Event::Page::Condition
+        self_switch_ch: A
+        self_switch_valid: false
+        switch1_id: 1
+        switch1_valid: false
+        switch2_id: 1
+        switch2_valid: false
+        variable_id: 1
+        variable_valid: false
+        variable_value: 0
+      direction_fix: false
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        blend_type: 0
+        character_hue: 0
+        character_name: Object boulder
+        direction: 2
+        opacity: 255
+        pattern: 0
+        tile_id: 0
+      list:
+      - !ruby/object:RPG::EventCommand {c: 355, i: 0, p: [pbPushThisBoulder]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 0, p: []}
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+        repeat: true
+        skippable: false
+      move_speed: 2
+      move_type: 0
+      step_anime: false
+      through: false
+      trigger: 1
+      walk_anime: true
+    - !ruby/object:RPG::Event::Page
+      always_on_top: false
+      condition: !ruby/object:RPG::Event::Page::Condition
+        self_switch_ch: A
+        self_switch_valid: true
+        switch1_id: 1
+        switch1_valid: false
+        switch2_id: 1
+        switch2_valid: false
+        variable_id: 1
+        variable_valid: false
+        variable_value: 0
+      direction_fix: false
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        blend_type: 0
+        character_hue: 0
+        character_name: Object boulder
+        direction: 2
+        opacity: 255
+        pattern: 0
+        tile_id: 0
+      list:
+      - !ruby/object:RPG::EventCommand {c: 0, i: 0, p: []}
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+        repeat: true
+        skippable: false
+      move_speed: 2
+      move_type: 0
+      step_anime: false
+      through: false
+      trigger: 0
+      walk_anime: true
+    x: 19
+    y: 7
+  8: !ruby/object:RPG::Event
+    id: 8
+    name: Boulder position checks
+    pages:
+    - !ruby/object:RPG::Event::Page
+      always_on_top: false
+      condition: !ruby/object:RPG::Event::Page::Condition
+        self_switch_ch: A
+        self_switch_valid: false
+        switch1_id: 1
+        switch1_valid: false
+        switch2_id: 1
+        switch2_valid: false
+        variable_id: 1
+        variable_valid: false
+        variable_value: 0
+      direction_fix: false
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        blend_type: 0
+        character_hue: 0
+        character_name: ''
+        direction: 2
+        opacity: 255
+        pattern: 0
+        tile_id: 0
+      list:
+      - !ruby/object:RPG::EventCommand {c: 108, i: 0, p: [Boulder to be pushed down
+            hole is event 6.]}
+      - !ruby/object:RPG::EventCommand {c: 111, i: 0, p: [2, A, 1]}
+      - !ruby/object:RPG::EventCommand {c: 122, i: 1, p: [4, 4, 0, 6, 6, 0]}
+      - !ruby/object:RPG::EventCommand {c: 122, i: 1, p: [5, 5, 0, 6, 6, 1]}
+      - !ruby/object:RPG::EventCommand {c: 111, i: 1, p: [1, 4, 0, 12, 0]}
+      - !ruby/object:RPG::EventCommand {c: 111, i: 2, p: [1, 5, 0, 7, 0]}
+      - !ruby/object:RPG::EventCommand {c: 108, i: 3, p: [Is over hole.]}
+      - !ruby/object:RPG::EventCommand {c: 106, i: 3, p: [8]}
+      - !ruby/object:RPG::EventCommand {c: 250, i: 3, p: [!ruby/object:RPG::AudioFile {
+            name: Battle throw, pitch: 100, volume: 80}]}
+      - !ruby/object:RPG::EventCommand {c: 121, i: 3, p: [57, 57, 0]}
+      - !ruby/object:RPG::EventCommand {c: 123, i: 3, p: [A, 0]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 3, p: []}
+      - !ruby/object:RPG::EventCommand {c: 412, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 412, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 412, i: 0, p: []}
+      - !ruby/object:RPG::EventCommand {c: 108, i: 0, p: [Boulder to be pushed onto
+            switch is event 7.]}
+      - !ruby/object:RPG::EventCommand {c: 108, i: 0, p: ['There is more to this one
+            because the boulder can be ']}
+      - !ruby/object:RPG::EventCommand {c: 408, i: 0, p: [pushed off the switch again.]}
+      - !ruby/object:RPG::EventCommand {c: 111, i: 0, p: [2, B, 1]}
+      - !ruby/object:RPG::EventCommand {c: 122, i: 1, p: [4, 4, 0, 6, 7, 0]}
+      - !ruby/object:RPG::EventCommand {c: 122, i: 1, p: [5, 5, 0, 6, 7, 1]}
+      - !ruby/object:RPG::EventCommand {c: 111, i: 1, p: [1, 4, 0, 20, 0]}
+      - !ruby/object:RPG::EventCommand {c: 111, i: 2, p: [1, 5, 0, 7, 0]}
+      - !ruby/object:RPG::EventCommand {c: 108, i: 3, p: [Is on switch.]}
+      - !ruby/object:RPG::EventCommand {c: 106, i: 3, p: [8]}
+      - !ruby/object:RPG::EventCommand {c: 250, i: 3, p: [!ruby/object:RPG::AudioFile {
+            name: Battle ball drop, pitch: 100, volume: 80}]}
+      - !ruby/object:RPG::EventCommand {c: 355, i: 3, p: ['pbSetSelfSwitch(5, "A",
+            true)']}
+      - !ruby/object:RPG::EventCommand {c: 123, i: 3, p: [B, 0]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 3, p: []}
+      - !ruby/object:RPG::EventCommand {c: 412, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 412, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 411, i: 0, p: []}
+      - !ruby/object:RPG::EventCommand {c: 122, i: 1, p: [4, 4, 0, 6, 7, 0]}
+      - !ruby/object:RPG::EventCommand {c: 122, i: 1, p: [5, 5, 0, 6, 7, 1]}
+      - !ruby/object:RPG::EventCommand {c: 111, i: 1, p: [1, 4, 0, 20, 5]}
+      - !ruby/object:RPG::EventCommand {c: 108, i: 2, p: [Boulder has been moved off
+            the switch.]}
+      - !ruby/object:RPG::EventCommand {c: 355, i: 2, p: ['pbSetSelfSwitch(5, "A",
+            false)']}
+      - !ruby/object:RPG::EventCommand {c: 123, i: 2, p: [B, 1]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 411, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 111, i: 2, p: [1, 5, 0, 7, 5]}
+      - !ruby/object:RPG::EventCommand {c: 108, i: 3, p: [Boulder has been moved off
+            the switch.]}
+      - !ruby/object:RPG::EventCommand {c: 355, i: 3, p: ['pbSetSelfSwitch(5, "A",
+            false)']}
+      - !ruby/object:RPG::EventCommand {c: 123, i: 3, p: [B, 1]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 3, p: []}
+      - !ruby/object:RPG::EventCommand {c: 412, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 412, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 412, i: 0, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 0, p: []}
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+        repeat: true
+        skippable: false
+      move_speed: 3
+      move_type: 0
+      step_anime: false
+      through: false
+      trigger: 4
+      walk_anime: true
+    x: 6
+    y: 5
+  9: !ruby/object:RPG::Event
+    id: 9
+    name: Sign
+    pages:
+    - !ruby/object:RPG::Event::Page
+      always_on_top: false
+      condition: !ruby/object:RPG::Event::Page::Condition
+        self_switch_ch: A
+        self_switch_valid: false
+        switch1_id: 1
+        switch1_valid: false
+        switch2_id: 1
+        switch2_valid: false
+        variable_id: 1
+        variable_valid: false
+        variable_value: 0
+      direction_fix: false
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        blend_type: 0
+        character_hue: 0
+        character_name: ''
+        direction: 2
+        opacity: 255
+        pattern: 0
+        tile_id: 0
+      list:
+      - !ruby/object:RPG::EventCommand {c: 101, i: 0, p: ['The positions of the boulders
+            are checked by a ']}
+      - !ruby/object:RPG::EventCommand {c: 401, i: 0, p: [Parallel Process event.]}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 0, p: ['The hole event must have
+            its "Through" option set, to ']}
+      - !ruby/object:RPG::EventCommand {c: 401, i: 0, p: [allow boulder events to
+            be pushed onto it.]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 0, p: []}
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+        repeat: true
+        skippable: false
+      move_speed: 3
+      move_type: 0
+      step_anime: false
+      through: false
+      trigger: 0
+      walk_anime: true
+    x: 14
+    y: 10
+  10: !ruby/object:RPG::Event
+    id: 10
+    name: SmashRock
+    pages:
+    - !ruby/object:RPG::Event::Page
+      always_on_top: false
+      condition: !ruby/object:RPG::Event::Page::Condition
+        self_switch_ch: A
+        self_switch_valid: false
+        switch1_id: 1
+        switch1_valid: false
+        switch2_id: 1
+        switch2_valid: false
+        variable_id: 1
+        variable_valid: false
+        variable_value: 0
+      direction_fix: false
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        blend_type: 0
+        character_hue: 0
+        character_name: Object rock
+        direction: 2
+        opacity: 255
+        pattern: 0
+        tile_id: 0
+      list:
+      - !ruby/object:RPG::EventCommand
+        c: 209
+        i: 0
+        p:
+        - 0
+        - !ruby/object:RPG::MoveRoute
+          list:
+          - &1 !ruby/object:RPG::MoveCommand {code: 16, parameters: []}
+          - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+          repeat: false
+          skippable: false
+      - !ruby/object:RPG::EventCommand {c: 509, i: 0, p: [*1]}
+      - !ruby/object:RPG::EventCommand {c: 111, i: 0, p: [12, pbRockSmash]}
+      - !ruby/object:RPG::EventCommand {c: 355, i: 1, p: [pbSmashThisEvent]}
+      - !ruby/object:RPG::EventCommand {c: 355, i: 1, p: [pbRockSmashRandomEncounter]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 412, i: 0, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 0, p: []}
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+        repeat: true
+        skippable: false
+      move_speed: 3
+      move_type: 0
+      step_anime: false
+      through: false
+      trigger: 0
+      walk_anime: true
+    x: 20
+    y: 15
+  11: !ruby/object:RPG::Event
+    id: 11
+    name: SmashRock
+    pages:
+    - !ruby/object:RPG::Event::Page
+      always_on_top: false
+      condition: !ruby/object:RPG::Event::Page::Condition
+        self_switch_ch: A
+        self_switch_valid: false
+        switch1_id: 1
+        switch1_valid: false
+        switch2_id: 1
+        switch2_valid: false
+        variable_id: 1
+        variable_valid: false
+        variable_value: 0
+      direction_fix: false
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        blend_type: 0
+        character_hue: 0
+        character_name: Object rock
+        direction: 2
+        opacity: 255
+        pattern: 0
+        tile_id: 0
+      list:
+      - !ruby/object:RPG::EventCommand
+        c: 209
+        i: 0
+        p:
+        - 0
+        - !ruby/object:RPG::MoveRoute
+          list:
+          - &2 !ruby/object:RPG::MoveCommand {code: 16, parameters: []}
+          - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+          repeat: false
+          skippable: false
+      - !ruby/object:RPG::EventCommand {c: 509, i: 0, p: [*2]}
+      - !ruby/object:RPG::EventCommand {c: 111, i: 0, p: [12, pbRockSmash]}
+      - !ruby/object:RPG::EventCommand {c: 355, i: 1, p: [pbSmashThisEvent]}
+      - !ruby/object:RPG::EventCommand {c: 355, i: 1, p: [pbRockSmashRandomEncounter]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 412, i: 0, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 0, p: []}
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+        repeat: true
+        skippable: false
+      move_speed: 3
+      move_type: 0
+      step_anime: false
+      through: false
+      trigger: 0
+      walk_anime: true
+    x: 20
+    y: 14
+  12: !ruby/object:RPG::Event
+    id: 12
+    name: SmashRock
+    pages:
+    - !ruby/object:RPG::Event::Page
+      always_on_top: false
+      condition: !ruby/object:RPG::Event::Page::Condition
+        self_switch_ch: A
+        self_switch_valid: false
+        switch1_id: 1
+        switch1_valid: false
+        switch2_id: 1
+        switch2_valid: false
+        variable_id: 1
+        variable_valid: false
+        variable_value: 0
+      direction_fix: false
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        blend_type: 0
+        character_hue: 0
+        character_name: Object rock
+        direction: 2
+        opacity: 255
+        pattern: 0
+        tile_id: 0
+      list:
+      - !ruby/object:RPG::EventCommand
+        c: 209
+        i: 0
+        p:
+        - 0
+        - !ruby/object:RPG::MoveRoute
+          list:
+          - &3 !ruby/object:RPG::MoveCommand {code: 16, parameters: []}
+          - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+          repeat: false
+          skippable: false
+      - !ruby/object:RPG::EventCommand {c: 509, i: 0, p: [*3]}
+      - !ruby/object:RPG::EventCommand {c: 111, i: 0, p: [12, pbRockSmash]}
+      - !ruby/object:RPG::EventCommand {c: 355, i: 1, p: [pbSmashThisEvent]}
+      - !ruby/object:RPG::EventCommand {c: 355, i: 1, p: [pbRockSmashRandomEncounter]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 412, i: 0, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 0, p: []}
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+        repeat: true
+        skippable: false
+      move_speed: 3
+      move_type: 0
+      step_anime: false
+      through: false
+      trigger: 0
+      walk_anime: true
+    x: 14
+    y: 9
+  13: !ruby/object:RPG::Event
+    id: 13
+    name: Dungeon ladder
+    pages:
+    - !ruby/object:RPG::Event::Page
+      always_on_top: false
+      condition: !ruby/object:RPG::Event::Page::Condition
+        self_switch_ch: A
+        self_switch_valid: false
+        switch1_id: 1
+        switch1_valid: false
+        switch2_id: 1
+        switch2_valid: false
+        variable_id: 1
+        variable_valid: false
+        variable_value: 0
+      direction_fix: false
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        blend_type: 0
+        character_hue: 0
+        character_name: ''
+        direction: 2
+        opacity: 255
+        pattern: 0
+        tile_id: 0
+      list:
+      - !ruby/object:RPG::EventCommand {c: 108, i: 0, p: ['Set which dungeon parameters
+            are to be used for the ']}
+      - !ruby/object:RPG::EventCommand {c: 408, i: 0, p: ['next dungeon map entered.
+            These parameters are ']}
+      - !ruby/object:RPG::EventCommand {c: 408, i: 0, p: [defined in the PBS file
+            dungeon_parameters.txt]}
+      - !ruby/object:RPG::EventCommand {c: 108, i: 0, p: ['You can set the following:']}
+      - !ruby/object:RPG::EventCommand {c: 408, i: 0, p: ['$PokemonGlobal.dungeon_area
+            = :forest']}
+      - !ruby/object:RPG::EventCommand {c: 408, i: 0, p: [$PokemonGlobal.dungeon_version
+            = 42]}
+      - !ruby/object:RPG::EventCommand {c: 355, i: 0, p: ['$PokemonGlobal.dungeon_area
+            = :cave']}
+      - !ruby/object:RPG::EventCommand {c: 250, i: 0, p: [!ruby/object:RPG::AudioFile {
+            name: Door exit, pitch: 100, volume: 80}]}
+      - !ruby/object:RPG::EventCommand {c: 223, i: 0, p: [!ruby/object:Tone {blue: -255.0,
+            gray: 0.0, green: -255.0, red: -255.0}, 6]}
+      - !ruby/object:RPG::EventCommand {c: 106, i: 0, p: [8]}
+      - !ruby/object:RPG::EventCommand {c: 201, i: 0, p: [0, 51, 0, 0, 6, 1]}
+      - !ruby/object:RPG::EventCommand {c: 223, i: 0, p: [!ruby/object:Tone {blue: 0.0,
+            gray: 0.0, green: 0.0, red: 0.0}, 6]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 0, p: []}
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+        repeat: true
+        skippable: false
+      move_speed: 3
+      move_type: 0
+      step_anime: false
+      through: false
+      trigger: 1
+      walk_anime: true
+    x: 24
+    y: 14
+  14: !ruby/object:RPG::Event
+    id: 14
+    name: Dungeon sign
+    pages:
+    - !ruby/object:RPG::Event::Page
+      always_on_top: false
+      condition: !ruby/object:RPG::Event::Page::Condition
+        self_switch_ch: A
+        self_switch_valid: false
+        switch1_id: 1
+        switch1_valid: false
+        switch2_id: 1
+        switch2_valid: false
+        variable_id: 1
+        variable_valid: false
+        variable_value: 0
+      direction_fix: false
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        blend_type: 0
+        character_hue: 0
+        character_name: ''
+        direction: 2
+        opacity: 255
+        pattern: 0
+        tile_id: 0
+      list:
+      - !ruby/object:RPG::EventCommand {c: 101, i: 0, p: [This ladder leads to a random
+            dungeon.]}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 0, p: [!binary "VGhlIGxldmVscyBvZiBQb2vDqW1vbiB3aXRoaW4gYXJlIGJhc2VkIG9uIHRo\nZSBsZXZlbHMg"]}
+      - !ruby/object:RPG::EventCommand {c: 401, i: 0, p: [!binary "b2YgUG9rw6ltb24gaW4gdGhlIHBsYXllcidzIHBhcnR5Lg=="]}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 0, p: ['This is because the dungeon
+            map''s metadata gives it ']}
+      - !ruby/object:RPG::EventCommand {c: 401, i: 0, p: [the "ScaleWildEncounterLevels"
+            flag.]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 0, p: []}
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+        repeat: true
+        skippable: false
+      move_speed: 3
+      move_type: 0
+      step_anime: false
+      through: false
+      trigger: 0
+      walk_anime: true
+    x: 24
+    y: 13
+  15: !ruby/object:RPG::Event
+    id: 15
+    name: Tile puzzles
+    pages:
+    - !ruby/object:RPG::Event::Page
+      always_on_top: false
+      condition: !ruby/object:RPG::Event::Page::Condition
+        self_switch_ch: A
+        self_switch_valid: false
+        switch1_id: 1
+        switch1_valid: false
+        switch2_id: 1
+        switch2_valid: false
+        variable_id: 1
+        variable_valid: false
+        variable_value: 0
+      direction_fix: false
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        blend_type: 0
+        character_hue: 0
+        character_name: ''
+        direction: 2
+        opacity: 255
+        pattern: 0
+        tile_id: 0
+      list:
+      - !ruby/object:RPG::EventCommand {c: 101, i: 0, p: ['Which tile puzzle do you
+            want to play?']}
+      - !ruby/object:RPG::EventCommand {c: 102, i: 0, p: [[Alph, Alph Rotator, Mystic
+              Square, Tile Swap], 0]}
+      - !ruby/object:RPG::EventCommand {c: 402, i: 0, p: [0, Alph]}
+      - !ruby/object:RPG::EventCommand {c: 108, i: 1, p: ['A jigsaw puzzle. All tiles
+            start in trays on either side ']}
+      - !ruby/object:RPG::EventCommand {c: 408, i: 1, p: [of the grid.]}
+      - !ruby/object:RPG::EventCommand {c: 111, i: 1, p: [12, 'pbTilePuzzle(1, "Kabuto")']}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 2, p: [Puzzle solved!]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 411, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 2, p: [Gave up...]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 412, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 402, i: 0, p: [1, Alph Rotator]}
+      - !ruby/object:RPG::EventCommand {c: 108, i: 1, p: ['A jigsaw puzzle. All tiles
+            start in trays on either side ']}
+      - !ruby/object:RPG::EventCommand {c: 408, i: 1, p: [of the grid. Each tile can
+            be rotated.]}
+      - !ruby/object:RPG::EventCommand {c: 111, i: 1, p: [12, 'pbTilePuzzle(2, "Kabuto")']}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 2, p: [Puzzle solved!]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 411, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 2, p: [Gave up...]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 412, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 402, i: 0, p: [2, Mystic Square]}
+      - !ruby/object:RPG::EventCommand {c: 108, i: 1, p: ['Also known as the 15 puzzle.
+            All tiles (except for one) ']}
+      - !ruby/object:RPG::EventCommand {c: 408, i: 1, p: ['start in random places
+            in the grid. Use the empty tile ']}
+      - !ruby/object:RPG::EventCommand {c: 408, i: 1, p: ['space to slide tiles around
+            and rearrange them to ']}
+      - !ruby/object:RPG::EventCommand {c: 408, i: 1, p: ['create the picture. The
+            missing tile is the bottom right ']}
+      - !ruby/object:RPG::EventCommand {c: 408, i: 1, p: [one in the completed picture.]}
+      - !ruby/object:RPG::EventCommand {c: 111, i: 1, p: [12, 'pbTilePuzzle(3, "Kabuto")']}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 2, p: [Puzzle solved!]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 411, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 2, p: [Gave up...]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 412, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 402, i: 0, p: [3, Tile Swap]}
+      - !ruby/object:RPG::EventCommand {c: 108, i: 1, p: ['All tiles start in random
+            places in the grid. By choosing ']}
+      - !ruby/object:RPG::EventCommand {c: 408, i: 1, p: ['and swapping pairs of adjacent
+            tiles, unscramble the ']}
+      - !ruby/object:RPG::EventCommand {c: 408, i: 1, p: [picture.]}
+      - !ruby/object:RPG::EventCommand {c: 111, i: 1, p: [12, 'pbTilePuzzle(4, "Kabuto")']}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 2, p: [Puzzle solved!]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 411, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 2, p: [Gave up...]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 412, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 404, i: 0, p: []}
+      - !ruby/object:RPG::EventCommand {c: 102, i: 0, p: [[Tile Swap Rotator, Rubik's
+              Square, Star Rotator, Cancel], 4]}
+      - !ruby/object:RPG::EventCommand {c: 402, i: 0, p: [0, Tile Swap Rotator]}
+      - !ruby/object:RPG::EventCommand {c: 108, i: 1, p: ['All tiles start in random
+            places in the grid. By choosing ']}
+      - !ruby/object:RPG::EventCommand {c: 408, i: 1, p: ['and swapping pairs of adjacent
+            tiles, unscramble the ']}
+      - !ruby/object:RPG::EventCommand {c: 408, i: 1, p: [picture. Each tile can be
+            rotated.]}
+      - !ruby/object:RPG::EventCommand {c: 111, i: 1, p: [12, 'pbTilePuzzle(5, "Kabuto")']}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 2, p: [Puzzle solved!]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 411, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 2, p: [Gave up...]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 412, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 402, i: 0, p: [1, Rubik's Square]}
+      - !ruby/object:RPG::EventCommand {c: 108, i: 1, p: ['All tiles start in random
+            places in the grid. Slide a ']}
+      - !ruby/object:RPG::EventCommand {c: 408, i: 1, p: ['whole row of tiles left/right,
+            or a whole column of tiles ']}
+      - !ruby/object:RPG::EventCommand {c: 408, i: 1, p: ['up/down at a time. The
+            tile that falls off one side of ']}
+      - !ruby/object:RPG::EventCommand {c: 408, i: 1, p: ['the grid appears on the
+            other side. Unscramble the ']}
+      - !ruby/object:RPG::EventCommand {c: 408, i: 1, p: [picture.]}
+      - !ruby/object:RPG::EventCommand {c: 111, i: 1, p: [12, 'pbTilePuzzle(6, "Kabuto")']}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 2, p: [Puzzle solved!]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 411, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 2, p: [Gave up...]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 412, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 402, i: 0, p: [2, Star Rotator]}
+      - !ruby/object:RPG::EventCommand {c: 108, i: 1, p: ['All tiles start in their
+            proper places in the grid, but are ']}
+      - !ruby/object:RPG::EventCommand {c: 408, i: 1, p: ['randomly rotated. When
+            one tile is rotated, all tiles ']}
+      - !ruby/object:RPG::EventCommand {c: 408, i: 1, p: [touching one of its sides
+            are also rotated.]}
+      - !ruby/object:RPG::EventCommand {c: 111, i: 1, p: [12, 'pbTilePuzzle(7, "Kabuto")']}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 2, p: [Puzzle solved!]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 411, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 2, p: [Gave up...]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 412, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 402, i: 0, p: [3, Cancel]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 404, i: 0, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 0, p: []}
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+        repeat: true
+        skippable: false
+      move_speed: 3
+      move_type: 0
+      step_anime: false
+      through: false
+      trigger: 0
+      walk_anime: true
+    x: 24
+    y: 8
+  16: !ruby/object:RPG::Event
+    id: 16
+    name: EV016
+    pages:
+    - !ruby/object:RPG::Event::Page
+      always_on_top: false
+      condition: !ruby/object:RPG::Event::Page::Condition
+        self_switch_ch: A
+        self_switch_valid: false
+        switch1_id: 1
+        switch1_valid: false
+        switch2_id: 1
+        switch2_valid: false
+        variable_id: 1
+        variable_valid: false
+        variable_value: 0
+      direction_fix: false
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        blend_type: 0
+        character_hue: 0
+        character_name: ''
+        direction: 2
+        opacity: 255
+        pattern: 0
+        tile_id: 0
+      list:
+      - !ruby/object:RPG::EventCommand {c: 108, i: 0, p: ['This event is empty, but
+            prevents boulders from ']}
+      - !ruby/object:RPG::EventCommand {c: 408, i: 0, p: [being pushed over it.]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 0, p: []}
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+        repeat: true
+        skippable: false
+      move_speed: 3
+      move_type: 0
+      step_anime: false
+      through: false
+      trigger: 0
+      walk_anime: true
+    x: 18
+    y: 10
+height: 29
+tileset_id: 6
+width: 34

@@ -1,0 +1,134 @@
+---
+- 
+- !ruby/object:RPG::CommonEvent
+  id: 1
+  list:
+  - !ruby/object:RPG::EventCommand {c: 355, i: 0, p: ['Phone::Call.start_message']}
+  - !ruby/object:RPG::EventCommand {c: 111, i: 0, p: [12, $game_map.map_id==4]}
+  - !ruby/object:RPG::EventCommand {c: 101, i: 1, p: ['\bHello, \PN!\nI can see you
+        calling me over there!']}
+  - !ruby/object:RPG::EventCommand {c: 101, i: 1, p: [\bCome over and talk to me.]}
+  - !ruby/object:RPG::EventCommand {c: 119, i: 1, p: [End call]}
+  - !ruby/object:RPG::EventCommand {c: 0, i: 1, p: []}
+  - !ruby/object:RPG::EventCommand {c: 412, i: 0, p: []}
+  - !ruby/object:RPG::EventCommand {c: 101, i: 0, p: ['\bHello, this is Professor
+        Oak...\nOh, hello, \PN!']}
+  - !ruby/object:RPG::EventCommand {c: 101, i: 0, p: [!binary "XGJTbywgaG93J3MgeW91ciBQb2vDqWRleCBjb21pbmcgYWxvbmc/"]}
+  - !ruby/object:RPG::EventCommand {c: 102, i: 0, p: [[!binary "RXZhbHVhdGUgUG9rw6lkZXg=",
+        Quit], 2]}
+  - !ruby/object:RPG::EventCommand {c: 402, i: 0, p: [0, !binary "RXZhbHVhdGUgUG9rw6lkZXg="]}
+  - !ruby/object:RPG::EventCommand {c: 355, i: 1, p: ['pbSet(1,$player.pokedex.seen_count)']}
+  - !ruby/object:RPG::EventCommand {c: 655, i: 1, p: ['pbSet(2,$player.pokedex.owned_count)']}
+  - !ruby/object:RPG::EventCommand {c: 101, i: 1, p: [!binary "XGJIbW0sIGxldCdzIHNlZS4uXG5Zb3UndmUgc2VlbiBcdlsxXSBQb2vDqW1v\nbiwgYW5k"]}
+  - !ruby/object:RPG::EventCommand {c: 401, i: 1, p: [!binary "XG55b3UndmUgY2F1Z2h0IFx2WzJdIFBva8OpbW9uIVxuSSBzZWUh"]}
+  - !ruby/object:RPG::EventCommand {c: 111, i: 1, p: [1, 2, 0, 30, 4]}
+  - !ruby/object:RPG::EventCommand {c: 101, i: 2, p: ['\bHmm, you still have a long
+        journey ahead of you!']}
+  - !ruby/object:RPG::EventCommand {c: 401, i: 2, p: [\nKeep on going!]}
+  - !ruby/object:RPG::EventCommand {c: 119, i: 2, p: [End evaluation]}
+  - !ruby/object:RPG::EventCommand {c: 0, i: 2, p: []}
+  - !ruby/object:RPG::EventCommand {c: 412, i: 1, p: []}
+  - !ruby/object:RPG::EventCommand {c: 111, i: 1, p: [1, 2, 0, 75, 4]}
+  - !ruby/object:RPG::EventCommand {c: 101, i: 2, p: [!binary "XGJIbW0sIHlvdSdyZSBjYXRjaGluZyBQb2vDqW1vbiBhdCBhIGRlY2VudCBw\nYWNlIQ=="]}
+  - !ruby/object:RPG::EventCommand {c: 119, i: 2, p: [End evaluation]}
+  - !ruby/object:RPG::EventCommand {c: 0, i: 2, p: []}
+  - !ruby/object:RPG::EventCommand {c: 412, i: 1, p: []}
+  - !ruby/object:RPG::EventCommand {c: 111, i: 1, p: [1, 2, 0, 150, 4]}
+  - !ruby/object:RPG::EventCommand {c: 101, i: 2, p: [!binary "XGJZb3UndmUgY2F1Z2h0IGEgbG90IG9mIFBva8OpbW9uLCBidXQgbWFrZSBz\ndXJlIA=="]}
+  - !ruby/object:RPG::EventCommand {c: 401, i: 2, p: [you're raising them carefully!]}
+  - !ruby/object:RPG::EventCommand {c: 119, i: 2, p: [End evaluation]}
+  - !ruby/object:RPG::EventCommand {c: 0, i: 2, p: []}
+  - !ruby/object:RPG::EventCommand {c: 412, i: 1, p: []}
+  - !ruby/object:RPG::EventCommand {c: 111, i: 1, p: [1, 2, 0, 150, 1]}
+  - !ruby/object:RPG::EventCommand {c: 101, i: 2, p: [!binary "XGJJIGRpZG4ndCBldmVuIGtub3cgdGhhdCBtYW55IFBva8OpbW9uIGV4aXN0\nZWQh"]}
+  - !ruby/object:RPG::EventCommand {c: 119, i: 2, p: [End evaluation]}
+  - !ruby/object:RPG::EventCommand {c: 0, i: 2, p: []}
+  - !ruby/object:RPG::EventCommand {c: 412, i: 1, p: []}
+  - !ruby/object:RPG::EventCommand {c: 118, i: 1, p: [End evaluation]}
+  - !ruby/object:RPG::EventCommand {c: 101, i: 1, p: [!binary "XGJTaG93IG1lIHlvdXIgUG9rw6lkZXggYWdhaW4gYW55dGltZSE="]}
+  - !ruby/object:RPG::EventCommand {c: 0, i: 1, p: []}
+  - !ruby/object:RPG::EventCommand {c: 402, i: 0, p: [1, Quit]}
+  - !ruby/object:RPG::EventCommand {c: 101, i: 1, p: [!binary "XGJTaG93IG1lIHlvdXIgUG9rw6lkZXggYW55dGltZSE="]}
+  - !ruby/object:RPG::EventCommand {c: 0, i: 1, p: []}
+  - !ruby/object:RPG::EventCommand {c: 404, i: 0, p: []}
+  - !ruby/object:RPG::EventCommand {c: 118, i: 0, p: [End call]}
+  - !ruby/object:RPG::EventCommand {c: 355, i: 0, p: ['Phone::Call.end_message']}
+  - !ruby/object:RPG::EventCommand {c: 0, i: 0, p: []}
+  name: Professor Oak phone
+  switch_id: 1
+  trigger: 0
+- !ruby/object:RPG::CommonEvent
+  id: 2
+  list:
+  - !ruby/object:RPG::EventCommand {c: 101, i: 0, p: ['\rDo you want me to stop following
+        you?']}
+  - !ruby/object:RPG::EventCommand {c: 102, i: 0, p: [['Yes', 'No'], 2]}
+  - !ruby/object:RPG::EventCommand {c: 402, i: 0, p: [0, 'Yes']}
+  - !ruby/object:RPG::EventCommand {c: 101, i: 1, p: ['\rI''ll just vanish, then.']}
+  - !ruby/object:RPG::EventCommand {c: 355, i: 1, p: [Followers.remove("May")]}
+  - !ruby/object:RPG::EventCommand {c: 355, i: 1, p: [pbDeregisterPartner]}
+  - !ruby/object:RPG::EventCommand {c: 0, i: 1, p: []}
+  - !ruby/object:RPG::EventCommand {c: 402, i: 0, p: [1, 'No']}
+  - !ruby/object:RPG::EventCommand {c: 101, i: 1, p: [\rLet's keep going!]}
+  - !ruby/object:RPG::EventCommand {c: 0, i: 1, p: []}
+  - !ruby/object:RPG::EventCommand {c: 404, i: 0, p: []}
+  - !ruby/object:RPG::EventCommand {c: 0, i: 0, p: []}
+  name: May dependent event
+  switch_id: 1
+  trigger: 0
+- !ruby/object:RPG::CommonEvent
+  id: 3
+  list:
+  - !ruby/object:RPG::EventCommand {c: 0, i: 0, p: []}
+  name: ''
+  switch_id: 1
+  trigger: 0
+- !ruby/object:RPG::CommonEvent
+  id: 4
+  list:
+  - !ruby/object:RPG::EventCommand {c: 0, i: 0, p: []}
+  name: ''
+  switch_id: 1
+  trigger: 0
+- !ruby/object:RPG::CommonEvent
+  id: 5
+  list:
+  - !ruby/object:RPG::EventCommand {c: 0, i: 0, p: []}
+  name: ''
+  switch_id: 1
+  trigger: 0
+- !ruby/object:RPG::CommonEvent
+  id: 6
+  list:
+  - !ruby/object:RPG::EventCommand {c: 0, i: 0, p: []}
+  name: ''
+  switch_id: 1
+  trigger: 0
+- !ruby/object:RPG::CommonEvent
+  id: 7
+  list:
+  - !ruby/object:RPG::EventCommand {c: 0, i: 0, p: []}
+  name: ''
+  switch_id: 1
+  trigger: 0
+- !ruby/object:RPG::CommonEvent
+  id: 8
+  list:
+  - !ruby/object:RPG::EventCommand {c: 0, i: 0, p: []}
+  name: ''
+  switch_id: 1
+  trigger: 0
+- !ruby/object:RPG::CommonEvent
+  id: 9
+  list:
+  - !ruby/object:RPG::EventCommand {c: 0, i: 0, p: []}
+  name: ''
+  switch_id: 1
+  trigger: 0
+- !ruby/object:RPG::CommonEvent
+  id: 10
+  list:
+  - !ruby/object:RPG::EventCommand {c: 0, i: 0, p: []}
+  name: ''
+  switch_id: 1
+  trigger: 0

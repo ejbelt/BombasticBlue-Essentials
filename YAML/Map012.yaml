@@ -1,0 +1,691 @@
+--- !ruby/object:RPG::Map
+autoplay_bgm: true
+autoplay_bgs: false
+bgm: !ruby/object:RPG::AudioFile
+  name: Cedolan City
+  pitch: 100
+  volume: 80
+bgs: !ruby/object:RPG::AudioFile
+  name: ''
+  pitch: 100
+  volume: 80
+data: !ruby/object:Table
+  dim: 3
+  x: 20
+  y: 15
+  z: 3
+  data:
+  - 022e 022e 022e 022e 022e 021d 021e 021f 022e 022e 022e 022e 022e 021e 021e 021e
+    021e 021e 021e 021e
+  - 0236 0236 0236 0236 0236 0225 021e 0227 0236 0236 0236 0236 0236 021e 021e 021e
+    021e 021e 021e 021e
+  - 02a1 02a1 02a1 02a1 02a1 0225 021e 0227 02a1 02a1 02a1 02a1 02a1 021e 021e 021e
+    021e 021e 021e 021e
+  - 02a1 0298 0298 0298 0298 0225 021e 0227 0298 0298 0298 0298 0298 021e 021e 021e
+    021e 021e 021e 021e
+  - 02a1 0298 0298 0298 029b 0225 021e 0227 0298 0298 0298 0298 029b 021e 021e 021e
+    021e 021e 021e 021e
+  - 02a1 0298 0298 02a1 02a2 022d 022e 022f 0298 0298 0298 02a1 02a2 021e 021e 021e
+    021e 021e 021e 021e
+  - 02a1 0298 02a1 02a1 02a2 0235 0236 0237 0298 0298 02a1 02a1 02a2 021e 021e 021e
+    021e 021e 021e 021e
+  - 02a1 0298 02b1 02a9 02aa 0298 0298 0298 0298 0298 02b1 02a9 02aa 021e 021e 021e
+    021e 021e 021e 021e
+  - 02a1 0298 0298 0298 0298 0298 0298 0298 0298 0298 0298 0298 0298 021e 021e 021e
+    021e 021e 021e 021e
+  - 02a1 0298 0298 0298 0298 0298 0298 0298 0298 0298 0298 0298 0298 021e 021e 021e
+    021e 021e 021e 021e
+  - 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e
+    021e 021e 021e 021e
+  - 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e
+    021e 021e 021e 021e
+  - 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e
+    021e 021e 021e 021e
+  - 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e
+    021e 021e 021e 021e
+  - 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e
+    021e 021e 021e 021e
+  - 06e6 05fe 05ff 05fe 05ff 0000 0000 0000 06e6 05a1 05a2 0000 06e6 0000 0000 0000
+    0000 0000 0000 0000
+  - 06ee 0606 0607 0606 0607 0000 0000 0000 06ee 05a9 05aa 0000 06ee 0000 0000 0000
+    0000 0000 0000 0000
+  - 06f6 060e 060f 060e 060f 0000 0000 0000 06f6 0000 0000 0000 06f6 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 067e 0835 067e 0000 0000 0000 0000 0000 067e 0835 067e 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 083c 083d 083e 0000 0000 0000 0000 0000 083c 083d 083e 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 067e 0844 0845 0846 067e 0000 05b3 0000 067e 0844 0845 0846 067e 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 084c 084d 084e 0000 0000 05bb 0000 0000 084c 084d 084e 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 067e 0000 067e 0000 0000 0000 0000 0000 067e 0000 067e 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 06eb 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 06eb 0000 0000 0000
+    0000 0000 0000 0000
+  - 06f3 0000 0000 0000 0000 04dd 04de 04df 0000 0000 0000 0000 06f3 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 04e5 04e6 04e7 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0834 0000 0836 0000 0000 0000 0000 0000 0834 0000 0836 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+encounter_list: []
+encounter_step: 30
+events:
+  1: !ruby/object:RPG::Event
+    id: 1
+    name: Exit
+    pages:
+    - !ruby/object:RPG::Event::Page
+      always_on_top: false
+      condition: !ruby/object:RPG::Event::Page::Condition
+        self_switch_ch: A
+        self_switch_valid: false
+        switch1_id: 1
+        switch1_valid: false
+        switch2_id: 1
+        switch2_valid: false
+        variable_id: 1
+        variable_valid: false
+        variable_value: 0
+      direction_fix: false
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        blend_type: 0
+        character_hue: 0
+        character_name: ''
+        direction: 2
+        opacity: 255
+        pattern: 0
+        tile_id: 0
+      list:
+      - !ruby/object:RPG::EventCommand {c: 250, i: 0, p: [!ruby/object:RPG::AudioFile {
+            name: Door exit, pitch: 100, volume: 80}]}
+      - !ruby/object:RPG::EventCommand {c: 223, i: 0, p: [!ruby/object:Tone {blue: -255.0,
+            gray: 0.0, green: -255.0, red: -255.0}, 6]}
+      - !ruby/object:RPG::EventCommand {c: 106, i: 0, p: [8]}
+      - !ruby/object:RPG::EventCommand {c: 201, i: 0, p: [0, 7, 22, 28, 0, 1]}
+      - !ruby/object:RPG::EventCommand {c: 223, i: 0, p: [!ruby/object:Tone {blue: 0.0,
+            gray: 0.0, green: 0.0, red: 0.0}, 6]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 0, p: []}
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+        repeat: true
+        skippable: false
+      move_speed: 3
+      move_type: 0
+      step_anime: false
+      through: false
+      trigger: 1
+      walk_anime: true
+    x: 6
+    y: 10
+  2: !ruby/object:RPG::Event
+    id: 2
+    name: Move Deleter
+    pages:
+    - !ruby/object:RPG::Event::Page
+      always_on_top: false
+      condition: !ruby/object:RPG::Event::Page::Condition
+        self_switch_ch: A
+        self_switch_valid: false
+        switch1_id: 1
+        switch1_valid: false
+        switch2_id: 1
+        switch2_valid: false
+        variable_id: 4
+        variable_valid: false
+        variable_value: 0
+      direction_fix: false
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        blend_type: 0
+        character_hue: 0
+        character_name: trainer_ENGINEER
+        direction: 2
+        opacity: 255
+        pattern: 0
+        tile_id: 0
+      list:
+      - !ruby/object:RPG::EventCommand {c: 101, i: 0, p: ['\bUh...\nOh, yes, I''m
+            the Move Deleter.']}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 0, p: [\bI can make Pokémon forget
+            their moves.]}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 0, p: ['\bWould you like me to
+            do that?']}
+      - !ruby/object:RPG::EventCommand {c: 102, i: 0, p: [['Yes', 'No'], 2]}
+      - !ruby/object:RPG::EventCommand {c: 402, i: 0, p: [0, 'Yes']}
+      - !ruby/object:RPG::EventCommand {c: 118, i: 1, p: [ChoosePokemon]}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 1, p: ['\bWhich Pokémon should
+            forget a move?']}
+      - !ruby/object:RPG::EventCommand {c: 355, i: 1, p: ['pbChoosePokemon(1, 3)']}
+      - !ruby/object:RPG::EventCommand {c: 108, i: 1, p: ['If Game Variable 1 is less
+            than 0, it means the player ']}
+      - !ruby/object:RPG::EventCommand {c: 408, i: 1, p: [has canceled choosing a
+            Pokémon.]}
+      - !ruby/object:RPG::EventCommand {c: 111, i: 1, p: [1, 1, 0, 0, 4]}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 2, p: ['\bCome again if there are
+            moves that need to be ']}
+      - !ruby/object:RPG::EventCommand {c: 401, i: 2, p: [forgotten.]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 411, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 111, i: 2, p: [12, 'pbGetPokemon(1).egg?']}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 3, p: ['\bWhat? No Egg should know
+            any moves.']}
+      - !ruby/object:RPG::EventCommand {c: 115, i: 3, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 3, p: []}
+      - !ruby/object:RPG::EventCommand {c: 412, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 111, i: 2, p: [12, 'pbGetPokemon(1).shadowPokemon?']}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 3, p: ['\bWhat? I can''t make a
+            Shadow Pokémon forget a ']}
+      - !ruby/object:RPG::EventCommand {c: 401, i: 3, p: [move.]}
+      - !ruby/object:RPG::EventCommand {c: 115, i: 3, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 3, p: []}
+      - !ruby/object:RPG::EventCommand {c: 412, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 111, i: 2, p: [12, pbGetPokemon(1).numMoves
+            == 1]}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 3, p: ['\b\v[3] seems to know only
+            one move...']}
+      - !ruby/object:RPG::EventCommand {c: 115, i: 3, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 3, p: []}
+      - !ruby/object:RPG::EventCommand {c: 412, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 2, p: ['\bWhich move should be
+            forgotten?']}
+      - !ruby/object:RPG::EventCommand {c: 355, i: 2, p: ['pbChooseMove(pbGetPokemon(1),
+            2, 4)']}
+      - !ruby/object:RPG::EventCommand {c: 111, i: 2, p: [1, 2, 0, 0, 4]}
+      - !ruby/object:RPG::EventCommand {c: 119, i: 3, p: [ChoosePokemon]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 3, p: []}
+      - !ruby/object:RPG::EventCommand {c: 411, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 3, p: ['\bHm! \v[3]''s \v[4]? That
+            move should be forgotten?']}
+      - !ruby/object:RPG::EventCommand {c: 102, i: 3, p: [['Yes', 'No'], 2]}
+      - !ruby/object:RPG::EventCommand {c: 402, i: 3, p: [0, 'Yes']}
+      - !ruby/object:RPG::EventCommand {c: 249, i: 4, p: [!ruby/object:RPG::AudioFile {
+            name: Forget move, pitch: 100, volume: 100}]}
+      - !ruby/object:RPG::EventCommand {c: 106, i: 4, p: [40]}
+      - !ruby/object:RPG::EventCommand {c: 355, i: 4, p: [pkmn = pbGetPokemon(1)]}
+      - !ruby/object:RPG::EventCommand {c: 655, i: 4, p: [pkmn.forget_move_at_index(pbGet(2))]}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 4, p: [\bIt worked to perfection!]}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 4, p: ['\b\v[3] has forgotten \v[4]
+            completely.']}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 4, p: []}
+      - !ruby/object:RPG::EventCommand {c: 402, i: 3, p: [1, 'No']}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 4, p: ['\bCome again if there are
+            moves that need to be ']}
+      - !ruby/object:RPG::EventCommand {c: 401, i: 4, p: [forgotten.]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 4, p: []}
+      - !ruby/object:RPG::EventCommand {c: 404, i: 3, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 3, p: []}
+      - !ruby/object:RPG::EventCommand {c: 412, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 412, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 402, i: 0, p: [1, 'No']}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 1, p: ['\bCome again if there are
+            moves that need to be ']}
+      - !ruby/object:RPG::EventCommand {c: 401, i: 1, p: [forgotten.]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 404, i: 0, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 0, p: []}
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+        repeat: true
+        skippable: false
+      move_speed: 3
+      move_type: 0
+      step_anime: false
+      through: false
+      trigger: 0
+      walk_anime: true
+    x: 6
+    y: 7
+  3: !ruby/object:RPG::Event
+    id: 3
+    name: Move Relearner
+    pages:
+    - !ruby/object:RPG::Event::Page
+      always_on_top: false
+      condition: !ruby/object:RPG::Event::Page::Condition
+        self_switch_ch: A
+        self_switch_valid: false
+        switch1_id: 1
+        switch1_valid: false
+        switch2_id: 1
+        switch2_valid: false
+        variable_id: 4
+        variable_valid: false
+        variable_value: 0
+      direction_fix: false
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        blend_type: 0
+        character_hue: 0
+        character_name: NPC 06
+        direction: 2
+        opacity: 255
+        pattern: 0
+        tile_id: 0
+      list:
+      - !ruby/object:RPG::EventCommand {c: 111, i: 0, p: [12, 'isTempSwitchOff?("A")']}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 1, p: [\bI'm the Pokémon Move Maniac.]}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 1, p: ['\bI know every single move
+            that Pokémon learn ']}
+      - !ruby/object:RPG::EventCommand {c: 401, i: 1, p: [growing up.]}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 1, p: [\bI'm also a collector of
+            Heart Scales.]}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 1, p: ['\bIf you bring me one,
+            I''ll teach a move to one of your ']}
+      - !ruby/object:RPG::EventCommand {c: 401, i: 1, p: [Pokémon.]}
+      - !ruby/object:RPG::EventCommand {c: 355, i: 1, p: [setTempSwitchOn("A")]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 412, i: 0, p: []}
+      - !ruby/object:RPG::EventCommand {c: 111, i: 0, p: [12, '$bag.has?(:HEARTSCALE)']}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 1, p: ['\bOh! That''s it! That''s
+            an honest to goodness Heart ']}
+      - !ruby/object:RPG::EventCommand {c: 401, i: 1, p: [Scale!]}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 1, p: ['\bLet me guess, you want
+            me to teach one of your ']}
+      - !ruby/object:RPG::EventCommand {c: 401, i: 1, p: ['Pokémon a move?']}
+      - !ruby/object:RPG::EventCommand {c: 102, i: 1, p: [['Yes', 'No'], 2]}
+      - !ruby/object:RPG::EventCommand {c: 402, i: 1, p: [0, 'Yes']}
+      - !ruby/object:RPG::EventCommand {c: 118, i: 2, p: [ChoosePokemon]}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 2, p: ['\bWhich Pokémon needs tutoring?']}
+      - !ruby/object:RPG::EventCommand {c: 355, i: 2, p: ['pbChoosePokemon(1, 3,']}
+      - !ruby/object:RPG::EventCommand {c: 655, i: 2, p: ['  proc { |pkmn|']}
+      - !ruby/object:RPG::EventCommand {c: 655, i: 2, p: ['    pkmn.can_relearn_move?']}
+      - !ruby/object:RPG::EventCommand {c: 655, i: 2, p: ['  },']}
+      - !ruby/object:RPG::EventCommand {c: 655, i: 2, p: ['  true']}
+      - !ruby/object:RPG::EventCommand {c: 655, i: 2, p: [)]}
+      - !ruby/object:RPG::EventCommand {c: 108, i: 2, p: ['If Game Variable 1 is less
+            than 0, it means the player ']}
+      - !ruby/object:RPG::EventCommand {c: 408, i: 2, p: [has canceled choosing a
+            Pokémon.]}
+      - !ruby/object:RPG::EventCommand {c: 111, i: 2, p: [1, 1, 0, 0, 4]}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 3, p: ['\bIf your Pokémon need
+            to learn a move, come back ']}
+      - !ruby/object:RPG::EventCommand {c: 401, i: 3, p: [with a Heart Scale.]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 3, p: []}
+      - !ruby/object:RPG::EventCommand {c: 411, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 111, i: 3, p: [12, 'pbGetPokemon(1).egg?']}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 4, p: ['\bHunh? There isn''t a
+            single move that I can teach an ']}
+      - !ruby/object:RPG::EventCommand {c: 401, i: 4, p: [Egg.]}
+      - !ruby/object:RPG::EventCommand {c: 119, i: 4, p: [ChoosePokemon]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 4, p: []}
+      - !ruby/object:RPG::EventCommand {c: 412, i: 3, p: []}
+      - !ruby/object:RPG::EventCommand {c: 111, i: 3, p: [12, 'pbGetPokemon(1).shadowPokemon?']}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 4, p: ['\bNo way, I don''t want
+            to go near a Shadow ']}
+      - !ruby/object:RPG::EventCommand {c: 401, i: 4, p: [!binary "UG9rw6ltb24u"]}
+      - !ruby/object:RPG::EventCommand {c: 119, i: 4, p: [ChoosePokemon]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 4, p: []}
+      - !ruby/object:RPG::EventCommand {c: 412, i: 3, p: []}
+      - !ruby/object:RPG::EventCommand {c: 111, i: 3, p: [12, '!pbGetPokemon(1).can_relearn_move?']}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 4, p: [\bSorry...]}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 4, p: ['\bIt doesn''t appear as
+            if I have any move I can teach ']}
+      - !ruby/object:RPG::EventCommand {c: 401, i: 4, p: ['to your \v[3].']}
+      - !ruby/object:RPG::EventCommand {c: 119, i: 4, p: [ChoosePokemon]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 4, p: []}
+      - !ruby/object:RPG::EventCommand {c: 412, i: 3, p: []}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 3, p: ['\bWhich move should I teach
+            to your \v[3]?']}
+      - !ruby/object:RPG::EventCommand {c: 111, i: 3, p: [12, pbRelearnMoveScreen(pbGetPokemon(1))]}
+      - !ruby/object:RPG::EventCommand {c: 355, i: 4, p: ['$bag.remove(:HEARTSCALE)']}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 4, p: [\PN handed over one Heart
+            Scale in exchange.]}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 4, p: ['\bIf your Pokémon need
+            to learn a move, come back ']}
+      - !ruby/object:RPG::EventCommand {c: 401, i: 4, p: [with a Heart Scale.]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 4, p: []}
+      - !ruby/object:RPG::EventCommand {c: 411, i: 3, p: []}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 4, p: ['\bIf your Pokémon need
+            to learn a move, come back ']}
+      - !ruby/object:RPG::EventCommand {c: 401, i: 4, p: [with a Heart Scale.]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 4, p: []}
+      - !ruby/object:RPG::EventCommand {c: 412, i: 3, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 3, p: []}
+      - !ruby/object:RPG::EventCommand {c: 412, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 402, i: 1, p: [1, 'No']}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 2, p: ['\bIf your Pokémon need
+            to learn a move, come back ']}
+      - !ruby/object:RPG::EventCommand {c: 401, i: 2, p: [with a Heart Scale.]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 404, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 411, i: 0, p: []}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 1, p: ['\bIf your Pokémon need
+            to learn a move, come back ']}
+      - !ruby/object:RPG::EventCommand {c: 401, i: 1, p: [with a Heart Scale.]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 412, i: 0, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 0, p: []}
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+        repeat: true
+        skippable: false
+      move_speed: 3
+      move_type: 0
+      step_anime: false
+      through: false
+      trigger: 0
+      walk_anime: true
+    x: 5
+    y: 7
+  4: !ruby/object:RPG::Event
+    id: 4
+    name: Name Rater
+    pages:
+    - !ruby/object:RPG::Event::Page
+      always_on_top: false
+      condition: !ruby/object:RPG::Event::Page::Condition
+        self_switch_ch: A
+        self_switch_valid: false
+        switch1_id: 1
+        switch1_valid: false
+        switch2_id: 1
+        switch2_valid: false
+        variable_id: 1
+        variable_valid: false
+        variable_value: 0
+      direction_fix: false
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        blend_type: 0
+        character_hue: 0
+        character_name: NPC 10
+        direction: 2
+        opacity: 255
+        pattern: 0
+        tile_id: 0
+      list:
+      - !ruby/object:RPG::EventCommand {c: 101, i: 0, p: ['\bHello, hello!\nI am the
+            official Name Rater!']}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 0, p: ['\bWant me to rate the nicknames
+            of your Pokémon?']}
+      - !ruby/object:RPG::EventCommand {c: 102, i: 0, p: [['Yes', 'No'], 2]}
+      - !ruby/object:RPG::EventCommand {c: 402, i: 0, p: [0, 'Yes']}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 1, p: ['\bWhich Pokémon''s nickname
+            should I critique?']}
+      - !ruby/object:RPG::EventCommand {c: 108, i: 1, p: ['Opens a screen for choosing
+            a Pokémon. The index ']}
+      - !ruby/object:RPG::EventCommand {c: 408, i: 1, p: ['is stored in Game Variable
+            1, and the name in Game ']}
+      - !ruby/object:RPG::EventCommand {c: 408, i: 1, p: [Variable 3.]}
+      - !ruby/object:RPG::EventCommand {c: 355, i: 1, p: ['pbChoosePokemon(1, 3)']}
+      - !ruby/object:RPG::EventCommand {c: 108, i: 1, p: ['If Game Variable 1 is less
+            than 0, it means the player ']}
+      - !ruby/object:RPG::EventCommand {c: 408, i: 1, p: [has canceled choosing a
+            Pokémon.]}
+      - !ruby/object:RPG::EventCommand {c: 111, i: 1, p: [1, 1, 0, 0, 4]}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 2, p: [\bI see.\nDo come visit
+            again.]}
+      - !ruby/object:RPG::EventCommand {c: 115, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 412, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 108, i: 1, p: [Check for eggs.]}
+      - !ruby/object:RPG::EventCommand {c: 111, i: 1, p: [12, 'pbGetPokemon(1).egg?']}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 2, p: ['\bNow, now... That is merely
+            an Egg!']}
+      - !ruby/object:RPG::EventCommand {c: 115, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 412, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 108, i: 1, p: [Check for Shadow Pokémon.]}
+      - !ruby/object:RPG::EventCommand {c: 111, i: 1, p: [12, 'pbGetPokemon(1).shadowPokemon?']}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 2, p: [\bI wouldn't dare critique
+            a Shadow Pokémon's name!]}
+      - !ruby/object:RPG::EventCommand {c: 115, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 412, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 111, i: 1, p: [12, 'pbGetPokemon(1).foreign?($player)']}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 2, p: ['\bHmmm... \v[3] it is!']}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 2, p: ['\bThis is a magnificent
+            nickname! It is impeccably ']}
+      - !ruby/object:RPG::EventCommand {c: 401, i: 2, p: [beyond reproach!]}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 2, p: ['\bYou''ll do well to cherish
+            your \v[3] now and ']}
+      - !ruby/object:RPG::EventCommand {c: 401, i: 2, p: [beyond.]}
+      - !ruby/object:RPG::EventCommand {c: 115, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 412, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 1, p: ['\b\v[3], is it?\nThat is
+            a decent nickname!']}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 1, p: ['\bBut, would you like me
+            to give it a nicer name?']}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 1, p: ['\bHow about it?']}
+      - !ruby/object:RPG::EventCommand {c: 102, i: 1, p: [['Yes', 'No'], 2]}
+      - !ruby/object:RPG::EventCommand {c: 402, i: 1, p: [0, 'Yes']}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 2, p: ['\bAh, good. Then, what
+            shall the new nickname be?']}
+      - !ruby/object:RPG::EventCommand {c: 355, i: 2, p: [pkmn = pbGetPokemon(1)]}
+      - !ruby/object:RPG::EventCommand {c: 655, i: 2, p: [species = pkmn.speciesName]}
+      - !ruby/object:RPG::EventCommand {c: 655, i: 2, p: ['pbSet(4, species)']}
+      - !ruby/object:RPG::EventCommand {c: 655, i: 2, p: [pbTextEntry(]}
+      - !ruby/object:RPG::EventCommand {c: 655, i: 2, p: ['  _I("{1}''s nickname?",
+            species),']}
+      - !ruby/object:RPG::EventCommand {c: 655, i: 2, p: ['  0, Pokemon::MAX_NAME_SIZE,
+            5']}
+      - !ruby/object:RPG::EventCommand {c: 655, i: 2, p: [)]}
+      - !ruby/object:RPG::EventCommand {c: 111, i: 2, p: [12, pbGet(5) == pbGet(3)
+            || (pbGet(5) == "" && pbGet(3) == pbGet(4))]}
+      - !ruby/object:RPG::EventCommand {c: 108, i: 3, p: [The Pokémon's nickname wasn't
+            changed.]}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 3, p: ['\bI see. You''re right,
+            there''s no need to change this ']}
+      - !ruby/object:RPG::EventCommand {c: 401, i: 3, p: [Pokémon's nickname.]}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 3, p: [\bIt already had a superb
+            name!]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 3, p: []}
+      - !ruby/object:RPG::EventCommand {c: 411, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 111, i: 3, p: [12, pbGet(5) == "" || pbGet(5)
+            == pbGet(4)]}
+      - !ruby/object:RPG::EventCommand {c: 108, i: 4, p: [Resets the Pokémon's nickname
+            to the species name.]}
+      - !ruby/object:RPG::EventCommand {c: 355, i: 4, p: [pkmn = pbGetPokemon(1)]}
+      - !ruby/object:RPG::EventCommand {c: 655, i: 4, p: [pkmn.name = nil]}
+      - !ruby/object:RPG::EventCommand {c: 655, i: 4, p: ['pbSet(3, pkmn.name)']}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 4, p: ['\bDone! From now on, this
+            Pokémon shall be known']}
+      - !ruby/object:RPG::EventCommand {c: 401, i: 4, p: ['as \v[3]!']}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 4, p: ['\bIt looks no different
+            from before, and yet, this is ']}
+      - !ruby/object:RPG::EventCommand {c: 401, i: 4, p: [vastly superior!]}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 4, p: [\bHow fortunate for you!]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 4, p: []}
+      - !ruby/object:RPG::EventCommand {c: 411, i: 3, p: []}
+      - !ruby/object:RPG::EventCommand {c: 108, i: 4, p: ['Retrieves the Pokémon whose
+            party index is stored in ']}
+      - !ruby/object:RPG::EventCommand {c: 408, i: 4, p: ['Game Variable 1, and changes
+            its name to the name ']}
+      - !ruby/object:RPG::EventCommand {c: 408, i: 4, p: [stored in Game Variable
+            5.]}
+      - !ruby/object:RPG::EventCommand {c: 355, i: 4, p: [pkmn = pbGetPokemon(1)]}
+      - !ruby/object:RPG::EventCommand {c: 655, i: 4, p: [pkmn.name = pbGet(5)]}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 4, p: ['\bDone! From now on, this
+            Pokémon shall be known']}
+      - !ruby/object:RPG::EventCommand {c: 401, i: 4, p: ['as \v[5]!']}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 4, p: ['\bIt is a better name than
+            before!\nHow fortunate for ']}
+      - !ruby/object:RPG::EventCommand {c: 401, i: 4, p: [you!]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 4, p: []}
+      - !ruby/object:RPG::EventCommand {c: 412, i: 3, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 3, p: []}
+      - !ruby/object:RPG::EventCommand {c: 412, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 402, i: 1, p: [1, 'No']}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 2, p: [\bI see.\nDo come visit
+            again.]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 404, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 402, i: 0, p: [1, 'No']}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 1, p: [\bI see.\nDo come visit
+            again.]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 404, i: 0, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 0, p: []}
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+        repeat: true
+        skippable: false
+      move_speed: 3
+      move_type: 0
+      step_anime: false
+      through: false
+      trigger: 0
+      walk_anime: true
+    x: 10
+    y: 7
+  5: !ruby/object:RPG::Event
+    id: 5
+    name: Move Tutor
+    pages:
+    - !ruby/object:RPG::Event::Page
+      always_on_top: false
+      condition: !ruby/object:RPG::Event::Page::Condition
+        self_switch_ch: A
+        self_switch_valid: false
+        switch1_id: 1
+        switch1_valid: false
+        switch2_id: 1
+        switch2_valid: false
+        variable_id: 4
+        variable_valid: false
+        variable_value: 0
+      direction_fix: false
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        blend_type: 0
+        character_hue: 0
+        character_name: NPC 11
+        direction: 2
+        opacity: 255
+        pattern: 0
+        tile_id: 0
+      list:
+      - !ruby/object:RPG::EventCommand {c: 101, i: 0, p: [\rHello! I'm a Move Tutor!]}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 0, p: ['\rI can teach a special
+            and powerful move to your ']}
+      - !ruby/object:RPG::EventCommand {c: 401, i: 0, p: [Pokémon.]}
+      - !ruby/object:RPG::EventCommand {c: 118, i: 0, p: [Start]}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 0, p: ['\rWhich special move would
+            you like me to teach?']}
+      - !ruby/object:RPG::EventCommand {c: 102, i: 0, p: [[Frenzy Plant, Blast Burn,
+            Hydro Cannon, Exit], 4]}
+      - !ruby/object:RPG::EventCommand {c: 402, i: 0, p: [0, Frenzy Plant]}
+      - !ruby/object:RPG::EventCommand {c: 111, i: 1, p: [12, 'pbMoveTutorChoose(:FRENZYPLANT)']}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 2, p: ['\rWould you like me to
+            teach another Pokémon a ']}
+      - !ruby/object:RPG::EventCommand {c: 401, i: 2, p: ['special move?']}
+      - !ruby/object:RPG::EventCommand {c: 102, i: 2, p: [['Yes', 'No'], 2]}
+      - !ruby/object:RPG::EventCommand {c: 402, i: 2, p: [0, 'Yes']}
+      - !ruby/object:RPG::EventCommand {c: 119, i: 3, p: [Start]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 3, p: []}
+      - !ruby/object:RPG::EventCommand {c: 402, i: 2, p: [1, 'No']}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 3, p: []}
+      - !ruby/object:RPG::EventCommand {c: 404, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 411, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 119, i: 2, p: [Start]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 412, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 402, i: 0, p: [1, Blast Burn]}
+      - !ruby/object:RPG::EventCommand {c: 111, i: 1, p: [12, 'pbMoveTutorChoose(:BLASTBURN)']}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 2, p: ['\rWould you like me to
+            teach another Pokémon a ']}
+      - !ruby/object:RPG::EventCommand {c: 401, i: 2, p: ['special move?']}
+      - !ruby/object:RPG::EventCommand {c: 102, i: 2, p: [['Yes', 'No'], 2]}
+      - !ruby/object:RPG::EventCommand {c: 402, i: 2, p: [0, 'Yes']}
+      - !ruby/object:RPG::EventCommand {c: 119, i: 3, p: [Start]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 3, p: []}
+      - !ruby/object:RPG::EventCommand {c: 402, i: 2, p: [1, 'No']}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 3, p: []}
+      - !ruby/object:RPG::EventCommand {c: 404, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 411, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 119, i: 2, p: [Start]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 412, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 402, i: 0, p: [2, Hydro Cannon]}
+      - !ruby/object:RPG::EventCommand {c: 111, i: 1, p: [12, 'pbMoveTutorChoose(:HYDROCANNON)']}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 2, p: ['\rWould you like me to
+            teach another Pokémon a ']}
+      - !ruby/object:RPG::EventCommand {c: 401, i: 2, p: ['special move?']}
+      - !ruby/object:RPG::EventCommand {c: 102, i: 2, p: [['Yes', 'No'], 2]}
+      - !ruby/object:RPG::EventCommand {c: 402, i: 2, p: [0, 'Yes']}
+      - !ruby/object:RPG::EventCommand {c: 119, i: 3, p: [Start]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 3, p: []}
+      - !ruby/object:RPG::EventCommand {c: 402, i: 2, p: [1, 'No']}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 3, p: []}
+      - !ruby/object:RPG::EventCommand {c: 404, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 411, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 119, i: 2, p: [Start]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 412, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 402, i: 0, p: [3, Exit]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 404, i: 0, p: []}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 0, p: [\rCome back any time!]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 0, p: []}
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+        repeat: true
+        skippable: false
+      move_speed: 3
+      move_type: 0
+      step_anime: false
+      through: false
+      trigger: 0
+      walk_anime: true
+    x: 2
+    y: 7
+height: 15
+tileset_id: 3
+width: 20

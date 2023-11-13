@@ -1,0 +1,942 @@
+--- !ruby/object:RPG::Map
+autoplay_bgm: true
+autoplay_bgs: false
+bgm: !ruby/object:RPG::AudioFile
+  name: Cedolan City
+  pitch: 100
+  volume: 80
+bgs: !ruby/object:RPG::AudioFile
+  name: ''
+  pitch: 100
+  volume: 80
+data: !ruby/object:Table
+  dim: 3
+  x: 20
+  y: 15
+  z: 3
+  data:
+  - 0208 0209 0209 0209 0209 0209 0209 0209 0209 0209 0209 0209 0209 0209 020b 021e
+    021e 021e 021e 021e
+  - 0210 0211 0211 0211 0211 0211 0211 0211 0211 0211 0211 0211 0211 0211 0213 021e
+    021e 021e 021e 021e
+  - 0251 0251 0269 0269 0269 0269 0269 0269 0269 0269 0269 0269 0251 0251 026a 021e
+    021e 021e 021e 021e
+  - 0251 0248 0248 0248 0248 0248 0248 0248 0248 0248 0248 0248 0248 0248 0248 021e
+    021e 021e 021e 021e
+  - 0251 0248 0248 0248 0248 0248 0248 0248 0248 0248 0248 0248 0248 0248 0248 021e
+    021e 021e 021e 021e
+  - 0251 0248 0248 0248 0248 0248 0248 0248 0248 0248 0248 0248 0248 0248 0248 021e
+    021e 021e 021e 021e
+  - 0251 0248 0248 0248 0248 0248 0248 0248 0248 0248 0248 0248 0248 0248 0248 021e
+    021e 021e 021e 021e
+  - 0251 0248 0248 0248 0248 0248 0248 0248 0248 0248 0248 0248 0248 0248 0248 021e
+    021e 021e 021e 021e
+  - 0251 0248 0248 0248 0248 0248 0248 0248 0248 0248 0248 0248 0248 0248 0248 021e
+    021e 021e 021e 021e
+  - 0251 0248 0248 0248 0248 0248 0248 0248 0248 0248 0248 0248 0248 0248 0248 021e
+    021e 021e 021e 021e
+  - 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e
+    021e 021e 021e 021e
+  - 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e
+    021e 021e 021e 021e
+  - 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e
+    021e 021e 021e 021e
+  - 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e
+    021e 021e 021e 021e
+  - 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e
+    021e 021e 021e 021e
+  - 0208 069d 0000 06fd 06fe 06ff 06fd 06fe 06ff 06fd 06fe 06fc 06f8 06f9 020b 0000
+    0000 0000 0000 0000
+  - 0210 06a5 0000 0705 0706 0707 0705 0706 0707 0705 0706 0704 0700 0701 0213 0000
+    0000 0000 0000 0000
+  - 0218 06ad 0000 070d 070e 070f 070d 070e 070f 070d 070e 070c 0708 0709 021b 0000
+    0000 0000 0000 0000
+  - 06d0 0000 0784 0785 0786 0000 0000 0000 0000 0000 0000 0000 0000 06d0 06d0 0000
+    0000 0000 0000 0000
+  - 06d0 0000 077c 077d 077e 0000 0000 0773 0773 0000 0000 0784 0785 0786 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 067e 0000 0000 067e 078b 078b 067e 0000 078c 078d 078e 067e 0000
+    0000 0000 0000 0000
+  - 0000 0000 0784 0785 0786 0000 067e 078b 078b 067e 0000 078c 078d 078e 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 077c 077d 077e 0000 0000 0793 0793 0000 0000 077c 077d 077e 067e 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 067e 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 04dd 04de 04df 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 04e5 04e6 04e7 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0740 0741 0744 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0748 0749 074c 0000 0000 0750 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0758 0753 0000 0000 0000 06bc 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0740 0741 0744 0000 0000 074f 075b 0000 0000 0000 0000 06c4 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0748 0749 074c 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+encounter_list: []
+encounter_step: 30
+events:
+  1: !ruby/object:RPG::Event
+    id: 1
+    name: Exit
+    pages:
+    - !ruby/object:RPG::Event::Page
+      always_on_top: false
+      condition: !ruby/object:RPG::Event::Page::Condition
+        self_switch_ch: A
+        self_switch_valid: false
+        switch1_id: 1
+        switch1_valid: false
+        switch2_id: 1
+        switch2_valid: false
+        variable_id: 1
+        variable_valid: false
+        variable_value: 0
+      direction_fix: false
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        blend_type: 0
+        character_hue: 0
+        character_name: ''
+        direction: 2
+        opacity: 255
+        pattern: 0
+        tile_id: 0
+      list:
+      - !ruby/object:RPG::EventCommand {c: 108, i: 0, p: ['This command makes the
+            fossil reviver finish reviving ']}
+      - !ruby/object:RPG::EventCommand {c: 408, i: 0, p: [a Pokémon.]}
+      - !ruby/object:RPG::EventCommand {c: 121, i: 0, p: [13, 13, 1]}
+      - !ruby/object:RPG::EventCommand {c: 250, i: 0, p: [!ruby/object:RPG::AudioFile {
+            name: Door exit, pitch: 100, volume: 80}]}
+      - !ruby/object:RPG::EventCommand {c: 223, i: 0, p: [!ruby/object:Tone {blue: -255.0,
+            gray: 0.0, green: -255.0, red: -255.0}, 6]}
+      - !ruby/object:RPG::EventCommand {c: 106, i: 0, p: [8]}
+      - !ruby/object:RPG::EventCommand {c: 201, i: 0, p: [0, 7, 35, 28, 0, 1]}
+      - !ruby/object:RPG::EventCommand {c: 223, i: 0, p: [!ruby/object:Tone {blue: 0.0,
+            gray: 0.0, green: 0.0, red: 0.0}, 6]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 0, p: []}
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+        repeat: true
+        skippable: false
+      move_speed: 3
+      move_type: 0
+      step_anime: false
+      through: false
+      trigger: 1
+      walk_anime: true
+    x: 7
+    y: 10
+  2: !ruby/object:RPG::Event
+    id: 2
+    name: Fossil reviver
+    pages:
+    - !ruby/object:RPG::Event::Page
+      always_on_top: false
+      condition: !ruby/object:RPG::Event::Page::Condition
+        self_switch_ch: A
+        self_switch_valid: false
+        switch1_id: 1
+        switch1_valid: false
+        switch2_id: 1
+        switch2_valid: false
+        variable_id: 28
+        variable_valid: false
+        variable_value: 0
+      direction_fix: false
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        blend_type: 0
+        character_hue: 0
+        character_name: trainer_SCIENTIST
+        direction: 2
+        opacity: 255
+        pattern: 0
+        tile_id: 0
+      list:
+      - !ruby/object:RPG::EventCommand {c: 108, i: 0, p: ['The fossil reviver finishes
+            reviving the Pokémon as ']}
+      - !ruby/object:RPG::EventCommand {c: 408, i: 0, p: ['soon as you step out of
+            the door. See the exit event ']}
+      - !ruby/object:RPG::EventCommand {c: 408, i: 0, p: [on this map.]}
+      - !ruby/object:RPG::EventCommand {c: 111, i: 0, p: [2, B, 1]}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 1, p: ['\bOh, hello. I''m a scientist.']}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 1, p: ['\bI can turn fossils into
+            living, breathing Pokémon!']}
+      - !ruby/object:RPG::EventCommand {c: 123, i: 1, p: [B, 0]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 411, i: 0, p: []}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 1, p: [\bAiyah! You come again!]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 412, i: 0, p: []}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 0, p: ['\bDo you have a fossil
+            for me?']}
+      - !ruby/object:RPG::EventCommand {c: 102, i: 0, p: [['Yes', 'No'], 2]}
+      - !ruby/object:RPG::EventCommand {c: 402, i: 0, p: [0, 'Yes']}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 1, p: ['\bWhich fossil do you want
+            me to revive?']}
+      - !ruby/object:RPG::EventCommand {c: 355, i: 1, p: [pbChooseFossil(9)]}
+      - !ruby/object:RPG::EventCommand {c: 111, i: 1, p: [12, 'pbGet(9) == :NONE']}
+      - !ruby/object:RPG::EventCommand {c: 108, i: 2, p: [Player didn't choose a fossil.]}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 2, p: ['\bLet me know when you
+            want me to revive a ']}
+      - !ruby/object:RPG::EventCommand {c: 401, i: 2, p: [fossil for you.]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 411, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 108, i: 2, p: [Player chose a fossil.]}
+      - !ruby/object:RPG::EventCommand {c: 355, i: 2, p: [$bag.remove(pbGet(9))]}
+      - !ruby/object:RPG::EventCommand {c: 355, i: 2, p: ['data = GameData::Item.get(pbGet(9))']}
+      - !ruby/object:RPG::EventCommand {c: 655, i: 2, p: ['pbSet(3, data.name)']}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 2, p: ['\bOkay. I''ll see if I
+            can revive your \v[3].']}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 2, p: [\bCome back later.]}
+      - !ruby/object:RPG::EventCommand {c: 108, i: 2, p: [Convert fossil into species
+            now.]}
+      - !ruby/object:RPG::EventCommand {c: 355, i: 2, p: ['conversion_hash = {']}
+      - !ruby/object:RPG::EventCommand {c: 655, i: 2, p: ['  :HELIXFOSSIL => :OMANYTE,']}
+      - !ruby/object:RPG::EventCommand {c: 655, i: 2, p: ['  :DOMEFOSSIL  => :KABUTO,']}
+      - !ruby/object:RPG::EventCommand {c: 655, i: 2, p: ['  :OLDAMBER    => :AERODACTYL,']}
+      - !ruby/object:RPG::EventCommand {c: 655, i: 2, p: ['  :ROOTFOSSIL  => :LILEEP,']}
+      - !ruby/object:RPG::EventCommand {c: 655, i: 2, p: ['  :CLAWFOSSIL  => :ANORITH,']}
+      - !ruby/object:RPG::EventCommand {c: 655, i: 2, p: ['  :SKULLFOSSIL => :CRANIDOS,']}
+      - !ruby/object:RPG::EventCommand {c: 655, i: 2, p: ['  :ARMORFOSSIL => :SHIELDON']}
+      - !ruby/object:RPG::EventCommand {c: 655, i: 2, p: ['}']}
+      - !ruby/object:RPG::EventCommand {c: 355, i: 2, p: ['conversion_hash.merge!({']}
+      - !ruby/object:RPG::EventCommand {c: 655, i: 2, p: ['  :COVERFOSSIL => :TIRTOUGA,']}
+      - !ruby/object:RPG::EventCommand {c: 655, i: 2, p: ['  :PLUMEFOSSIL => :ARCHEN,']}
+      - !ruby/object:RPG::EventCommand {c: 655, i: 2, p: ['  :JAWFOSSIL   => :TYRUNT,']}
+      - !ruby/object:RPG::EventCommand {c: 655, i: 2, p: ['  :SAILFOSSIL  => :AMAURA']}
+      - !ruby/object:RPG::EventCommand {c: 655, i: 2, p: ['})']}
+      - !ruby/object:RPG::EventCommand {c: 355, i: 2, p: [item = pbGet(9)]}
+      - !ruby/object:RPG::EventCommand {c: 655, i: 2, p: ['species = conversion_hash[item]']}
+      - !ruby/object:RPG::EventCommand {c: 655, i: 2, p: ['pbSet(9, species)']}
+      - !ruby/object:RPG::EventCommand {c: 123, i: 2, p: [A, 0]}
+      - !ruby/object:RPG::EventCommand {c: 121, i: 2, p: [13, 13, 0]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 412, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 402, i: 0, p: [1, 'No']}
+      - !ruby/object:RPG::EventCommand {c: 108, i: 1, p: [Player doesn't want to choose
+            a fossil.]}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 1, p: [\bI'll be here if you want
+            my help.]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 404, i: 0, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 0, p: []}
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+        repeat: true
+        skippable: false
+      move_speed: 3
+      move_type: 0
+      step_anime: false
+      through: false
+      trigger: 0
+      walk_anime: true
+    - !ruby/object:RPG::Event::Page
+      always_on_top: false
+      condition: !ruby/object:RPG::Event::Page::Condition
+        self_switch_ch: A
+        self_switch_valid: true
+        switch1_id: 1
+        switch1_valid: false
+        switch2_id: 1
+        switch2_valid: false
+        variable_id: 1
+        variable_valid: false
+        variable_value: 0
+      direction_fix: false
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        blend_type: 0
+        character_hue: 0
+        character_name: trainer_SCIENTIST
+        direction: 2
+        opacity: 255
+        pattern: 0
+        tile_id: 0
+      list:
+      - !ruby/object:RPG::EventCommand {c: 111, i: 0, p: [12, 'pbGet(9).is_a?(Symbol)']}
+      - !ruby/object:RPG::EventCommand {c: 355, i: 1, p: ['data = GameData::Species.get(']}
+      - !ruby/object:RPG::EventCommand {c: 655, i: 1, p: ['  pbGet(9))']}
+      - !ruby/object:RPG::EventCommand {c: 655, i: 1, p: ['pbSet(3, data.name)']}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 1, p: ['\bWhere have you been?
+            I''ve finished reviving your']}
+      - !ruby/object:RPG::EventCommand {c: 401, i: 1, p: [fossil.]}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 1, p: ['\bIt was \v[3] like I thought.']}
+      - !ruby/object:RPG::EventCommand {c: 111, i: 1, p: [12, 'pbAddToParty(pbGet(9),
+            1)']}
+      - !ruby/object:RPG::EventCommand {c: 355, i: 2, p: [$stats.revived_fossil_count
+            += 1]}
+      - !ruby/object:RPG::EventCommand {c: 122, i: 2, p: [9, 9, 0, 0, 0]}
+      - !ruby/object:RPG::EventCommand {c: 123, i: 2, p: [A, 1]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 411, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 2, p: ['\bYou have no room left.
+            Make room, then come see ']}
+      - !ruby/object:RPG::EventCommand {c: 401, i: 2, p: [me.]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 412, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 411, i: 0, p: []}
+      - !ruby/object:RPG::EventCommand {c: 108, i: 1, p: ['This only happens when
+            the fossil reviver is given an ']}
+      - !ruby/object:RPG::EventCommand {c: 408, i: 1, p: [item that couldn't be turned
+            into a species on page 1.]}
+      - !ruby/object:RPG::EventCommand {c: 108, i: 1, p: ['This should never happen.
+            If it does, there is a ']}
+      - !ruby/object:RPG::EventCommand {c: 408, i: 1, p: ['mistake in the conversion_hash
+            on page 1, namely ']}
+      - !ruby/object:RPG::EventCommand {c: 408, i: 1, p: ['that it doesn''t contain
+            a "fossil => species" pair for ']}
+      - !ruby/object:RPG::EventCommand {c: 408, i: 1, p: [the item given to the fossil
+            reviver.]}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 1, p: [\bI managed to revive your
+            fossil.]}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 1, p: ['\bHowever, what I brought
+            back didn''t live long...\1 ']}
+      - !ruby/object:RPG::EventCommand {c: 401, i: 1, p: [fortunately.]}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 1, p: [\bSorry.]}
+      - !ruby/object:RPG::EventCommand {c: 123, i: 1, p: [A, 1]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 412, i: 0, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 0, p: []}
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+        repeat: true
+        skippable: false
+      move_speed: 3
+      move_type: 0
+      step_anime: false
+      through: false
+      trigger: 0
+      walk_anime: true
+    - !ruby/object:RPG::Event::Page
+      always_on_top: false
+      condition: !ruby/object:RPG::Event::Page::Condition
+        self_switch_ch: A
+        self_switch_valid: false
+        switch1_id: 13
+        switch1_valid: true
+        switch2_id: 1
+        switch2_valid: false
+        variable_id: 1
+        variable_valid: false
+        variable_value: 0
+      direction_fix: false
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        blend_type: 0
+        character_hue: 0
+        character_name: trainer_SCIENTIST
+        direction: 2
+        opacity: 255
+        pattern: 0
+        tile_id: 0
+      list:
+      - !ruby/object:RPG::EventCommand {c: 101, i: 0, p: ['\bI told you, come back
+            later.']}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 0, p: []}
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+        repeat: true
+        skippable: false
+      move_speed: 3
+      move_type: 0
+      step_anime: false
+      through: false
+      trigger: 0
+      walk_anime: true
+    x: 10
+    y: 3
+  3: !ruby/object:RPG::Event
+    id: 3
+    name: PC
+    pages:
+    - !ruby/object:RPG::Event::Page
+      always_on_top: false
+      condition: !ruby/object:RPG::Event::Page::Condition
+        self_switch_ch: A
+        self_switch_valid: false
+        switch1_id: 1
+        switch1_valid: false
+        switch2_id: 1
+        switch2_valid: false
+        variable_id: 1
+        variable_valid: false
+        variable_value: 0
+      direction_fix: false
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        blend_type: 0
+        character_hue: 0
+        character_name: ''
+        direction: 2
+        opacity: 255
+        pattern: 0
+        tile_id: 0
+      list:
+      - !ruby/object:RPG::EventCommand {c: 355, i: 0, p: [pbPokeCenterPC]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 0, p: []}
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+        repeat: true
+        skippable: false
+      move_speed: 3
+      move_type: 0
+      step_anime: false
+      through: false
+      trigger: 0
+      walk_anime: true
+    x: 1
+    y: 1
+  4: !ruby/object:RPG::Event
+    id: 4
+    name: Fossil combiner
+    pages:
+    - !ruby/object:RPG::Event::Page
+      always_on_top: false
+      condition: !ruby/object:RPG::Event::Page::Condition
+        self_switch_ch: A
+        self_switch_valid: false
+        switch1_id: 1
+        switch1_valid: false
+        switch2_id: 1
+        switch2_valid: false
+        variable_id: 14
+        variable_valid: false
+        variable_value: 0
+      direction_fix: false
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        blend_type: 0
+        character_hue: 0
+        character_name: trainer_SCIENTIST
+        direction: 2
+        opacity: 255
+        pattern: 0
+        tile_id: 0
+      list:
+      - !ruby/object:RPG::EventCommand {c: 108, i: 0, p: ['The fossil combiner is
+            from Gen 8. They take two ']}
+      - !ruby/object:RPG::EventCommand {c: 408, i: 0, p: [!binary "ZGlmZmVyZW50IGZvc3NpbCBpdGVtcyBhbmQgcHJvZHVjZSBhIFBva8OpbW9u\nIGJhc2VkIA=="]}
+      - !ruby/object:RPG::EventCommand {c: 408, i: 0, p: ['on the combination. This
+            is a relatively ']}
+      - !ruby/object:RPG::EventCommand {c: 408, i: 0, p: ['straightforward "choose
+            an item from each of two ']}
+      - !ruby/object:RPG::EventCommand {c: 408, i: 0, p: [!binary "bGlzdHMsIGFkZCBhIFBva8OpbW9uIGJhc2VkIG9uIHdoYXQgd2FzIGNob3Nl\nbiIu"]}
+      - !ruby/object:RPG::EventCommand {c: 111, i: 0, p: [2, B, 1]}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 1, p: ['\bHello, huh! My name is
+            Carl Ess. I can turn ']}
+      - !ruby/object:RPG::EventCommand {c: 401, i: 1, p: ['combinations of partial
+            Fossils into living, breathing']}
+      - !ruby/object:RPG::EventCommand {c: 401, i: 1, p: [!binary "UG9rw6ltb24h"]}
+      - !ruby/object:RPG::EventCommand {c: 123, i: 1, p: [B, 0]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 412, i: 0, p: []}
+      - !ruby/object:RPG::EventCommand {c: 108, i: 0, p: [================================]}
+      - !ruby/object:RPG::EventCommand {c: 108, i: 0, p: ['Check whether the player
+            has at least one top fossil ']}
+      - !ruby/object:RPG::EventCommand {c: 408, i: 0, p: ['and at least one bottom
+            fossil. The result of this ']}
+      - !ruby/object:RPG::EventCommand {c: 408, i: 0, p: ['check could have been stored
+            in a Game Switch ']}
+      - !ruby/object:RPG::EventCommand {c: 408, i: 0, p: ['rather than a Game Variable,
+            because it''s just "yes or ']}
+      - !ruby/object:RPG::EventCommand {c: 408, i: 0, p: ['no", but there are no Game
+            Switches for temporary ']}
+      - !ruby/object:RPG::EventCommand {c: 408, i: 0, p: [values and I didn't feel
+            like makng one just for this.]}
+      - !ruby/object:RPG::EventCommand {c: 355, i: 0, p: ['top = $bag.has?(:FOSSILIZEDBIRD)
+            ||']}
+      - !ruby/object:RPG::EventCommand {c: 655, i: 0, p: ['      $bag.has?(:FOSSILIZEDFISH)']}
+      - !ruby/object:RPG::EventCommand {c: 655, i: 0, p: ['btm = $bag.has?(:FOSSILIZEDDRAKE)
+            ||']}
+      - !ruby/object:RPG::EventCommand {c: 655, i: 0, p: ['      $bag.has?(:FOSSILIZEDDINO)']}
+      - !ruby/object:RPG::EventCommand {c: 655, i: 0, p: ['pbSet(1, (top && btm) ?
+            1 : 0)']}
+      - !ruby/object:RPG::EventCommand {c: 111, i: 0, p: [1, 1, 0, 1, 0]}
+      - !ruby/object:RPG::EventCommand {c: 108, i: 1, p: ['The choice of top fossil
+            will be stored in Game Variable ']}
+      - !ruby/object:RPG::EventCommand {c: 408, i: 1, p: ['1 (1=Bird, 2=Fish, 0=Quit).']}
+      - !ruby/object:RPG::EventCommand {c: 408, i: 1, p: ['The choice of bottom fossil
+            will be stored in Game ']}
+      - !ruby/object:RPG::EventCommand {c: 408, i: 1, p: ['Variable 2 (1=Drake, 2=Dino,
+            0=Quit).']}
+      - !ruby/object:RPG::EventCommand {c: 122, i: 1, p: [1, 1, 0, 0, 0]}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 1, p: ['\bHm? You''ve got some
+            Fossils there, huh. Will you ']}
+      - !ruby/object:RPG::EventCommand {c: 401, i: 1, p: ['show them to me, Carl Ess?']}
+      - !ruby/object:RPG::EventCommand {c: 102, i: 1, p: [['Yes', 'No'], 2]}
+      - !ruby/object:RPG::EventCommand {c: 402, i: 1, p: [0, 'Yes']}
+      - !ruby/object:RPG::EventCommand {c: 118, i: 2, p: [Start choices]}
+      - !ruby/object:RPG::EventCommand {c: 108, i: 2, p: [================================]}
+      - !ruby/object:RPG::EventCommand {c: 108, i: 2, p: [Choose the top half.]}
+      - !ruby/object:RPG::EventCommand {c: 111, i: 2, p: [12, '$bag.has?(:FOSSILIZEDBIRD)
+            && $bag.has?(:FOSSILIZEDFISH)']}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 3, p: ['\bWhich of your Fossils
+            do you think stands up to the ']}
+      - !ruby/object:RPG::EventCommand {c: 401, i: 3, p: ['high standards of Carl
+            Ess?']}
+      - !ruby/object:RPG::EventCommand {c: 102, i: 3, p: [[Fossilized Bird, Fossilized
+              Fish, Quit], 3]}
+      - !ruby/object:RPG::EventCommand {c: 402, i: 3, p: [0, Fossilized Bird]}
+      - !ruby/object:RPG::EventCommand {c: 122, i: 4, p: [1, 1, 0, 0, 1]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 4, p: []}
+      - !ruby/object:RPG::EventCommand {c: 402, i: 3, p: [1, Fossilized Fish]}
+      - !ruby/object:RPG::EventCommand {c: 122, i: 4, p: [1, 1, 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 4, p: []}
+      - !ruby/object:RPG::EventCommand {c: 402, i: 3, p: [2, Quit]}
+      - !ruby/object:RPG::EventCommand {c: 119, i: 4, p: [Quit]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 4, p: []}
+      - !ruby/object:RPG::EventCommand {c: 404, i: 3, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 3, p: []}
+      - !ruby/object:RPG::EventCommand {c: 411, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 111, i: 3, p: [12, '$bag.has?(:FOSSILIZEDBIRD)']}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 4, p: ['\bWhich of your Fossils
+            do you think stands up to the ']}
+      - !ruby/object:RPG::EventCommand {c: 401, i: 4, p: ['high standards of Carl
+            Ess?']}
+      - !ruby/object:RPG::EventCommand {c: 102, i: 4, p: [[Fossilized Bird, Quit],
+          2]}
+      - !ruby/object:RPG::EventCommand {c: 402, i: 4, p: [0, Fossilized Bird]}
+      - !ruby/object:RPG::EventCommand {c: 122, i: 5, p: [1, 1, 0, 0, 1]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 5, p: []}
+      - !ruby/object:RPG::EventCommand {c: 402, i: 4, p: [1, Quit]}
+      - !ruby/object:RPG::EventCommand {c: 119, i: 5, p: [Quit]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 5, p: []}
+      - !ruby/object:RPG::EventCommand {c: 404, i: 4, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 4, p: []}
+      - !ruby/object:RPG::EventCommand {c: 411, i: 3, p: []}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 4, p: ['\bWhich of your Fossils
+            do you think stands up to the ']}
+      - !ruby/object:RPG::EventCommand {c: 401, i: 4, p: ['high standards of Carl
+            Ess?']}
+      - !ruby/object:RPG::EventCommand {c: 102, i: 4, p: [[Fossilized Fish, Quit],
+          2]}
+      - !ruby/object:RPG::EventCommand {c: 402, i: 4, p: [0, Fossilized Fish]}
+      - !ruby/object:RPG::EventCommand {c: 122, i: 5, p: [1, 1, 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 5, p: []}
+      - !ruby/object:RPG::EventCommand {c: 402, i: 4, p: [1, Quit]}
+      - !ruby/object:RPG::EventCommand {c: 119, i: 5, p: [Quit]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 5, p: []}
+      - !ruby/object:RPG::EventCommand {c: 404, i: 4, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 4, p: []}
+      - !ruby/object:RPG::EventCommand {c: 412, i: 3, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 3, p: []}
+      - !ruby/object:RPG::EventCommand {c: 412, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 108, i: 2, p: [================================]}
+      - !ruby/object:RPG::EventCommand {c: 108, i: 2, p: [Choose the bottom half.]}
+      - !ruby/object:RPG::EventCommand {c: 111, i: 2, p: [12, '$bag.has?(:FOSSILIZEDDRAKE)
+            && $bag.has?(:FOSSILIZEDDINO)']}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 3, p: ['\bWhich of your Fossils
+            do you think will pique the ']}
+      - !ruby/object:RPG::EventCommand {c: 401, i: 3, p: ['curiosity of Carl Ess?']}
+      - !ruby/object:RPG::EventCommand {c: 102, i: 3, p: [[Fossilized Drake, Fossilized
+              Dino, Quit], 3]}
+      - !ruby/object:RPG::EventCommand {c: 402, i: 3, p: [0, Fossilized Drake]}
+      - !ruby/object:RPG::EventCommand {c: 122, i: 4, p: [2, 2, 0, 0, 1]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 4, p: []}
+      - !ruby/object:RPG::EventCommand {c: 402, i: 3, p: [1, Fossilized Dino]}
+      - !ruby/object:RPG::EventCommand {c: 122, i: 4, p: [2, 2, 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 4, p: []}
+      - !ruby/object:RPG::EventCommand {c: 402, i: 3, p: [2, Quit]}
+      - !ruby/object:RPG::EventCommand {c: 119, i: 4, p: [Quit]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 4, p: []}
+      - !ruby/object:RPG::EventCommand {c: 404, i: 3, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 3, p: []}
+      - !ruby/object:RPG::EventCommand {c: 411, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 111, i: 3, p: [12, '$bag.has?(:FOSSILIZEDDRAKE)']}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 4, p: ['\bWhich of your Fossils
+            do you think will pique the ']}
+      - !ruby/object:RPG::EventCommand {c: 401, i: 4, p: ['curiosity of Carl Ess?']}
+      - !ruby/object:RPG::EventCommand {c: 102, i: 4, p: [[Fossilized Drake, Quit],
+          2]}
+      - !ruby/object:RPG::EventCommand {c: 402, i: 4, p: [0, Fossilized Drake]}
+      - !ruby/object:RPG::EventCommand {c: 122, i: 5, p: [2, 2, 0, 0, 1]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 5, p: []}
+      - !ruby/object:RPG::EventCommand {c: 402, i: 4, p: [1, Quit]}
+      - !ruby/object:RPG::EventCommand {c: 119, i: 5, p: [Quit]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 5, p: []}
+      - !ruby/object:RPG::EventCommand {c: 404, i: 4, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 4, p: []}
+      - !ruby/object:RPG::EventCommand {c: 411, i: 3, p: []}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 4, p: ['\bWhich of your Fossils
+            do you think will pique the ']}
+      - !ruby/object:RPG::EventCommand {c: 401, i: 4, p: ['curiosity of Carl Ess?']}
+      - !ruby/object:RPG::EventCommand {c: 102, i: 4, p: [[Fossilized Dino, Quit],
+          2]}
+      - !ruby/object:RPG::EventCommand {c: 402, i: 4, p: [0, Fossilized Dino]}
+      - !ruby/object:RPG::EventCommand {c: 122, i: 5, p: [2, 2, 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 5, p: []}
+      - !ruby/object:RPG::EventCommand {c: 402, i: 4, p: [1, Quit]}
+      - !ruby/object:RPG::EventCommand {c: 119, i: 5, p: [Quit]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 5, p: []}
+      - !ruby/object:RPG::EventCommand {c: 404, i: 4, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 4, p: []}
+      - !ruby/object:RPG::EventCommand {c: 412, i: 3, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 3, p: []}
+      - !ruby/object:RPG::EventCommand {c: 412, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 402, i: 1, p: [1, 'No']}
+      - !ruby/object:RPG::EventCommand {c: 119, i: 2, p: [Quit]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 404, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 411, i: 0, p: []}
+      - !ruby/object:RPG::EventCommand {c: 108, i: 1, p: [================================]}
+      - !ruby/object:RPG::EventCommand {c: 108, i: 1, p: [Player doesn't have at least
+            one fossil for each end.]}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 1, p: ['\bCome see me when you
+            have some interesting ']}
+      - !ruby/object:RPG::EventCommand {c: 401, i: 1, p: [Fossils.]}
+      - !ruby/object:RPG::EventCommand {c: 115, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 412, i: 0, p: []}
+      - !ruby/object:RPG::EventCommand {c: 108, i: 0, p: [================================]}
+      - !ruby/object:RPG::EventCommand {c: 108, i: 0, p: [!binary "RGV0ZXJtaW5lIHdoaWNoIFBva8OpbW9uIHdpbGwgYmUgcmV2aXZlZCBmcm9t\nIHRoZSA="]}
+      - !ruby/object:RPG::EventCommand {c: 408, i: 0, p: ['chosen fossils. Its species
+            is stored in Game Variable ']}
+      - !ruby/object:RPG::EventCommand {c: 408, i: 0, p: ['14.']}
+      - !ruby/object:RPG::EventCommand {c: 111, i: 0, p: [1, 1, 0, 1, 0]}
+      - !ruby/object:RPG::EventCommand {c: 111, i: 1, p: [1, 2, 0, 1, 0]}
+      - !ruby/object:RPG::EventCommand {c: 108, i: 2, p: [Bird + Drake = Dracozolt]}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 2, p: ['\bSo I should restore the
+            Fossilized Bird and the ']}
+      - !ruby/object:RPG::EventCommand {c: 401, i: 2, p: ['Fossilized Drake together,
+            huh?']}
+      - !ruby/object:RPG::EventCommand {c: 102, i: 2, p: [['Yes, please', I want to
+              try something else, Quit], 3]}
+      - !ruby/object:RPG::EventCommand {c: 402, i: 2, p: [0, 'Yes, please']}
+      - !ruby/object:RPG::EventCommand {c: 355, i: 3, p: ['pbSet(14, :DRACOZOLT)']}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 3, p: []}
+      - !ruby/object:RPG::EventCommand {c: 402, i: 2, p: [1, I want to try something
+            else]}
+      - !ruby/object:RPG::EventCommand {c: 119, i: 3, p: [Start choices]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 3, p: []}
+      - !ruby/object:RPG::EventCommand {c: 402, i: 2, p: [2, Quit]}
+      - !ruby/object:RPG::EventCommand {c: 119, i: 3, p: [Quit]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 3, p: []}
+      - !ruby/object:RPG::EventCommand {c: 404, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 411, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 108, i: 2, p: [Bird + Dino = Arctozolt]}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 2, p: ['\bSo I should restore the
+            Fossilized Bird and the ']}
+      - !ruby/object:RPG::EventCommand {c: 401, i: 2, p: ['Fossilized Dino together,
+            huh?']}
+      - !ruby/object:RPG::EventCommand {c: 102, i: 2, p: [['Yes, please', I want to
+              try something else, Quit], 3]}
+      - !ruby/object:RPG::EventCommand {c: 402, i: 2, p: [0, 'Yes, please']}
+      - !ruby/object:RPG::EventCommand {c: 355, i: 3, p: ['pbSet(14, :ARCTOZOLT)']}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 3, p: []}
+      - !ruby/object:RPG::EventCommand {c: 402, i: 2, p: [1, I want to try something
+            else]}
+      - !ruby/object:RPG::EventCommand {c: 119, i: 3, p: [Start choices]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 3, p: []}
+      - !ruby/object:RPG::EventCommand {c: 402, i: 2, p: [2, Quit]}
+      - !ruby/object:RPG::EventCommand {c: 119, i: 3, p: [Quit]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 3, p: []}
+      - !ruby/object:RPG::EventCommand {c: 404, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 412, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 411, i: 0, p: []}
+      - !ruby/object:RPG::EventCommand {c: 111, i: 1, p: [1, 2, 0, 1, 0]}
+      - !ruby/object:RPG::EventCommand {c: 108, i: 2, p: [Fish + Drake = Dracovish]}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 2, p: ['\bSo I should restore the
+            Fossilized Fish and the ']}
+      - !ruby/object:RPG::EventCommand {c: 401, i: 2, p: ['Fossilized Drake together,
+            huh?']}
+      - !ruby/object:RPG::EventCommand {c: 102, i: 2, p: [['Yes, please', I want to
+              try something else, Quit], 3]}
+      - !ruby/object:RPG::EventCommand {c: 402, i: 2, p: [0, 'Yes, please']}
+      - !ruby/object:RPG::EventCommand {c: 355, i: 3, p: ['pbSet(14, :DRACOVISH)']}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 3, p: []}
+      - !ruby/object:RPG::EventCommand {c: 402, i: 2, p: [1, I want to try something
+            else]}
+      - !ruby/object:RPG::EventCommand {c: 119, i: 3, p: [Start choices]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 3, p: []}
+      - !ruby/object:RPG::EventCommand {c: 402, i: 2, p: [2, Quit]}
+      - !ruby/object:RPG::EventCommand {c: 119, i: 3, p: [Quit]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 3, p: []}
+      - !ruby/object:RPG::EventCommand {c: 404, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 411, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 108, i: 2, p: [Fish + Dino = Arctovish]}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 2, p: ['\bSo I should restore the
+            Fossilized Fish and the ']}
+      - !ruby/object:RPG::EventCommand {c: 401, i: 2, p: ['Fossilized Dino together,
+            huh?']}
+      - !ruby/object:RPG::EventCommand {c: 102, i: 2, p: [['Yes, please', I want to
+              try something else, Quit], 3]}
+      - !ruby/object:RPG::EventCommand {c: 402, i: 2, p: [0, 'Yes, please']}
+      - !ruby/object:RPG::EventCommand {c: 355, i: 3, p: ['pbSet(14, :ARCTOVISH)']}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 3, p: []}
+      - !ruby/object:RPG::EventCommand {c: 402, i: 2, p: [1, I want to try something
+            else]}
+      - !ruby/object:RPG::EventCommand {c: 119, i: 3, p: [Start choices]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 3, p: []}
+      - !ruby/object:RPG::EventCommand {c: 402, i: 2, p: [2, Quit]}
+      - !ruby/object:RPG::EventCommand {c: 119, i: 3, p: [Quit]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 3, p: []}
+      - !ruby/object:RPG::EventCommand {c: 404, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 412, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 412, i: 0, p: []}
+      - !ruby/object:RPG::EventCommand {c: 108, i: 0, p: [================================]}
+      - !ruby/object:RPG::EventCommand {c: 108, i: 0, p: [!binary "Q3JlYXRlIHRoZSBQb2vDqW1vbiBmcm9tIHRoZSBjaG9zZW4gZm9zc2lscywg\nYW5kIA=="]}
+      - !ruby/object:RPG::EventCommand {c: 408, i: 0, p: [give it to the player.]}
+      - !ruby/object:RPG::EventCommand {c: 111, i: 0, p: [12, 'GameData::Species.exists?(pbGet(14))']}
+      - !ruby/object:RPG::EventCommand {c: 108, i: 1, p: [!binary "Rm9zc2lscyBjYW4gYmUgY29tYmluZWQgYW5kIHdpbGwgbWFrZSBhIFBva8Op\nbW9uLiA="]}
+      - !ruby/object:RPG::EventCommand {c: 408, i: 1, p: [!binary "UmVtb3ZlIHRoZSBmb3NzaWwgaXRlbXMgYW5kIGFkZCB0aGUgUG9rw6ltb24u"]}
+      - !ruby/object:RPG::EventCommand {c: 111, i: 1, p: [1, 1, 0, 1, 0]}
+      - !ruby/object:RPG::EventCommand {c: 355, i: 2, p: ['$bag.remove(:FOSSILIZEDBIRD)']}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 411, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 355, i: 2, p: ['$bag.remove(:FOSSILIZEDFISH)']}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 412, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 111, i: 1, p: [1, 2, 0, 1, 0]}
+      - !ruby/object:RPG::EventCommand {c: 355, i: 2, p: ['$bag.remove(:FOSSILIZEDDRAKE)']}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 411, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 355, i: 2, p: ['$bag.remove(:FOSSILIZEDDINO)']}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 412, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 1, p: ['\bOK. Restoration time.
+            Let''s unravel the mystery of ']}
+      - !ruby/object:RPG::EventCommand {c: 401, i: 1, p: [these Fossils!]}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 1, p: ['\bAll right, I''ll stick
+            ''em together! Here... we... GO!']}
+      - !ruby/object:RPG::EventCommand {c: 106, i: 1, p: [20]}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 1, p: ['\bObjective complete. It
+            seems the restoration was a ']}
+      - !ruby/object:RPG::EventCommand {c: 401, i: 1, p: [great success.]}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 1, p: [!binary "XGJZZXMsIEkgY2FuIHNlZSBpdCBpbiBpdHMgZXllcy4gVGhpcyBpcyBhIFBv\na8OpbW9uIHRoYXQg"]}
+      - !ruby/object:RPG::EventCommand {c: 401, i: 1, p: [walked the face of Essen
+            in ancient times! Please]}
+      - !ruby/object:RPG::EventCommand {c: 401, i: 1, p: [!binary "dGFrZSBhbmQgY2FyZSBmb3IgdGhpcyBQb2vDqW1vbiwgaHVoLg=="]}
+      - !ruby/object:RPG::EventCommand {c: 111, i: 1, p: [12, 'pbAddToParty(pbGet(14),
+            1)']}
+      - !ruby/object:RPG::EventCommand {c: 355, i: 2, p: [$stats.revived_fossil_count
+            += 1]}
+      - !ruby/object:RPG::EventCommand {c: 122, i: 2, p: [14, 14, 0, 0, 0]}
+      - !ruby/object:RPG::EventCommand {c: 108, i: 2, p: [!binary "UG9rw6ltb24gd2FzIGFkZGVkIQ=="]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 411, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 108, i: 2, p: [!binary "VGhlIFBva8OpbW9uIGNvdWxkbid0IGJlIGFkZGVkIHRvIHRoZSBwYXJ0eS4g\nS2VlcCBpdHMg"]}
+      - !ruby/object:RPG::EventCommand {c: 408, i: 2, p: ['species in Game Variable
+            14 and turn Self Switch A ']}
+      - !ruby/object:RPG::EventCommand {c: 408, i: 2, p: ['on, to let the player collect
+            it once they have space in ']}
+      - !ruby/object:RPG::EventCommand {c: 408, i: 2, p: [their party. See page 2
+            of this event.]}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 2, p: ['\bOh, you don''t have space
+            in your party, huh. Make ']}
+      - !ruby/object:RPG::EventCommand {c: 401, i: 2, p: [some room and then come
+            back here for your]}
+      - !ruby/object:RPG::EventCommand {c: 401, i: 2, p: [!binary "UG9rw6ltb24u"]}
+      - !ruby/object:RPG::EventCommand {c: 123, i: 2, p: [A, 0]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 412, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 411, i: 0, p: []}
+      - !ruby/object:RPG::EventCommand {c: 108, i: 1, p: [The species to be revived
+            is not defined. Do nothing.]}
+      - !ruby/object:RPG::EventCommand {c: 122, i: 1, p: [14, 14, 0, 0, 0]}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 1, p: [\bOh. They don't seem to
+            work together.]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 412, i: 0, p: []}
+      - !ruby/object:RPG::EventCommand {c: 115, i: 0, p: []}
+      - !ruby/object:RPG::EventCommand {c: 108, i: 0, p: [================================]}
+      - !ruby/object:RPG::EventCommand {c: 118, i: 0, p: [Quit]}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 0, p: ['\bMaybe some other time,
+            then.']}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 0, p: []}
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+        repeat: true
+        skippable: false
+      move_speed: 3
+      move_type: 0
+      step_anime: false
+      through: false
+      trigger: 0
+      walk_anime: true
+    - !ruby/object:RPG::Event::Page
+      always_on_top: false
+      condition: !ruby/object:RPG::Event::Page::Condition
+        self_switch_ch: A
+        self_switch_valid: true
+        switch1_id: 1
+        switch1_valid: false
+        switch2_id: 1
+        switch2_valid: false
+        variable_id: 1
+        variable_valid: false
+        variable_value: 0
+      direction_fix: false
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        blend_type: 0
+        character_hue: 0
+        character_name: trainer_SCIENTIST
+        direction: 2
+        opacity: 255
+        pattern: 0
+        tile_id: 0
+      list:
+      - !ruby/object:RPG::EventCommand {c: 101, i: 0, p: [!binary "XGJIdWgsIGhhdmUgeW91IG1hZGUgc29tZSByb29tIGZvciB5b3VyIFBva8Op\nbW9uIA=="]}
+      - !ruby/object:RPG::EventCommand {c: 401, i: 0, p: ['yet?']}
+      - !ruby/object:RPG::EventCommand {c: 111, i: 0, p: [12, 'pbAddToParty(pbGet(14),
+            1)']}
+      - !ruby/object:RPG::EventCommand {c: 355, i: 1, p: [$stats.revived_fossil_count
+            += 1]}
+      - !ruby/object:RPG::EventCommand {c: 122, i: 1, p: [14, 14, 0, 0, 0]}
+      - !ruby/object:RPG::EventCommand {c: 123, i: 1, p: [A, 1]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 411, i: 0, p: []}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 1, p: ['\bYou haven''t. Make some
+            room and then come back ']}
+      - !ruby/object:RPG::EventCommand {c: 401, i: 1, p: [here.]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 412, i: 0, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 0, p: []}
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+        repeat: true
+        skippable: false
+      move_speed: 3
+      move_type: 0
+      step_anime: false
+      through: false
+      trigger: 0
+      walk_anime: true
+    x: 5
+    y: 3
+  5: !ruby/object:RPG::Event
+    id: 5
+    name: Old Amber
+    pages:
+    - !ruby/object:RPG::Event::Page
+      always_on_top: false
+      condition: !ruby/object:RPG::Event::Page::Condition
+        self_switch_ch: A
+        self_switch_valid: false
+        switch1_id: 1
+        switch1_valid: false
+        switch2_id: 1
+        switch2_valid: false
+        variable_id: 1
+        variable_valid: false
+        variable_value: 0
+      direction_fix: false
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        blend_type: 0
+        character_hue: 0
+        character_name: ''
+        direction: 2
+        opacity: 255
+        pattern: 0
+        tile_id: 1726
+      list:
+      - !ruby/object:RPG::EventCommand {c: 111, i: 0, p: [12, 'pbItemBall(:OLDAMBER)']}
+      - !ruby/object:RPG::EventCommand {c: 123, i: 1, p: [A, 0]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 412, i: 0, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 0, p: []}
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+        repeat: true
+        skippable: false
+      move_speed: 3
+      move_type: 0
+      step_anime: false
+      through: false
+      trigger: 0
+      walk_anime: true
+    - !ruby/object:RPG::Event::Page
+      always_on_top: false
+      condition: !ruby/object:RPG::Event::Page::Condition
+        self_switch_ch: A
+        self_switch_valid: true
+        switch1_id: 1
+        switch1_valid: false
+        switch2_id: 1
+        switch2_valid: false
+        variable_id: 1
+        variable_valid: false
+        variable_value: 0
+      direction_fix: false
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        blend_type: 0
+        character_hue: 0
+        character_name: ''
+        direction: 2
+        opacity: 255
+        pattern: 0
+        tile_id: 0
+      list:
+      - !ruby/object:RPG::EventCommand {c: 0, i: 0, p: []}
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+        repeat: true
+        skippable: false
+      move_speed: 3
+      move_type: 0
+      step_anime: false
+      through: false
+      trigger: 0
+      walk_anime: true
+    x: 11
+    y: 6
+height: 15
+tileset_id: 3
+width: 20
