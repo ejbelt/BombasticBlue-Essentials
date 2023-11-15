@@ -105,7 +105,7 @@ module BattleAnimationEditor
         animation.name = window.controls[0].text
         break
       end
-      if window.changed?(cancelbutton) || Input.triggerex?(:ESCAPE)
+      if window.changed?(cancelbutton)
         break
       end
     end

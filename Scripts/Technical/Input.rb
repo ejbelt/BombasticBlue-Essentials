@@ -29,3 +29,12 @@ module Mouse
     return Input.mouse_x, Input.mouse_y
   end
 end
+
+module KeyboardInput
+  module_function
+
+  def getKeyboardInput(keycode)
+    return nil unless Input.isPressed(keycode)
+    return true
+  end
+end

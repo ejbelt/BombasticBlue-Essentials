@@ -191,12 +191,12 @@ class Scene_Map
     if !pbMapInterpreterRunning? && !$PokemonGlobal.forced_movement?
       if Input.trigger?(Input::USE)
         $game_temp.interact_calling = true
-      elsif Input.trigger?(Input::ACTION)
+      elsif Input.trigger?(Input::ACTION) || Input.triggerex?(:ESCAPE)
         if !$game_system.menu_disabled && !$game_player.moving?
           $game_temp.menu_calling = true
           $game_temp.menu_beep = true
         end
-      elsif Input.trigger?(Input::SPECIAL)
+      elsif Input.trigger?(Input::ACTION)
         $game_temp.ready_menu_calling = true if !$game_player.moving?
       elsif Input.press?(Input::F9)
         $game_temp.debug_calling = true if $DEBUG

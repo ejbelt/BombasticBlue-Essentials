@@ -40,6 +40,7 @@ class GameStats
   attr_accessor :blacked_out_count
   attr_accessor :mega_evolution_count
   attr_accessor :failed_poke_ball_count
+  attr_accessor :amulets_utilized
   # Currency
   attr_accessor :money_spent_at_marts
   attr_accessor :money_earned_at_marts
