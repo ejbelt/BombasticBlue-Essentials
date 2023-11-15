@@ -76,27 +76,12 @@ class Battle
   end
 
   def pbGetMegaRingName(idxBattler)
-    if !@mega_rings.empty?
-      if pbOwnedByPlayer?(idxBattler)
-        @mega_rings.each { |item| return GameData::Item.get(item).name if $bag.has?(item) }
-      else
-        trainer_items = pbGetOwnerItems(idxBattler)
-        @mega_rings.each { |item| return GameData::Item.get(item).name if trainer_items&.include?(item) }
-      end
-    end
-    return _INTL("Mega Ring")
+    return nil
   end
 
   def pbCanMegaEvolve?(idxBattler)
-    return false if $game_switches[Settings::NO_MEGA_EVOLUTION]
-    return false if !@battlers[idxBattler].hasMega?
-    return false if @battlers[idxBattler].wild?
-    return true if $DEBUG && Input.press?(Input::CTRL)
-    return false if @battlers[idxBattler].effects[PBEffects::SkyDrop] >= 0
-    return false if !pbHasMegaRing?(idxBattler)
-    side  = @battlers[idxBattler].idxOwnSide
-    owner = pbGetOwnerIndexFromBattlerIndex(idxBattler)
-    return @megaEvolution[side][owner] == -1
+    return false
+    #FUCK YOU, FUCK MEGA EVOLUTIONS, YOU CAN'T EVEN TURN IT BACK ON. 
   end
 
   def pbRegisterMegaEvolution(idxBattler)
