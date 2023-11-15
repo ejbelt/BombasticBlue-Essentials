@@ -47,7 +47,7 @@ class Player < Trainer
     @pokedex               = Pokedex.new
     @has_pokedex           = false
     @has_pokegear          = false
-    @has_running_shoes     = false
+    @has_running_shoes     = true   #Start by default lol.
     @has_box_link          = false
     @seen_storage_creator  = false
     @has_exp_all           = false

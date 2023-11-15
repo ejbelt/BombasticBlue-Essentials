@@ -3,10 +3,11 @@
 [001]   # Intro
 Name = Intro
 #-------------------------------
-[002]   # Lappet Town
-Name = Lappet Town
+[002]   # Test Town
+Name = Test Town
 Outdoor = true
 ShowArea = true
+Weather = Storm,100
 MapPosition = 0,13,12
 BattleBack = field
 #-------------------------------
