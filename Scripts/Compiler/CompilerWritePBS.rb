@@ -24,12 +24,22 @@ module Compiler
     paths = get_all_PBS_file_paths(game_data)
     schema = game_data.schema
     idx = 0
+    puts "Testing this stupid function\n========\n"
+    puts schema
+    puts "\\\\\\\\"
+    game_data.each do |element|
+      puts element
+    end
+    puts "\\\\\\\\"
     paths.each do |path|
       write_pbs_file_message_start(path[0])
       File.open(path[0], "wb") do |f|
         add_PBS_header_to_file(f)
         # Write each element in turn
         game_data.each do |element|
+          puts "Game Data Element check"
+          puts element
+          puts "+++++++++"
           next if element.pbs_file_suffix != path[1]
           echo "." if idx % 100 == 0
           Graphics.update if idx % 500 == 0
@@ -43,9 +53,17 @@ module Compiler
             f.write("[#{element.id}]\r\n")
           end
           schema.each_key do |key|
+            puts "Schema Check"
+            puts key
+            puts element
+            puts element.get_property_for_PBS(key)
             next if key == "SectionName"
             val = element.get_property_for_PBS(key)
             next if val.nil?
+            puts val
+            puts "-----"
+            puts schema[key][1][0]
+            puts "-----"
             if schema[key][1][0] == "^" && val.is_a?(Array)
               val.each do |sub_val|
                 f.write(sprintf("%s = ", key))
@@ -57,9 +75,12 @@ module Compiler
               pbWriteCsvRecord(val, f, schema[key])
               f.write("\r\n")
             end
+            
+            puts "\n------"
           end
         end
       end
+      puts "\n\n"
       process_pbs_file_message_end
     end
   end
@@ -157,6 +178,13 @@ module Compiler
   #=============================================================================
   def write_items
     write_PBS_file_generic(GameData::Item)
+  end
+
+  #=============================================================================
+  # Save charm data to PBS file
+  #=============================================================================
+  def write_charms
+    write_PBS_file_generic(GameData::Charm)
   end
 
   #=============================================================================

@@ -456,6 +456,76 @@ class ItemLister
   end
 end
 
+  #
+  #
+  #
+
+  class CharmLister
+    def initialize(selection = 0, includeNew = true)
+      @sprite = ItemIconSprite.new(Graphics.width * 3 / 4, Graphics.height / 2, nil)
+      @sprite.z = 2
+      @selection = selection
+      @commands = []
+      @ids = []
+      @includeNew = includeNew
+      @index = 0
+    end
+  
+    def dispose
+      @sprite.bitmap&.dispose
+      @sprite.dispose
+    end
+  
+    def setViewport(viewport)
+      @sprite.viewport = viewport
+    end
+  
+    def startIndex
+      return @index
+    end
+
+    # Sorted alphabetically.
+  def commands
+    @commands.clear
+    @ids.clear
+    cmds = []
+    idx = 1
+    GameData::Charm.each do |charm|
+      puts "Listing this charm"
+      puts "\n=======\n"
+      puts charm
+      puts idx
+      puts charm.id
+      puts charm.name
+      cmds.push([idx, charm.id, charm.name])
+      idx += 1
+    end
+    cmds.sort! { |a, b| a[2].downcase <=> b[2].downcase }
+    if @includeNew
+      @commands.push(_INTL("[NEW CHARM]"))
+      @ids.push(true)
+    end
+    cmds.each do |i|
+      @commands.push(sprintf("%03d: %s", i[0], i[2]))
+      @ids.push(i[1])
+    end
+    @index = @selection
+    @index = @commands.length - 1 if @index >= @commands.length
+    @index = 0 if @index < 0
+    return @commands
+  end
+
+  def value(index)
+    return nil if index < 0
+    return @ids[index]
+  end
+
+  def refresh(index)
+    @sprite.item = (@ids[index].is_a?(Symbol)) ? @ids[index] : nil
+  end
+
+end
+
 #===============================================================================
 #
 #===============================================================================

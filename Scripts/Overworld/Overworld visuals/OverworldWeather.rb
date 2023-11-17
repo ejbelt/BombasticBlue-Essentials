@@ -43,12 +43,20 @@ module RPG
       @sun_magnitude        = 0   # +/- maximum addition to sun tone
       @sun_strength         = 0   # Current addition to sun tone (0 to @sun_magnitude)
       @time_until_flash     = 0
+      @time_until_thunder   = 0
+      @time_until_breeze    = rand(1, 14)
+      @time_until_brooze    = rand(5, 24)
+      @time_until_howl      = rand(15, 45)
+      @sound_breeze         = AudioCache.GetCacheValue("Ambience/breeze.ogg")
+      @sound_brooze         = AudioCache.GetCacheValue("Ambience/brooze.ogg")
+      @sound_howl           = AudioCache.GetCacheValue("Ambience/howl.ogg")
       @sprites              = []
       @sprite_lifetimes     = []
       @tiles                = []
       @new_sprites          = []
       @new_sprite_lifetimes = []
       @fading               = false
+      
     end
 
     def dispose
@@ -483,16 +491,60 @@ module RPG
       update_screen_tone
       # Storm flashes
       if @type == :Storm && !@fading
+        
         if @time_until_flash > 0
           @time_until_flash -= Graphics.delta
           if @time_until_flash <= 0
             @viewport.flash(Color.new(255, 255, 255, 230), rand(2..4) * 20)
           end
         end
+
+        if @time_until_thunder > 0
+          @time_until_thunder -= Graphics.delta
+        end
+        
+        if @time_until_thunder <= 0
+          soundcued = rand(1..6)
+          # pbSEPlay("Ambience/thunder_"+soundcued.to_s+"_near")
+        end
+
         if @time_until_flash <= 0
           @time_until_flash = rand(1..12) * 0.5   # 0.5-6 seconds
+          if @time_until_thunder <= 0
+            @time_until_thunder = rand(30..150) * 0.5
+          end
         end
+
       end
+
+      #Blizzard Ambience
+      if @type == :Blizzard && !@fading
+        
+        
+        if @time_until_breeze <= 0
+          @time_until_breeze = rand(8..25)
+          puts "Breeze"
+          pbSEPlay(@sound_breeze, 10)
+        end
+
+        if @time_until_brooze <= 0
+          @time_until_brooze = rand(15, 45)
+          puts "brooze"
+          pbSEPlay(@sound_brooze, 20)
+        end
+
+        if @time_until_howl <= 0
+          @time_until_howl = rand(50, 100)
+          puts "Howl"
+          pbSEPlay(@sound_howl, 50)
+        end
+
+        @time_until_breeze -= Graphics.delta
+        @time_until_brooze -= Graphics.delta
+        @time_until_howl -= Graphics.delta
+
+      end
+
       @viewport.update
       # Update weather particles (raindrops, snowflakes, etc.)
       if @weatherTypes[@type] && @weatherTypes[@type][1].length > 0

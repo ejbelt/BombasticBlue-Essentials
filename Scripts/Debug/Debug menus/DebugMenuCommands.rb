@@ -1205,6 +1205,15 @@ MenuHandlers.add(:debug_menu, :set_metadata, {
   }
 })
 
+MenuHandlers.add(:debug_menu, :set_charms, {
+  "name"        => _INTL("Edit charms.txt"),
+  "parent"      => :pbs_editors_menu,
+  "description" => _INTL("Edit Bombastic Blue charm data."),
+  "effect"      => proc {
+    pbFadeOutIn { bbCharmEditor }
+  }
+})
+
 MenuHandlers.add(:debug_menu, :set_items, {
   "name"        => _INTL("Edit items.txt"),
   "parent"      => :pbs_editors_menu,
@@ -1373,7 +1382,8 @@ MenuHandlers.add(:debug_menu, :create_pbs_files, {
       "town_map.txt",
       "trainer_types.txt",
       "trainers.txt",
-      "types.txt"
+      "types.txt",
+      "charms.txt"
     ]
     loop do
       cmd = pbShowCommands(nil, cmds, -1, cmd)
@@ -1401,6 +1411,7 @@ MenuHandlers.add(:debug_menu, :create_pbs_files, {
       when 20 then Compiler.write_trainer_types
       when 21 then Compiler.write_trainers
       when 22 then Compiler.write_types
+      when 23 then Compiler.write_charms
       else break
       end
       pbMessage(_INTL("File written."))

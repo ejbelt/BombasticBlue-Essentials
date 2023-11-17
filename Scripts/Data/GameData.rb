@@ -11,6 +11,10 @@ module GameData
     end
 
     def register(hash)
+      puts "Registering..."
+      puts :id
+      puts :id_number
+      puts hash
       self::DATA[hash[:id]] = self::DATA[hash[:id_number]] = self.new(hash)
     end
 
@@ -65,6 +69,8 @@ module GameData
     end
 
     def save
+      puts self::DATA
+      puts self::DATA_FILENAME
       save_data(self::DATA, "Data/#{self::DATA_FILENAME}")
     end
   end
@@ -81,7 +87,13 @@ module GameData
     end
 
     def register(hash)
+      puts "Registering Symbols..."
+      puts :id
+      puts hash
       self::DATA[hash[:id]] = self.new(hash)
+      puts self::DATA[hash[:id]].class
+      puts self::DATA[hash[:id]]
+      puts "----------"
     end
 
     # @param other [Symbol, self, String]
@@ -140,6 +152,21 @@ module GameData
     end
 
     def save
+      puts "========="
+      for key in self::DATA.keys()
+        puts key
+        puts "!!!!!!"
+        puts self::DATA[key]
+        puts "\n"
+        puts "\n"
+        #puts "......"
+        #for dKey in self::DATA[key]::DATA.keys()
+        #  puts dKey
+        #  puts self::DATA[key]::DATA[dKey]
+        #end
+        #puts "......."
+      end
+      puts "\n\n======"
       save_data(self::DATA, "Data/#{self::DATA_FILENAME}")
     end
   end
@@ -156,6 +183,10 @@ module GameData
     end
 
     def register(hash)
+      puts "Registering id numbers..."
+      puts :id
+      puts :id_number
+      puts hash
       self::DATA[hash[:id]] = self.new(hash)
     end
 
@@ -233,11 +264,40 @@ module GameData
     end
 
     def get_property_for_PBS(key)
+      puts "\nGetting PBS Property\n++++++++++++++++"
+      puts key
+
       ret = nil
+
+      puts self.class::SCHEMA
+      #puts "Get Schema Keys\n*********"
+      #for lKey in self.class::SCHEMA.keys()
+      #  puts lKey
+      #  puts self.class::SCHEMA[lKey]
+      # puts self.class::SCHEMA[lKey][0]
+      #  puts self.class::SCHEMA[lKey][1]
+      #  puts "\n"
+      #end
+      #puts "*********"
+
+      puts self.class::SCHEMA.include?(key)
+      if (self.class::SCHEMA.include?(key))
+        puts self.class::SCHEMA[key][0]
+        puts self.class::SCHEMA[key][0].class
+        puts self.class::SCHEMA[key][0].to_s
+        puts self.class::SCHEMA[key][1] 
+        puts self.respond_to?(self.class::SCHEMA[key][0])
+      end
+
       if self.class::SCHEMA.include?(key) && self.respond_to?(self.class::SCHEMA[key][0])
         ret = self.send(self.class::SCHEMA[key][0])
         ret = nil if ret == false || (ret.is_a?(Array) && ret.length == 0)
       end
+
+      puts "Return:"
+      puts ret
+
+      puts "\n++++++++++++++++++++"
       return ret
     end
   end

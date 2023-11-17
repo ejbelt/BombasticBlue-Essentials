@@ -240,6 +240,16 @@ module Compiler
     end
   end
 
+  #=============================================================================
+  # Compile Charm data
+  #=============================================================================
+  def compile_charms(*paths)
+    compile_PBS_file_generic(GameData::Charm, *paths) do |final_validate, hash|
+      puts final_validate
+      (final_validate) ? validate_all_compiled_charms : validate_compiled_charm(hash)
+    end
+  end
+
   def validate_compiled_item(hash)
   end
 
@@ -262,6 +272,21 @@ module Compiler
     MessageTypes.setMessagesAsHash(MessageTypes::ITEM_PORTION_NAMES, item_portion_names)
     MessageTypes.setMessagesAsHash(MessageTypes::ITEM_PORTION_NAME_PLURALS, item_portion_names_plural)
     MessageTypes.setMessagesAsHash(MessageTypes::ITEM_DESCRIPTIONS, item_descriptions)
+  end
+
+  def validate_compiled_charm(hash)
+  end
+
+  def validate_all_compiled_charms
+    # Get charm names/descriptions for translating
+    charm_names = []
+    charm_descriptions = []
+    GameData::Charm.each do |charm|
+      charm_names.push(charm.real_name)
+      charm_descriptions.push(charm.real_description)
+    end
+    MessageTypes.setMessagesAsHash(MessageTypes::CHARM_NAMES, charm_names)
+    MessageTypes.setMessagesAsHash(MessageTypes::CHARM_DESCRIPTIONS, charm_descriptions)
   end
 
   #=============================================================================

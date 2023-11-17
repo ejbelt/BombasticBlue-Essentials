@@ -938,6 +938,27 @@ module PocketProperty
   end
 end
 
+#
+#
+#
+
+module SocketProperty
+  def self.set(_settingname, oldsetting)
+    commands = Settings.amulet_slot_names.clone
+    cmd = pbMessage(_INTL("Choose a slot for this charm."), commands, -1)
+    return (cmd >= 0) ? cmd + 1 : oldsetting
+  end
+
+  def self.defaultValue
+    return 1
+  end
+
+  def self.format(value)
+    return _INTL("No Slot") if value == 0
+    return (value) ? Settings.amulet_slot_names[value - 1] : value.inspect
+  end
+end
+
 #===============================================================================
 #
 #===============================================================================
@@ -1627,6 +1648,10 @@ def pbPropertyList(title, data, properties, saveprompt = false)
   list = pbListWindow([], Graphics.width / 2)
   list.viewport = viewport
   list.z        = 2
+  puts "Getting information"
+  puts title
+  puts data
+  puts properties
   title = Window_UnformattedTextPokemon.newWithSize(
     title, list.width, 0, Graphics.width / 2, 64, viewport
   )
@@ -1639,7 +1664,11 @@ def pbPropertyList(title, data, properties, saveprompt = false)
   retval = nil
   commands = []
   properties.length.times do |i|
+    puts "\nProperty check"
+    puts properties[i]
     propobj = properties[i][1]
+    puts propobj
+    puts propobj.format(data[i])
     commands.push(sprintf("%s=%s", properties[i][0], propobj.format(data[i])))
   end
   list.commands = commands

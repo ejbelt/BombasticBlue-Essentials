@@ -247,6 +247,35 @@ EventHandlers.add(:on_enter_map, :set_weather,
     if new_map_metadata&.weather
       new_weather = new_map_metadata.weather[0] if rand(100) < new_map_metadata.weather[1]
     end
+
+    if (new_map_metadata.outdoor_map == nil)
+
+      if ((old_weather == :HeavyRain) || (old_weather == :Storm))
+        pbBGSPlay("rain_indoors_2", 10)
+      end
+
+      if (old_weather == :Blizzard)
+        pbBGSPlay("wind_4", 5)
+      end
+    
+    end
+
+    if (new_map_metadata.outdoor_map == true)
+
+      if (new_weather != old_weather)
+        pbBGSStop()
+      end
+
+      if (((new_weather == :HeavyRain) || (new_weather == :Storm)))
+        pbBGSPlay("rain_2", 30)
+      end
+
+      if (new_weather == :Blizzard)
+        pbBGSPlay("wind_4", 10)
+      end
+
+    end
+
     next if old_weather == new_weather
     $game_screen.weather(new_weather, 9, 0)
   }

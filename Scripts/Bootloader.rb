@@ -130,6 +130,7 @@ SCRIPTS = [
   'Data/PBS data/DungeonTileset',
   'Data/PBS data/DungeonParameters',
   'Data/PBS data/PhoneMessage',
+  'Data/PBS data/BombasticCharms',
 
   'Battle/Battle/Battle',
   'Battle/Battle/BattleStartAndEnd',
@@ -344,6 +345,8 @@ SCRIPTS = [
   'Debug/Debug menus/DebugPokemonCommands',
   'Debug/Debug menus/DebugFilenameUpdater',
   'Debug/EditorListers',
+
+  'Audio/AudioCache',
 
   'Compiler/Compiler',
   'Compiler/CompilerCompilePBS',

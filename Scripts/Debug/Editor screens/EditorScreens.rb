@@ -817,6 +817,141 @@ def pbEditMapMetadata(map_id)
 end
 
 #===============================================================================
+# Bombastic Blue Charms Editor
+#===============================================================================
+
+def bbCharmEditor
+  properties = GameData::Charm.editor_properties
+  pbListScreenBlock(_INTL("charms"), CharmLister.new(0, true)) do |button, charm|
+    charm_hash = {}
+    puts "\n Start of charm listing=====\n\n"
+    if charm
+      puts "Found charm"
+      puts charm
+      case button
+      when Input::ACTION
+        if charm.is_a?(Symbol) && pbConfirmMessageSerious("Delete this charm?")
+          GameData::Charm::DATA.delete(charm)
+          GameData::Charm.save
+          Compiler.write_charms
+          pbMessage(_INTL("The charm was deleted."))
+        end
+      when Input::USE
+        if charm.is_a?(Symbol)
+          itm = GameData::Charm.get(charm)
+          data = []
+          properties.each do |prop|
+            val = itm.get_property_for_PBS(prop[0])
+            puts "Putting value in place:"
+            puts val
+            val = prop[1].defaultValue if val.nil? && prop[1].respond_to?(:defaultValue)
+            data.push(val)
+          end
+          if pbPropertyList(itm.id.to_s, data, properties, true)
+            # Construct charm hash
+            schema = GameData::Charm.schema
+            properties.each_with_index do |prop, i|
+              case prop[0]
+              when "ID"
+                charm_hash[schema["SectionName"][0]] = data[i]
+              when "Function Code"
+                puts schema["FunctionCode"].class
+                charm_hash[schema["FunctionCode"][0]] = data[i]
+              else
+                puts schema[prop[0]].class
+                puts prop[0]
+                charm_hash[schema[prop[0]][0]] = data[i]
+              end
+
+              
+              puts "=======\n"
+              puts charm_hash[schema[prop[0]]]
+              puts "\n\n"
+            end
+            charm_hash[:pbs_file_suffix] = itm.pbs_file_suffix
+            # Add charm's data to records
+            puts "Charm hash: "
+            puts charm_hash
+            GameData::Charm.register(charm_hash)
+            GameData::Charm.save
+            Compiler.write_charms
+          end
+        else   # Add a new charm
+          bbCharmEditorNew(nil)
+        end
+      end
+    end
+  end
+end
+
+def bbCharmEditorNew(default_name)
+  # Choose a name
+  name = pbMessageFreeText(_INTL("Please enter the charm's name."),
+                           (default_name) ? default_name.gsub(/_+/, " ") : "", false, 30)
+  if nil_or_empty?(name)
+    return if !default_name
+    name = default_name
+  end
+  puts name
+  # Generate an ID based on the item name
+  id = name.gsub(/é/, "e")
+  id = id.gsub(/[^A-Za-z0-9_]/, "")
+  id = id.upcase
+  puts id
+  if id.length == 0
+    id = sprintf("ITEM_%03d", GameData::Charm.count)
+  elsif !id[0, 1][/[A-Z]/]
+    id = "ITEM_" + id
+  end
+  if GameData::Charm.exists?(id)
+    (1..100).each do |i|
+      trial_id = sprintf("%s_%d", id, i)
+      next if GameData::Charm.exists?(trial_id)
+      id = trial_id
+      break
+    end
+  end
+  if GameData::Charm.exists?(id)
+    pbMessage(_INTL("Failed to create the item. Choose a different name."))
+    return
+  end
+  # Choose a pocket
+  slot = SocketProperty.set("", 0)
+  return if slot == 0
+  puts slot
+  # Determine number of uses
+  total_uses = LimitProperty.new(20).set(_INTL("Usage Count"), -1)
+  return if total_uses == -1
+  puts total_uses
+  #Determine recharge rate
+  recharge_rate = LimitProperty.new(20).set(_INTL("Recharge Rate"), -1)
+  return if recharge_rate == -1
+  puts recharge_rate
+  #Field use
+
+  #Battle Use
+
+  # Choose a description
+  description = StringProperty.set(_INTL("Description"), "")
+  # Construct item hash
+  charm_hash = {
+    :id             => id.to_sym,
+    :name           => name,
+    :socket         => slot,
+    :total_uses     => total_uses,
+    :recharge_rate  => recharge_rate,
+    :description    => description
+  }
+  puts charm_hash[name]
+  # Add item's data to records
+  GameData::Charm.register(charm_hash)
+  GameData::Charm.save
+  Compiler.write_charms
+  pbMessage(_INTL("The charm {1} was created (ID: {2}).", name, id.to_s))
+  pbMessage(_INTL("Put the charm's graphic ({1}.png) in Graphics/Items, or it will be blank.", id.to_s))
+end
+
+#===============================================================================
 # Item editor
 #===============================================================================
 def pbItemEditor

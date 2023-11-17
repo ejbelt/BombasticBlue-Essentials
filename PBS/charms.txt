@@ -1,0 +1,23 @@
+﻿# See the documentation on the wiki to learn how to edit this file.
+#-------------------------------
+[TEST]
+Name = Test 1
+Socket = 1
+TotalUses = 5
+RechargeRate = 2
+FieldUse = OnPokemon
+BattleUse = OnPokemon
+Priority = 0
+FunctionCode = None
+Description = Test
+#-------------------------------
+[TEST2]
+Name = Test 2
+Socket = 1
+TotalUses = 15
+RechargeRate = 3
+FieldUse = OnPokemon
+BattleUse = OnPokemon
+Priority = 0
+FunctionCode = None
+Description = ???

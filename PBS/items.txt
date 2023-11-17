@@ -6532,14 +6532,6 @@ Price = 0
 Flags = KeyItem
 Description = A charm that increases the Exp. Points that Pokémon can get. A machine-like object is inside it.
 #-------------------------------
-[MEGARING]
-Name = Mega Ring
-NamePlural = Mega Rings
-Pocket = 8
-Price = 0
-Flags = KeyItem,MegaRing
-Description = This ring contains an untold power that somehow enables Pokémon carrying Mega Stones to Mega Evolve.
-#-------------------------------
 [POKEMONBOXLINK]
 Name = Pokémon Box Link
 NamePlural = Pokémon Box Links
@@ -6563,3 +6555,11 @@ Pocket = 8
 Price = 0
 Flags = KeyItem
 Description = A faded sea chart that shows the way to a certain island.
+#-------------------------------
+[CHARMAMULET]
+Name = Amulet
+NamePlural = Amulets
+Pocket = 9
+Price = 100000
+Flags = KeyItem
+Description = An Amulet that allows for charm usage.

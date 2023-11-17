@@ -194,7 +194,16 @@ module Settings
       _INTL("Berries"),
       _INTL("Mail"),
       _INTL("Battle Items"),
+      _INTL("Charms"),
       _INTL("Key Items")
+    ]
+  end
+
+  def self.amulet_slot_names
+    return [
+      _INTL("Prep Slot"),
+      _INTL("Support Slot"),
+      _INTL("Utility Slot")
     ]
   end
   # The maximum number of slots per pocket (-1 means infinite number).

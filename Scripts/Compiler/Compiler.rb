@@ -743,6 +743,12 @@ module Compiler
     rec = (record.is_a?(Array)) ? record.flatten : [record]
     start = (["*", "^"].include?(schema[1][0, 1])) ? 1 : 0
     index = -1
+
+    puts record
+    puts file
+    puts schema
+    puts "\n\n"
+
     loop do
       (start...schema[1].length).each do |i|
         index += 1
@@ -1005,6 +1011,7 @@ module Compiler
     compile_dungeon_tilesets(*text_files[:DungeonTileset][1])
     compile_dungeon_parameters(*text_files[:DungeonParameters][1])
     compile_phone(*text_files[:PhoneMessage][1])               # Depends on TrainerType
+    compile_charms(*text_files[:Charm][1])
   end
 
   def compile_all(mustCompile)
