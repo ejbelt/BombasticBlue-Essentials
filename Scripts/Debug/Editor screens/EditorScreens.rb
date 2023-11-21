@@ -842,8 +842,6 @@ def bbCharmEditor
           data = []
           properties.each do |prop|
             val = itm.get_property_for_PBS(prop[0])
-            puts "Putting value in place:"
-            puts val
             val = prop[1].defaultValue if val.nil? && prop[1].respond_to?(:defaultValue)
             data.push(val)
           end
@@ -855,23 +853,13 @@ def bbCharmEditor
               when "ID"
                 charm_hash[schema["SectionName"][0]] = data[i]
               when "Function Code"
-                puts schema["FunctionCode"].class
                 charm_hash[schema["FunctionCode"][0]] = data[i]
               else
-                puts schema[prop[0]].class
-                puts prop[0]
                 charm_hash[schema[prop[0]][0]] = data[i]
               end
-
-              
-              puts "=======\n"
-              puts charm_hash[schema[prop[0]]]
-              puts "\n\n"
             end
             charm_hash[:pbs_file_suffix] = itm.pbs_file_suffix
             # Add charm's data to records
-            puts "Charm hash: "
-            puts charm_hash
             GameData::Charm.register(charm_hash)
             GameData::Charm.save
             Compiler.write_charms

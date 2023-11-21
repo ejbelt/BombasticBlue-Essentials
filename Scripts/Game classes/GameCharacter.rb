@@ -28,6 +28,8 @@ class Game_Character
   attr_reader   :jump_speed
   attr_accessor :walk_anime
   attr_writer   :bob_height
+  attr_accessor :is_diagonal
+  attr_accessor :diag_dir
 
   def initialize(map = nil)
     @map                       = map
@@ -84,6 +86,8 @@ class Game_Character
     @moveto_happened           = false
     @locked                    = false
     @prelock_direction         = 0
+    @is_diagonal               = false
+    @diag_dir                  = 0
   end
 
   def x_offset; return @x_offset || 0; end
@@ -235,8 +239,15 @@ class Game_Character
   # Passability
   #=============================================================================
   def passable?(x, y, d, strict = false)
-    new_x = x + (d == 6 ? 1 : d == 4 ? -1 : 0)
-    new_y = y + (d == 2 ? 1 : d == 8 ? -1 : 0)
+
+    if (d % 2 == 0)
+      new_x = x + ((d == 4) ? -1 : (d == 6) ? 1 : 0)
+      new_y = y + ((d == 8) ? -1 : (d == 2) ? 1 : 0)
+    else
+      new_x = x + ((d == 1 || d == 7) ? -1 : (d % 3 == 0) ? 1 : 0)
+      new_y = y + ((d == 9 || d == 7) ? -1 : (d == 1 || d == 3) ? 1 : 0)
+    end
+
     return false unless self.map.valid?(new_x, new_y)
     return true if @through
     if strict
@@ -272,34 +283,62 @@ class Game_Character
       end
       return true
     when 1, 3   # Down diagonals
-      # Treated as moving down first and then horizontally, because that
-      # describes which tiles the character's feet touch
+      # Rework: We can move diagonally. We should treat it as such.
+
+      passable_x = true
+      passable_y = true
+
       (start_x...(start_x + @width)).each do |i|
-        return false if !passable?(i, start_y, 2, strict)
+        passable_x = false if !passable?(i, start_y, 2, strict)
       end
       x_diff = (dir == 3) ? @width - 1 : 0
       ((start_y - @height + 1)..start_y).each do |i|
-        return false if !passable?(start_x + x_diff, i + 1, dir + 3, strict)
+        passable_y = false if !passable?(start_x + x_diff, i + 1, dir + 3, strict)
       end
-      return true
+
+      
+
+      puts "Down Diags"
+      puts passable_x
+      puts passable_y
+      puts "\n"
+
+      return (passable_x & passable_y)
     when 7, 9   # Up diagonals
-      # Treated as moving horizontally first and then up, because that describes
-      # which tiles the character's feet touch
+      # Rework: We can move diagonally. We should treat it as such.
+
+      passable_x = true
+      passable_y = true
+
+      puts dir
+
       x_diff = (dir == 9) ? @width - 1 : 0
-      ((start_y - @height + 1)..start_y).each do |i|
-        return false if !passable?(start_x + x_diff, i, dir - 3, strict)
-      end
       x_tile_offset = (dir == 9) ? 1 : -1
       (start_x...(start_x + @width)).each do |i|
-        return false if !passable?(i + x_tile_offset, start_y - @height + 1, 8, strict)
+        ((start_y - @height + 1)..start_y).each do |i|
+          if passable_y == true
+            passable_y = false if !passable?(start_x + x_diff, i, dir - 3, strict)
+          end
+        end
+        if passable_x == true
+          passable_x = false if !passable?(i + x_tile_offset, start_y - @height + 1, 8, strict)
+        end
       end
-      return true
+
+      puts "Up Diags"
+      puts passable_x
+      puts passable_y
+      puts "\n"
+
+      return (passable_x & passable_y)
     end
     return false
   end
 
   def can_move_in_direction?(dir, strict = false)
-    return can_move_from_coordinate?(@x, @y, dir, strict)
+
+    canMove = can_move_from_coordinate?(@x, @y, dir, strict)
+    return canMove
   end
 
   #=============================================================================
@@ -357,6 +396,7 @@ class Game_Character
     @pattern = 0 if @walk_anime || @step_anime
     @anime_count = 0
     @prelock_direction = 0
+    @is_diagonal = false
   end
 
   def force_move_route(move_route)
@@ -556,8 +596,13 @@ class Game_Character
       turn_generic(dir)
       @move_initial_x = @x
       @move_initial_y = @y
-      @x += (dir == 4) ? -1 : (dir == 6) ? 1 : 0
-      @y += (dir == 8) ? -1 : (dir == 2) ? 1 : 0
+      if (dir % 2 == 0)
+        @x += (dir == 4) ? -1 : (dir == 6) ? 1 : 0
+        @y += (dir == 8) ? -1 : (dir == 2) ? 1 : 0
+      else
+        @x += (dir == 1 || dir == 7) ? -1 : (dir % 3 == 0) ? 1 : 0
+        @y += (dir == 9 || dir == 7) ? -1 : (dir == 1 || dir == 3) ? 1 : 0
+      end
       @move_timer = 0.0
       increase_steps
     else
@@ -580,6 +625,23 @@ class Game_Character
   def move_up(turn_enabled = true)
     move_generic(8, turn_enabled)
   end
+
+  def move_downleft(turn_enabled = true)
+    move_generic(1, turn_enabled)
+  end
+
+  def move_downright(turn_enabled = true)
+    move_generic(3, turn_enabled)
+  end
+
+  def move_upleft(turn_enabled = true)
+    move_generic(7, turn_enabled)
+  end
+
+  def move_upright(turn_enabled = true)
+    move_generic(9, turn_enabled)
+  end
+  
 
   def move_upper_left
     unless @direction_fix
@@ -791,10 +853,10 @@ class Game_Character
     old_x = @x
     old_y = @y
     case self.direction
-    when 2 then jump(0, distance)    # down
-    when 4 then jump(-distance, 0)   # left
-    when 6 then jump(distance, 0)    # right
-    when 8 then jump(0, -distance)   # up
+    when 1, 2, 3 then jump(0, distance)    # down
+    when 3, 4, 7 then jump(-distance, 0)   # left
+    when 1, 5, 6 then jump(distance, 0)    # right
+    when 5, 7, 8 then jump(0, -distance)   # up
     end
     return @x != old_x || @y != old_y
   end
@@ -804,19 +866,66 @@ class Game_Character
     old_x = @x
     old_y = @y
     case self.direction
-    when 2 then jump(0, -distance)   # down
-    when 4 then jump(distance, 0)    # left
-    when 6 then jump(-distance, 0)   # right
-    when 8 then jump(0, distance)    # up
+    when 1, 2, 3 then jump(0, -distance)   # down
+    when 3, 4, 7 then jump(distance, 0)    # left
+    when 1, 5, 6 then jump(-distance, 0)   # right
+    when 5, 7, 8 then jump(0, distance)    # up
     end
     return @x != old_x || @y != old_y
   end
 
+  def get_diagonal_dir()
+    return @diag_dir
+  end
+
+  def is_diagonal_turned()
+    return @is_diagonal
+  end
+
   def turn_generic(dir)
     return if @direction_fix
+    
     oldDirection = @direction
+
+    if @is_diagonal == true && dir % 2 == 0
+      @is_diagonal = false
+    end
+
+    
+
+    if (dir % 2 != 0 && (oldDirection == 2 || oldDirection == 8))    
+      @is_diagonal = true
+      @diag_dir = dir
+      case dir
+        when 1
+          dir = 2
+        when 3
+          dir = 2
+        when 7
+          dir = 8
+        when 9
+          dir = 8
+      end
+    end
+
+    if (dir % 2 != 0 && (oldDirection == 4 || oldDirection == 6))    
+      @is_diagonal = true
+      @diag_dir = dir
+      case dir
+        when 1
+          dir = 4
+        when 3
+          dir = 6
+        when 7
+          dir = 4
+        when 9
+          dir = 6
+      end
+    end
+
     @direction = dir
     @stop_count = 0
+
     pbCheckEventTriggerAfterTurning if dir != oldDirection
   end
 
@@ -825,12 +934,22 @@ class Game_Character
   def turn_right; turn_generic(6); end
   def turn_up;    turn_generic(8); end
 
+  
+  def turn_downleft;    turn_generic(1); end
+  def turn_downright;   turn_generic(3); end
+  def turn_upleft;      turn_generic(7); end
+  def turn_upright;     turn_generic(9); end
+
   def turn_right_90
     case @direction
     when 2 then turn_left
     when 4 then turn_up
     when 6 then turn_down
     when 8 then turn_right
+    when 1 then turn_upleft
+    when 3 then turn_downleft
+    when 7 then turn_upright
+    when 9 then turn_downright
     end
   end
 
@@ -840,6 +959,10 @@ class Game_Character
     when 4 then turn_down
     when 6 then turn_up
     when 8 then turn_left
+    when 1 then turn_upleft
+    when 3 then turn_downleft
+    when 7 then turn_downright
+    when 9 then turn_upright
     end
   end
 
@@ -849,6 +972,10 @@ class Game_Character
     when 4 then turn_right
     when 6 then turn_left
     when 8 then turn_down
+    when 1 then turn_upright
+    when 3 then turn_upleft
+    when 7 then turn_downright
+    when 9 then turn_downleft
     end
   end
 
@@ -857,11 +984,15 @@ class Game_Character
   end
 
   def turn_random
-    case rand(4)
+    case rand(8)
     when 0 then turn_up
     when 1 then turn_right
     when 2 then turn_left
     when 3 then turn_down
+    when 4 then turn_upright
+    when 5 then turn_upleft
+    when 6 then turn_downright
+    when 7 then turn_downleft
     end
   end
 
@@ -1019,5 +1150,6 @@ class Game_Character
     # Advance to the next animation frame
     @pattern = (@pattern + 1) % 4
     @anime_count -= pattern_time
+
   end
 end
