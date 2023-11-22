@@ -1,0 +1,416 @@
+--- !ruby/object:RPG::Map
+autoplay_bgm: true
+autoplay_bgs: false
+bgm: !ruby/object:RPG::AudioFile
+  name: Battle Frontier
+  pitch: 100
+  volume: 80
+bgs: !ruby/object:RPG::AudioFile
+  name: ''
+  pitch: 100
+  volume: 80
+data: !ruby/object:Table
+  dim: 3
+  x: 20
+  y: 15
+  z: 3
+  data:
+  - 0208 0209 0209 0209 0209 0209 0209 0209 020b 021e 021e 021e 021e 021e 021e 021e
+    021e 021e 021e 021e
+  - 0210 0211 0211 0211 0211 0211 0211 0211 0213 021e 021e 021e 021e 021e 021e 021e
+    021e 021e 021e 021e
+  - 0279 0281 0281 0281 0281 0281 0281 0281 028a 021e 021e 021e 021e 021e 021e 021e
+    021e 021e 021e 021e
+  - 027a 0270 0270 0270 0270 0270 0270 0270 0270 021e 021e 021e 021e 021e 021e 021e
+    021e 021e 021e 021e
+  - 027a 0270 0270 0270 0270 0270 0270 0270 0270 021e 021e 021e 021e 021e 021e 021e
+    021e 021e 021e 021e
+  - 027a 0270 0270 0270 0270 0270 0270 0270 0270 021e 021e 021e 021e 021e 021e 021e
+    021e 021e 021e 021e
+  - 027a 0270 0270 0270 0270 0270 0270 0270 0270 021e 021e 021e 021e 021e 021e 021e
+    021e 021e 021e 021e
+  - 027a 0270 0270 0270 0270 0270 0270 0270 0270 021e 021e 021e 021e 021e 021e 021e
+    021e 021e 021e 021e
+  - 027a 0270 0270 0270 0270 0270 0270 0270 0270 021e 021e 021e 021e 021e 021e 021e
+    021e 021e 021e 021e
+  - 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e
+    021e 021e 021e 021e
+  - 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e
+    021e 021e 021e 021e
+  - 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e
+    021e 021e 021e 021e
+  - 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e
+    021e 021e 021e 021e
+  - 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e
+    021e 021e 021e 021e
+  - 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e 021e
+    021e 021e 021e 021e
+  - 0000 0000 0000 0185 0186 0187 06fc 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0702 0703 018d 018e 018f 0704 0702 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0218 070a 070b 0000 0000 0000 070c 070a 021b 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0710 0711 0000 0000 0000 0000 0000 06fd 06fe 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0718 0719 071a 0000 0000 0000 0000 0705 0706 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0720 0721 0722 0000 0000 0000 0000 070d 070e 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 06f8 06f9 0000 0000 0000 0000 0000 06f8 06f9 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0700 0701 0000 0000 0000 0000 0000 0700 0701 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0708 0709 0000 04dd 04de 04df 0000 0708 0709 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 04e5 04e6 04e7 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+encounter_list: []
+encounter_step: 30
+events:
+  1: !ruby/object:RPG::Event
+    id: 1
+    name: Guide
+    pages:
+    - !ruby/object:RPG::Event::Page
+      always_on_top: false
+      condition: !ruby/object:RPG::Event::Page::Condition
+        self_switch_ch: A
+        self_switch_valid: false
+        switch1_id: 1
+        switch1_valid: false
+        switch2_id: 1
+        switch2_valid: false
+        variable_id: 1
+        variable_valid: false
+        variable_value: 0
+      direction_fix: false
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        blend_type: 0
+        character_hue: 0
+        character_name: trainer_SCIENTIST
+        direction: 8
+        opacity: 255
+        pattern: 0
+        tile_id: 0
+      list:
+      - !ruby/object:RPG::EventCommand
+        c: 209
+        i: 0
+        p:
+        - 0
+        - !ruby/object:RPG::MoveRoute
+          list:
+          - &1 !ruby/object:RPG::MoveCommand {code: 37, parameters: []}
+          - &2 !ruby/object:RPG::MoveCommand {code: 4, parameters: []}
+          - &3 !ruby/object:RPG::MoveCommand {code: 4, parameters: []}
+          - &4 !ruby/object:RPG::MoveCommand {code: 4, parameters: []}
+          - &5 !ruby/object:RPG::MoveCommand {code: 4, parameters: []}
+          - &6 !ruby/object:RPG::MoveCommand {code: 16, parameters: []}
+          - &7 !ruby/object:RPG::MoveCommand {code: 38, parameters: []}
+          - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+          repeat: false
+          skippable: true
+      - !ruby/object:RPG::EventCommand {c: 509, i: 0, p: [*1]}
+      - !ruby/object:RPG::EventCommand {c: 509, i: 0, p: [*2]}
+      - !ruby/object:RPG::EventCommand {c: 509, i: 0, p: [*3]}
+      - !ruby/object:RPG::EventCommand {c: 509, i: 0, p: [*4]}
+      - !ruby/object:RPG::EventCommand {c: 509, i: 0, p: [*5]}
+      - !ruby/object:RPG::EventCommand {c: 509, i: 0, p: [*6]}
+      - !ruby/object:RPG::EventCommand {c: 509, i: 0, p: [*7]}
+      - !ruby/object:RPG::EventCommand
+        c: 209
+        i: 0
+        p:
+        - -1
+        - !ruby/object:RPG::MoveRoute
+          list:
+          - &8 !ruby/object:RPG::MoveCommand {code: 42, parameters: [0]}
+          - &9 !ruby/object:RPG::MoveCommand {code: 29, parameters: [3]}
+          - &10 !ruby/object:RPG::MoveCommand {code: 37, parameters: []}
+          - &11 !ruby/object:RPG::MoveCommand {code: 4, parameters: []}
+          - &12 !ruby/object:RPG::MoveCommand {code: 42, parameters: [255]}
+          - &13 !ruby/object:RPG::MoveCommand {code: 4, parameters: []}
+          - &14 !ruby/object:RPG::MoveCommand {code: 4, parameters: []}
+          - &15 !ruby/object:RPG::MoveCommand {code: 4, parameters: []}
+          - &16 !ruby/object:RPG::MoveCommand {code: 38, parameters: []}
+          - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+          repeat: false
+          skippable: true
+      - !ruby/object:RPG::EventCommand {c: 509, i: 0, p: [*8]}
+      - !ruby/object:RPG::EventCommand {c: 509, i: 0, p: [*9]}
+      - !ruby/object:RPG::EventCommand {c: 509, i: 0, p: [*10]}
+      - !ruby/object:RPG::EventCommand {c: 509, i: 0, p: [*11]}
+      - !ruby/object:RPG::EventCommand {c: 509, i: 0, p: [*12]}
+      - !ruby/object:RPG::EventCommand {c: 509, i: 0, p: [*13]}
+      - !ruby/object:RPG::EventCommand {c: 509, i: 0, p: [*14]}
+      - !ruby/object:RPG::EventCommand {c: 509, i: 0, p: [*15]}
+      - !ruby/object:RPG::EventCommand {c: 509, i: 0, p: [*16]}
+      - !ruby/object:RPG::EventCommand {c: 210, i: 0, p: []}
+      - !ruby/object:RPG::EventCommand {c: 118, i: 0, p: [Choice Menu]}
+      - !ruby/object:RPG::EventCommand {c: 355, i: 0, p: ['pbSet(1,']}
+      - !ruby/object:RPG::EventCommand {c: 655, i: 0, p: ['  pbBattleChallenge.battleNumber']}
+      - !ruby/object:RPG::EventCommand {c: 655, i: 0, p: [)]}
+      - !ruby/object:RPG::EventCommand {c: 111, i: 0, p: [1, 1, 0, 1, 0]}
+      - !ruby/object:RPG::EventCommand {c: 355, i: 1, p: [pbBattleChallenge.extra.pbPrepareRentals]}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 1, p: [\bI'll take your party for
+            safekeeping.]}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 1, p: ['\bThen you may choose from
+            our selection of ']}
+      - !ruby/object:RPG::EventCommand {c: 401, i: 1, p: [Pokémon.]}
+      - !ruby/object:RPG::EventCommand {c: 355, i: 1, p: [pbBattleChallenge.extra.pbChooseRentals]}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 1, p: [\bCome with me.]}
+      - !ruby/object:RPG::EventCommand
+        c: 209
+        i: 1
+        p:
+        - 0
+        - !ruby/object:RPG::MoveRoute
+          list:
+          - &17 !ruby/object:RPG::MoveCommand {code: 37, parameters: []}
+          - &18 !ruby/object:RPG::MoveCommand {code: 4, parameters: []}
+          - &19 !ruby/object:RPG::MoveCommand {code: 4, parameters: []}
+          - &20 !ruby/object:RPG::MoveCommand {code: 4, parameters: []}
+          - &21 !ruby/object:RPG::MoveCommand {code: 42, parameters: [0]}
+          - &22 !ruby/object:RPG::MoveCommand {code: 38, parameters: []}
+          - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+          repeat: false
+          skippable: false
+      - !ruby/object:RPG::EventCommand {c: 509, i: 1, p: [*17]}
+      - !ruby/object:RPG::EventCommand {c: 509, i: 1, p: [*18]}
+      - !ruby/object:RPG::EventCommand {c: 509, i: 1, p: [*19]}
+      - !ruby/object:RPG::EventCommand {c: 509, i: 1, p: [*20]}
+      - !ruby/object:RPG::EventCommand {c: 509, i: 1, p: [*21]}
+      - !ruby/object:RPG::EventCommand {c: 509, i: 1, p: [*22]}
+      - !ruby/object:RPG::EventCommand
+        c: 209
+        i: 1
+        p:
+        - -1
+        - !ruby/object:RPG::MoveRoute
+          list:
+          - &23 !ruby/object:RPG::MoveCommand {code: 29, parameters: [3]}
+          - &24 !ruby/object:RPG::MoveCommand {code: 37, parameters: []}
+          - &25 !ruby/object:RPG::MoveCommand {code: 4, parameters: []}
+          - &26 !ruby/object:RPG::MoveCommand {code: 4, parameters: []}
+          - &27 !ruby/object:RPG::MoveCommand {code: 4, parameters: []}
+          - &28 !ruby/object:RPG::MoveCommand {code: 4, parameters: []}
+          - &29 !ruby/object:RPG::MoveCommand {code: 42, parameters: [0]}
+          - &30 !ruby/object:RPG::MoveCommand {code: 38, parameters: []}
+          - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+          repeat: false
+          skippable: false
+      - !ruby/object:RPG::EventCommand {c: 509, i: 1, p: [*23]}
+      - !ruby/object:RPG::EventCommand {c: 509, i: 1, p: [*24]}
+      - !ruby/object:RPG::EventCommand {c: 509, i: 1, p: [*25]}
+      - !ruby/object:RPG::EventCommand {c: 509, i: 1, p: [*26]}
+      - !ruby/object:RPG::EventCommand {c: 509, i: 1, p: [*27]}
+      - !ruby/object:RPG::EventCommand {c: 509, i: 1, p: [*28]}
+      - !ruby/object:RPG::EventCommand {c: 509, i: 1, p: [*29]}
+      - !ruby/object:RPG::EventCommand {c: 509, i: 1, p: [*30]}
+      - !ruby/object:RPG::EventCommand {c: 210, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 250, i: 1, p: [!ruby/object:RPG::AudioFile {
+            name: Door exit, pitch: 100, volume: 80}]}
+      - !ruby/object:RPG::EventCommand {c: 223, i: 1, p: [!ruby/object:Tone {blue: -255.0,
+            gray: 0.0, green: -255.0, red: -255.0}, 6]}
+      - !ruby/object:RPG::EventCommand {c: 106, i: 1, p: [8]}
+      - !ruby/object:RPG::EventCommand {c: 201, i: 1, p: [0, 64, 2, 9, 0, 1]}
+      - !ruby/object:RPG::EventCommand {c: 223, i: 1, p: [!ruby/object:Tone {blue: 0.0,
+            gray: 0.0, green: 0.0, red: 0.0}, 6]}
+      - !ruby/object:RPG::EventCommand {c: 115, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 412, i: 0, p: []}
+      - !ruby/object:RPG::EventCommand {c: 108, i: 0, p: [================================]}
+      - !ruby/object:RPG::EventCommand {c: 355, i: 0, p: ['if $game_temp.last_battle_record.nil?']}
+      - !ruby/object:RPG::EventCommand {c: 655, i: 0, p: ['  hide_choice(4)']}
+      - !ruby/object:RPG::EventCommand {c: 655, i: 0, p: [end]}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 0, p: ['\bBattle number \v[1] is
+            next. Are you ready?']}
+      - !ruby/object:RPG::EventCommand {c: 102, i: 0, p: [[Go on, Rest, Retire, Record],
+          0]}
+      - !ruby/object:RPG::EventCommand {c: 402, i: 0, p: [0, Go on]}
+      - !ruby/object:RPG::EventCommand {c: 355, i: 1, p: [pbBattleChallenge.pbGoOn]}
+      - !ruby/object:RPG::EventCommand {c: 355, i: 1, p: [pbBattleChallenge.extra.pbPrepareSwaps]}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 1, p: ['\bWould you like to swap
+            a Pokémon first?']}
+      - !ruby/object:RPG::EventCommand {c: 102, i: 1, p: [['Yes', 'No'], 2]}
+      - !ruby/object:RPG::EventCommand {c: 402, i: 1, p: [0, 'Yes']}
+      - !ruby/object:RPG::EventCommand {c: 111, i: 2, p: [12, pbBattleChallenge.extra.pbChooseSwaps]}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 3, p: ['\bOK, the Pokémon swap
+            is complete.']}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 3, p: []}
+      - !ruby/object:RPG::EventCommand {c: 412, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 402, i: 1, p: [1, 'No']}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 404, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 1, p: [\bCome with me.]}
+      - !ruby/object:RPG::EventCommand
+        c: 209
+        i: 1
+        p:
+        - 0
+        - !ruby/object:RPG::MoveRoute
+          list:
+          - &31 !ruby/object:RPG::MoveCommand {code: 37, parameters: []}
+          - &32 !ruby/object:RPG::MoveCommand {code: 4, parameters: []}
+          - &33 !ruby/object:RPG::MoveCommand {code: 4, parameters: []}
+          - &34 !ruby/object:RPG::MoveCommand {code: 4, parameters: []}
+          - &35 !ruby/object:RPG::MoveCommand {code: 42, parameters: [0]}
+          - &36 !ruby/object:RPG::MoveCommand {code: 38, parameters: []}
+          - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+          repeat: false
+          skippable: false
+      - !ruby/object:RPG::EventCommand {c: 509, i: 1, p: [*31]}
+      - !ruby/object:RPG::EventCommand {c: 509, i: 1, p: [*32]}
+      - !ruby/object:RPG::EventCommand {c: 509, i: 1, p: [*33]}
+      - !ruby/object:RPG::EventCommand {c: 509, i: 1, p: [*34]}
+      - !ruby/object:RPG::EventCommand {c: 509, i: 1, p: [*35]}
+      - !ruby/object:RPG::EventCommand {c: 509, i: 1, p: [*36]}
+      - !ruby/object:RPG::EventCommand
+        c: 209
+        i: 1
+        p:
+        - -1
+        - !ruby/object:RPG::MoveRoute
+          list:
+          - &37 !ruby/object:RPG::MoveCommand {code: 29, parameters: [3]}
+          - &38 !ruby/object:RPG::MoveCommand {code: 37, parameters: []}
+          - &39 !ruby/object:RPG::MoveCommand {code: 4, parameters: []}
+          - &40 !ruby/object:RPG::MoveCommand {code: 4, parameters: []}
+          - &41 !ruby/object:RPG::MoveCommand {code: 4, parameters: []}
+          - &42 !ruby/object:RPG::MoveCommand {code: 4, parameters: []}
+          - &43 !ruby/object:RPG::MoveCommand {code: 42, parameters: [0]}
+          - &44 !ruby/object:RPG::MoveCommand {code: 38, parameters: []}
+          - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+          repeat: false
+          skippable: false
+      - !ruby/object:RPG::EventCommand {c: 509, i: 1, p: [*37]}
+      - !ruby/object:RPG::EventCommand {c: 509, i: 1, p: [*38]}
+      - !ruby/object:RPG::EventCommand {c: 509, i: 1, p: [*39]}
+      - !ruby/object:RPG::EventCommand {c: 509, i: 1, p: [*40]}
+      - !ruby/object:RPG::EventCommand {c: 509, i: 1, p: [*41]}
+      - !ruby/object:RPG::EventCommand {c: 509, i: 1, p: [*42]}
+      - !ruby/object:RPG::EventCommand {c: 509, i: 1, p: [*43]}
+      - !ruby/object:RPG::EventCommand {c: 509, i: 1, p: [*44]}
+      - !ruby/object:RPG::EventCommand {c: 210, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 250, i: 1, p: [!ruby/object:RPG::AudioFile {
+            name: Door exit, pitch: 100, volume: 80}]}
+      - !ruby/object:RPG::EventCommand {c: 223, i: 1, p: [!ruby/object:Tone {blue: -255.0,
+            gray: 0.0, green: -255.0, red: -255.0}, 6]}
+      - !ruby/object:RPG::EventCommand {c: 106, i: 1, p: [8]}
+      - !ruby/object:RPG::EventCommand {c: 201, i: 1, p: [0, 64, 2, 9, 0, 1]}
+      - !ruby/object:RPG::EventCommand {c: 223, i: 1, p: [!ruby/object:Tone {blue: 0.0,
+            gray: 0.0, green: 0.0, red: 0.0}, 6]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 402, i: 0, p: [1, Rest]}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 1, p: ['\bWould you like to save
+            the game and continue ']}
+      - !ruby/object:RPG::EventCommand {c: 401, i: 1, p: ['later?']}
+      - !ruby/object:RPG::EventCommand {c: 102, i: 1, p: [['Yes', 'No'], 2]}
+      - !ruby/object:RPG::EventCommand {c: 402, i: 1, p: [0, 'Yes']}
+      - !ruby/object:RPG::EventCommand {c: 355, i: 2, p: [pbBattleChallenge.pbRest]}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 2, p: [Your game has been saved.]}
+      - !ruby/object:RPG::EventCommand {c: 354, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 115, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 402, i: 1, p: [1, 'No']}
+      - !ruby/object:RPG::EventCommand {c: 119, i: 2, p: [Choice Menu]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 404, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 119, i: 1, p: [Choice Menu]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 402, i: 0, p: [2, Retire]}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 1, p: ['\bAre you sure you want
+            to quit your challenge?']}
+      - !ruby/object:RPG::EventCommand {c: 102, i: 1, p: [['Yes', 'No'], 2]}
+      - !ruby/object:RPG::EventCommand {c: 402, i: 1, p: [0, 'Yes']}
+      - !ruby/object:RPG::EventCommand {c: 355, i: 2, p: [pbBattleChallenge.setDecision(2)]}
+      - !ruby/object:RPG::EventCommand {c: 250, i: 2, p: [!ruby/object:RPG::AudioFile {
+            name: Door exit, pitch: 100, volume: 80}]}
+      - !ruby/object:RPG::EventCommand {c: 223, i: 2, p: [!ruby/object:Tone {blue: -255.0,
+            gray: 0.0, green: -255.0, red: -255.0}, 6]}
+      - !ruby/object:RPG::EventCommand {c: 106, i: 2, p: [8]}
+      - !ruby/object:RPG::EventCommand {c: 355, i: 2, p: [pbBattleChallenge.pbGoToStart]}
+      - !ruby/object:RPG::EventCommand {c: 223, i: 2, p: [!ruby/object:Tone {blue: 0.0,
+            gray: 0.0, green: 0.0, red: 0.0}, 6]}
+      - !ruby/object:RPG::EventCommand {c: 115, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 402, i: 1, p: [1, 'No']}
+      - !ruby/object:RPG::EventCommand {c: 119, i: 2, p: [Choice Menu]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 404, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 402, i: 0, p: [3, Record]}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 1, p: ['\bWould you like to record
+            your last battle?']}
+      - !ruby/object:RPG::EventCommand {c: 102, i: 1, p: [['Yes', 'No'], 2]}
+      - !ruby/object:RPG::EventCommand {c: 402, i: 1, p: [0, 'Yes']}
+      - !ruby/object:RPG::EventCommand {c: 355, i: 2, p: [pbRecordLastBattle]}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 2, p: ['\se[Pkmn exp full]The battle
+            was recorded.']}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 402, i: 1, p: [1, 'No']}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 404, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 119, i: 1, p: [Choice Menu]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 404, i: 0, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 0, p: []}
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+        repeat: true
+        skippable: false
+      move_speed: 3
+      move_type: 0
+      step_anime: false
+      through: false
+      trigger: 3
+      walk_anime: true
+    x: 4
+    y: 8
+height: 15
+tileset_id: 3
+width: 20

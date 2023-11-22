@@ -54,7 +54,7 @@ class MoveRelearner_Scene
     overlay.clear
     @pokemon.types.each_with_index do |type, i|
       type_number = GameData::Type.get(type).icon_position
-      type_rect = Rect.new(0, type_number * 28, 64, 28)
+      type_rect = Rect.new(0, type_number * 16, 24, 16)
       type_x = (@pokemon.types.length == 1) ? 400 : 366 + (70 * i)
       overlay.blt(type_x, 70, @typebitmap.bitmap, type_rect)
     end
@@ -68,7 +68,7 @@ class MoveRelearner_Scene
       if moveobject
         moveData = GameData::Move.get(moveobject)
         type_number = GameData::Type.get(moveData.display_type(@pokemon)).icon_position
-        imagepos.push([_INTL("Graphics/UI/types"), 12, yPos - 4, 0, type_number * 28, 64, 28])
+        imagepos.push([_INTL("Graphics/UI/types"), 12, yPos - 4, 0, type_number * 16, 24, 16])
         textpos.push([moveData.name, 80, yPos, :left, Color.new(248, 248, 248), Color.black])
         textpos.push([_INTL("PP"), 112, yPos + 32, :left, Color.new(64, 64, 64), Color.new(176, 176, 176)])
         if moveData.total_pp > 0

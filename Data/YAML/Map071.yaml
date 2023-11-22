@@ -1,0 +1,549 @@
+--- !ruby/object:RPG::Map
+autoplay_bgm: true
+autoplay_bgs: false
+bgm: !ruby/object:RPG::AudioFile
+  name: Route 1
+  pitch: 100
+  volume: 80
+bgs: !ruby/object:RPG::AudioFile
+  name: ''
+  pitch: 100
+  volume: 80
+data: !ruby/object:Table
+  dim: 3
+  x: 20
+  y: 15
+  z: 3
+  data:
+  - 0180 0181 0181 0181 0181 0181 0181 0181 0181 0181 0181 0181 0181 0181 0181 0181
+    0187 01a5 01a5 01a5
+  - 0188 0189 0189 018b 0189 018b 018a 018c 018d 018e 0189 018b 0189 018b 0189 0189
+    018f 01a5 01a5 01a5
+  - 0190 0191 0191 0191 0191 0191 0192 0194 0195 0196 0191 0191 0191 0191 0191 0191
+    0197 01a5 01a5 01a5
+  - 0198 01a2 01a2 01a2 01a2 01a2 01a2 01a2 01a2 01a2 01a2 01a2 01a2 01a2 01a2 01a2
+    019f 01a5 01a5 01a5
+  - 0199 0199 0199 0199 0199 019b 0199 0199 0199 0199 0199 0199 0199 0199 0199 0199
+    0199 01a5 01a5 01a5
+  - 0199 0199 0199 0199 0199 01a2 0199 0199 0199 0199 0199 0199 0199 0199 0199 0199
+    0199 01a5 01a5 01a5
+  - 0199 0199 0199 0199 0199 01a2 0199 0199 0199 0199 0199 0199 0199 0199 0199 0199
+    0199 01a5 01a5 01a5
+  - 0199 0199 0199 0199 0199 0199 0199 0199 0199 0199 0199 0199 0199 0199 0199 0199
+    0199 01a5 01a5 01a5
+  - 0199 0199 0199 0199 0199 0199 0199 0199 0199 0199 0199 0199 0199 0199 0199 0199
+    0199 01a5 01a5 01a5
+  - 0199 0199 0199 0199 0199 0199 0199 0199 0199 0199 0199 0199 0199 0199 0199 0199
+    0199 01a5 01a5 01a5
+  - 0199 0199 0199 0199 0199 0199 0199 0199 0199 0199 0199 0199 0199 0199 0199 0199
+    0199 01a5 01a5 01a5
+  - 0199 0199 0199 0199 0199 0199 0199 0199 0199 0199 0199 0199 0199 0199 0199 0199
+    0199 01a5 01a5 01a5
+  - 01a5 01a5 01a5 01a5 01a5 01a5 01a5 01a5 01a5 01a5 01a5 01a5 01a5 01a5 01a5 01a5
+    01a5 01a5 01a5 01a5
+  - 01a5 01a5 01a5 01a5 01a5 01a5 01a5 01a5 01a5 01a5 01a5 01a5 01a5 01a5 01a5 01a5
+    01a5 01a5 01a5 01a5
+  - 01a5 01a5 01a5 01a5 01a5 01a5 01a5 01a5 01a5 01a5 01a5 01a5 01a5 01a5 01a5 01a5
+    01a5 01a5 01a5 01a5
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 01c1 01c1 01c1 01c1 01c1 01b2 0000 0000 0000 0000 0000 01b0 01c1 01c1 01c1 01c1
+    01c1 0000 0000 0000
+  - 0044 0044 0044 0044 0054 01ba 0000 0000 0000 0000 0000 01b8 0052 0044 0044 0044
+    0044 0000 0000 0000
+  - 0030 0030 0030 0030 0048 01bb 01c1 01b4 0000 01b3 01c1 01bc 0040 0030 0030 0030
+    0030 0000 0000 0000
+  - 0030 0030 0030 0030 0032 0044 0044 0044 01c9 0044 0044 0044 0031 0030 0030 0030
+    0030 0000 0000 0000
+  - 0030 0030 0030 0030 0030 0030 0030 0030 0030 0030 0030 0030 0030 0030 0030 0030
+    0030 0000 0000 0000
+  - 0030 0030 0030 0030 0030 0030 0030 0030 0030 0030 0030 0030 0030 0030 0030 0030
+    0030 0000 0000 0000
+  - 0030 0030 0030 0030 0030 0030 0030 0030 0030 0030 0030 0030 0030 0030 0030 0030
+    0030 0000 0000 0000
+  - 004c 004c 004c 004c 004c 004c 004c 004c 004c 004c 004c 004c 004c 004c 004c 004c
+    004c 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 01f3 01f4 01f5 01f6 01f7 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 01fb 01fc 01fd 01fe 01ff 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0203 0204 0205 0206 0207 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+encounter_list: []
+encounter_step: 30
+events:
+  1: !ruby/object:RPG::Event
+    id: 1
+    name: Door
+    pages:
+    - !ruby/object:RPG::Event::Page
+      always_on_top: false
+      condition: !ruby/object:RPG::Event::Page::Condition
+        self_switch_ch: A
+        self_switch_valid: false
+        switch1_id: 1
+        switch1_valid: false
+        switch2_id: 1
+        switch2_valid: false
+        variable_id: 1
+        variable_valid: false
+        variable_value: 0
+      direction_fix: false
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        blend_type: 0
+        character_hue: 0
+        character_name: ''
+        direction: 2
+        opacity: 255
+        pattern: 3
+        tile_id: 0
+      list:
+      - !ruby/object:RPG::EventCommand {c: 250, i: 0, p: [!ruby/object:RPG::AudioFile {
+            name: Door exit, pitch: 100, volume: 80}]}
+      - !ruby/object:RPG::EventCommand {c: 223, i: 0, p: [!ruby/object:Tone {blue: -255.0,
+            gray: 0.0, green: -255.0, red: -255.0}, 6]}
+      - !ruby/object:RPG::EventCommand {c: 106, i: 0, p: [8]}
+      - !ruby/object:RPG::EventCommand {c: 201, i: 0, p: [0, 69, 31, 15, 0, 1]}
+      - !ruby/object:RPG::EventCommand {c: 223, i: 0, p: [!ruby/object:Tone {blue: 0.0,
+            gray: 0.0, green: 0.0, red: 0.0}, 6]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 0, p: []}
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+        repeat: true
+        skippable: false
+      move_speed: 3
+      move_type: 0
+      step_anime: false
+      through: false
+      trigger: 1
+      walk_anime: true
+    - !ruby/object:RPG::Event::Page
+      always_on_top: false
+      condition: !ruby/object:RPG::Event::Page::Condition
+        self_switch_ch: A
+        self_switch_valid: false
+        switch1_id: 22
+        switch1_valid: true
+        switch2_id: 1
+        switch2_valid: false
+        variable_id: 1
+        variable_valid: false
+        variable_value: 0
+      direction_fix: false
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        blend_type: 0
+        character_hue: 0
+        character_name: ''
+        direction: 2
+        opacity: 255
+        pattern: 3
+        tile_id: 0
+      list:
+      - !ruby/object:RPG::EventCommand {c: 111, i: 0, p: [12, 'get_self.onEvent?']}
+      - !ruby/object:RPG::EventCommand {c: 355, i: 1, p: [Followers.hide_followers]}
+      - !ruby/object:RPG::EventCommand
+        c: 209
+        i: 1
+        p:
+        - -1
+        - !ruby/object:RPG::MoveRoute
+          list:
+          - &1 !ruby/object:RPG::MoveCommand {code: 44, parameters: [!ruby/object:RPG::AudioFile {
+                name: Door exit, pitch: 100, volume: 80}]}
+          - &2 !ruby/object:RPG::MoveCommand {code: 1, parameters: []}
+          - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+          repeat: false
+          skippable: true
+      - !ruby/object:RPG::EventCommand {c: 509, i: 1, p: [*1]}
+      - !ruby/object:RPG::EventCommand {c: 509, i: 1, p: [*2]}
+      - !ruby/object:RPG::EventCommand {c: 210, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 355, i: 1, p: [Followers.put_followers_on_player]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 412, i: 0, p: []}
+      - !ruby/object:RPG::EventCommand {c: 355, i: 0, p: [setTempSwitchOn("A")]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 0, p: []}
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+        repeat: true
+        skippable: false
+      move_speed: 3
+      move_type: 0
+      step_anime: false
+      through: false
+      trigger: 3
+      walk_anime: true
+    x: 8
+    y: 2
+  2: !ruby/object:RPG::Event
+    id: 2
+    name: Sailor
+    pages:
+    - !ruby/object:RPG::Event::Page
+      always_on_top: false
+      condition: !ruby/object:RPG::Event::Page::Condition
+        self_switch_ch: A
+        self_switch_valid: false
+        switch1_id: 1
+        switch1_valid: false
+        switch2_id: 1
+        switch2_valid: false
+        variable_id: 1
+        variable_valid: false
+        variable_value: 0
+      direction_fix: false
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        blend_type: 0
+        character_hue: 0
+        character_name: trainer_SAILOR
+        direction: 8
+        opacity: 255
+        pattern: 0
+        tile_id: 0
+      list:
+      - !ruby/object:RPG::EventCommand {c: 355, i: 0, p: ['hide_choice(2,']}
+      - !ruby/object:RPG::EventCommand {c: 655, i: 0, p: ['  !$bag.has?(:AURORATICKET))']}
+      - !ruby/object:RPG::EventCommand {c: 655, i: 0, p: ['hide_choice(3,']}
+      - !ruby/object:RPG::EventCommand {c: 655, i: 0, p: ['  !$bag.has?(:OLDSEAMAP))']}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 0, p: ['\bAhoy, there!\nWhere do
+            you want to sail?']}
+      - !ruby/object:RPG::EventCommand {c: 102, i: 0, p: [[Tiall Region, Berth Island,
+            Faraday Island, Exit], 4]}
+      - !ruby/object:RPG::EventCommand {c: 402, i: 0, p: [0, Tiall Region]}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 1, p: [\bThe Tiall Region it is.
+            All aboard!]}
+      - !ruby/object:RPG::EventCommand
+        c: 209
+        i: 1
+        p:
+        - 2
+        - !ruby/object:RPG::MoveRoute
+          list:
+          - &3 !ruby/object:RPG::MoveCommand {code: 37, parameters: []}
+          - &4 !ruby/object:RPG::MoveCommand {code: 1, parameters: []}
+          - &5 !ruby/object:RPG::MoveCommand {code: 42, parameters: [0]}
+          - &6 !ruby/object:RPG::MoveCommand {code: 38, parameters: []}
+          - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+          repeat: false
+          skippable: false
+      - !ruby/object:RPG::EventCommand {c: 509, i: 1, p: [*3]}
+      - !ruby/object:RPG::EventCommand {c: 509, i: 1, p: [*4]}
+      - !ruby/object:RPG::EventCommand {c: 509, i: 1, p: [*5]}
+      - !ruby/object:RPG::EventCommand {c: 509, i: 1, p: [*6]}
+      - !ruby/object:RPG::EventCommand
+        c: 209
+        i: 1
+        p:
+        - -1
+        - !ruby/object:RPG::MoveRoute
+          list:
+          - &7 !ruby/object:RPG::MoveCommand {code: 37, parameters: []}
+          - &8 !ruby/object:RPG::MoveCommand {code: 1, parameters: []}
+          - &9 !ruby/object:RPG::MoveCommand {code: 1, parameters: []}
+          - &10 !ruby/object:RPG::MoveCommand {code: 38, parameters: []}
+          - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+          repeat: false
+          skippable: false
+      - !ruby/object:RPG::EventCommand {c: 509, i: 1, p: [*7]}
+      - !ruby/object:RPG::EventCommand {c: 509, i: 1, p: [*8]}
+      - !ruby/object:RPG::EventCommand {c: 509, i: 1, p: [*9]}
+      - !ruby/object:RPG::EventCommand {c: 509, i: 1, p: [*10]}
+      - !ruby/object:RPG::EventCommand {c: 210, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 250, i: 1, p: [!ruby/object:RPG::AudioFile {
+            name: Door exit, pitch: 100, volume: 80}]}
+      - !ruby/object:RPG::EventCommand {c: 208, i: 1, p: [0]}
+      - !ruby/object:RPG::EventCommand {c: 223, i: 1, p: [!ruby/object:Tone {blue: -255.0,
+            gray: 0.0, green: -255.0, red: -255.0}, 6]}
+      - !ruby/object:RPG::EventCommand {c: 106, i: 1, p: [8]}
+      - !ruby/object:RPG::EventCommand {c: 208, i: 1, p: [1]}
+      - !ruby/object:RPG::EventCommand {c: 201, i: 1, p: [0, 75, 17, 11, 2, 1]}
+      - !ruby/object:RPG::EventCommand {c: 223, i: 1, p: [!ruby/object:Tone {blue: 0.0,
+            gray: 0.0, green: 0.0, red: 0.0}, 6]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 402, i: 0, p: [1, Berth Island]}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 1, p: [\bBerth Island it is. All
+            aboard!]}
+      - !ruby/object:RPG::EventCommand {c: 121, i: 1, p: [51, 51, 0]}
+      - !ruby/object:RPG::EventCommand
+        c: 209
+        i: 1
+        p:
+        - 2
+        - !ruby/object:RPG::MoveRoute
+          list:
+          - &11 !ruby/object:RPG::MoveCommand {code: 37, parameters: []}
+          - &12 !ruby/object:RPG::MoveCommand {code: 1, parameters: []}
+          - &13 !ruby/object:RPG::MoveCommand {code: 42, parameters: [0]}
+          - &14 !ruby/object:RPG::MoveCommand {code: 38, parameters: []}
+          - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+          repeat: false
+          skippable: false
+      - !ruby/object:RPG::EventCommand {c: 509, i: 1, p: [*11]}
+      - !ruby/object:RPG::EventCommand {c: 509, i: 1, p: [*12]}
+      - !ruby/object:RPG::EventCommand {c: 509, i: 1, p: [*13]}
+      - !ruby/object:RPG::EventCommand {c: 509, i: 1, p: [*14]}
+      - !ruby/object:RPG::EventCommand
+        c: 209
+        i: 1
+        p:
+        - -1
+        - !ruby/object:RPG::MoveRoute
+          list:
+          - &15 !ruby/object:RPG::MoveCommand {code: 37, parameters: []}
+          - &16 !ruby/object:RPG::MoveCommand {code: 1, parameters: []}
+          - &17 !ruby/object:RPG::MoveCommand {code: 1, parameters: []}
+          - &18 !ruby/object:RPG::MoveCommand {code: 38, parameters: []}
+          - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+          repeat: false
+          skippable: false
+      - !ruby/object:RPG::EventCommand {c: 509, i: 1, p: [*15]}
+      - !ruby/object:RPG::EventCommand {c: 509, i: 1, p: [*16]}
+      - !ruby/object:RPG::EventCommand {c: 509, i: 1, p: [*17]}
+      - !ruby/object:RPG::EventCommand {c: 509, i: 1, p: [*18]}
+      - !ruby/object:RPG::EventCommand {c: 210, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 250, i: 1, p: [!ruby/object:RPG::AudioFile {
+            name: Door exit, pitch: 100, volume: 80}]}
+      - !ruby/object:RPG::EventCommand {c: 208, i: 1, p: [0]}
+      - !ruby/object:RPG::EventCommand {c: 223, i: 1, p: [!ruby/object:Tone {blue: -255.0,
+            gray: 0.0, green: -255.0, red: -255.0}, 6]}
+      - !ruby/object:RPG::EventCommand {c: 106, i: 1, p: [8]}
+      - !ruby/object:RPG::EventCommand {c: 208, i: 1, p: [1]}
+      - !ruby/object:RPG::EventCommand {c: 201, i: 1, p: [0, 72, 14, 23, 8, 1]}
+      - !ruby/object:RPG::EventCommand {c: 223, i: 1, p: [!ruby/object:Tone {blue: 0.0,
+            gray: 0.0, green: 0.0, red: 0.0}, 6]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 402, i: 0, p: [2, Faraday Island]}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 1, p: [\bFaraday Island it is.
+            All aboard!]}
+      - !ruby/object:RPG::EventCommand {c: 121, i: 1, p: [52, 52, 0]}
+      - !ruby/object:RPG::EventCommand
+        c: 209
+        i: 1
+        p:
+        - 2
+        - !ruby/object:RPG::MoveRoute
+          list:
+          - &19 !ruby/object:RPG::MoveCommand {code: 37, parameters: []}
+          - &20 !ruby/object:RPG::MoveCommand {code: 1, parameters: []}
+          - &21 !ruby/object:RPG::MoveCommand {code: 42, parameters: [0]}
+          - &22 !ruby/object:RPG::MoveCommand {code: 38, parameters: []}
+          - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+          repeat: false
+          skippable: false
+      - !ruby/object:RPG::EventCommand {c: 509, i: 1, p: [*19]}
+      - !ruby/object:RPG::EventCommand {c: 509, i: 1, p: [*20]}
+      - !ruby/object:RPG::EventCommand {c: 509, i: 1, p: [*21]}
+      - !ruby/object:RPG::EventCommand {c: 509, i: 1, p: [*22]}
+      - !ruby/object:RPG::EventCommand
+        c: 209
+        i: 1
+        p:
+        - -1
+        - !ruby/object:RPG::MoveRoute
+          list:
+          - &23 !ruby/object:RPG::MoveCommand {code: 37, parameters: []}
+          - &24 !ruby/object:RPG::MoveCommand {code: 1, parameters: []}
+          - &25 !ruby/object:RPG::MoveCommand {code: 1, parameters: []}
+          - &26 !ruby/object:RPG::MoveCommand {code: 38, parameters: []}
+          - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+          repeat: false
+          skippable: false
+      - !ruby/object:RPG::EventCommand {c: 509, i: 1, p: [*23]}
+      - !ruby/object:RPG::EventCommand {c: 509, i: 1, p: [*24]}
+      - !ruby/object:RPG::EventCommand {c: 509, i: 1, p: [*25]}
+      - !ruby/object:RPG::EventCommand {c: 509, i: 1, p: [*26]}
+      - !ruby/object:RPG::EventCommand {c: 210, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 250, i: 1, p: [!ruby/object:RPG::AudioFile {
+            name: Door exit, pitch: 100, volume: 80}]}
+      - !ruby/object:RPG::EventCommand {c: 208, i: 1, p: [0]}
+      - !ruby/object:RPG::EventCommand {c: 223, i: 1, p: [!ruby/object:Tone {blue: -255.0,
+            gray: 0.0, green: -255.0, red: -255.0}, 6]}
+      - !ruby/object:RPG::EventCommand {c: 106, i: 1, p: [8]}
+      - !ruby/object:RPG::EventCommand {c: 208, i: 1, p: [1]}
+      - !ruby/object:RPG::EventCommand {c: 201, i: 1, p: [0, 73, 14, 23, 8, 1]}
+      - !ruby/object:RPG::EventCommand {c: 223, i: 1, p: [!ruby/object:Tone {blue: 0.0,
+            gray: 0.0, green: 0.0, red: 0.0}, 6]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 402, i: 0, p: [3, Exit]}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 1, p: [\bLet me know if you want
+            to set sail.]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 404, i: 0, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 0, p: []}
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+        repeat: true
+        skippable: false
+      move_speed: 3
+      move_type: 0
+      step_anime: false
+      through: false
+      trigger: 0
+      walk_anime: true
+    x: 8
+    y: 6
+  3: !ruby/object:RPG::Event
+    id: 3
+    name: Aurora Ticket NPC
+    pages:
+    - !ruby/object:RPG::Event::Page
+      always_on_top: false
+      condition: !ruby/object:RPG::Event::Page::Condition
+        self_switch_ch: A
+        self_switch_valid: false
+        switch1_id: 1
+        switch1_valid: false
+        switch2_id: 1
+        switch2_valid: false
+        variable_id: 1
+        variable_valid: false
+        variable_value: 0
+      direction_fix: false
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        blend_type: 0
+        character_hue: 0
+        character_name: trainer_SAILOR
+        direction: 6
+        opacity: 255
+        pattern: 0
+        tile_id: 0
+      list:
+      - !ruby/object:RPG::EventCommand {c: 111, i: 0, p: [12, '$bag.has?(:AURORATICKET)']}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 1, p: ['\bI''ve already given you
+            an Aurora Ticket. Have you ']}
+      - !ruby/object:RPG::EventCommand {c: 401, i: 1, p: ['gone to Berth Island yet?']}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 411, i: 0, p: []}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 1, p: ['\bHere, have this Aurora
+            Ticket.']}
+      - !ruby/object:RPG::EventCommand {c: 111, i: 1, p: [12, 'pbReceiveItem(:AURORATICKET)']}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 2, p: [\bYou can use that to sail
+            to Berth Island.]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 411, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 2, p: ['\bOh, you don''t have any
+            space in your Bag for it.']}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 412, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 412, i: 0, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 0, p: []}
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+        repeat: true
+        skippable: false
+      move_speed: 3
+      move_type: 0
+      step_anime: false
+      through: false
+      trigger: 0
+      walk_anime: true
+    x: 6
+    y: 5
+  4: !ruby/object:RPG::Event
+    id: 4
+    name: Old Sea Map NPC
+    pages:
+    - !ruby/object:RPG::Event::Page
+      always_on_top: false
+      condition: !ruby/object:RPG::Event::Page::Condition
+        self_switch_ch: A
+        self_switch_valid: false
+        switch1_id: 1
+        switch1_valid: false
+        switch2_id: 1
+        switch2_valid: false
+        variable_id: 1
+        variable_valid: false
+        variable_value: 0
+      direction_fix: false
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        blend_type: 0
+        character_hue: 0
+        character_name: trainer_SAILOR
+        direction: 4
+        opacity: 255
+        pattern: 0
+        tile_id: 0
+      list:
+      - !ruby/object:RPG::EventCommand {c: 111, i: 0, p: [12, '$bag.has?(:OLDSEAMAP)']}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 1, p: ['\bI''ve already given you
+            an Old Sea Map. Have you ']}
+      - !ruby/object:RPG::EventCommand {c: 401, i: 1, p: ['gone to Faraday Island
+            yet?']}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 411, i: 0, p: []}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 1, p: ['\bHere, have this Old Sea
+            Map.']}
+      - !ruby/object:RPG::EventCommand {c: 111, i: 1, p: [12, 'pbReceiveItem(:OLDSEAMAP)']}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 2, p: [\bYou can use that to sail
+            to Faraday Island.]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 411, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 2, p: ['\bOh, you don''t have any
+            space in your Bag for it.']}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 412, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 412, i: 0, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 0, p: []}
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+        repeat: true
+        skippable: false
+      move_speed: 3
+      move_type: 0
+      step_anime: false
+      through: false
+      trigger: 0
+      walk_anime: true
+    x: 10
+    y: 5
+height: 15
+tileset_id: 15
+width: 20

@@ -1,0 +1,403 @@
+--- !ruby/object:RPG::Map
+autoplay_bgm: true
+autoplay_bgs: false
+bgm: !ruby/object:RPG::AudioFile
+  name: Poke Mart
+  pitch: 100
+  volume: 80
+bgs: !ruby/object:RPG::AudioFile
+  name: ''
+  pitch: 100
+  volume: 80
+data: !ruby/object:Table
+  dim: 3
+  x: 32
+  y: 20
+  z: 3
+  data:
+  - 029b 029b 029b 029b 029b 029b 029b 029b 029b 029b 029b 029b 029b 029b 029b 029b
+    029b 029b 029b 029b 029b 029b 029b 029b 029b 029b 029b 029b 029b 029b 029b 029b
+  - 029b 029b 029b 029b 029b 029b 029b 029b 029b 029b 029b 029b 029b 029b 029b 029b
+    029b 029b 029b 029b 029b 029b 029b 029b 029b 029b 029b 029b 029b 029b 029b 029b
+  - 029b 029b 029b 029b 029b 029b 029b 029b 029b 029b 029b 029b 029b 029b 029b 029b
+    029b 029b 029b 029b 029b 029b 029b 029b 029b 029b 029b 029b 029b 029b 029b 029b
+  - 029b 029b 029b 029b 029b 029b 029b 029b 029b 029b 029b 029b 029b 029b 029b 029b
+    029b 029b 029b 029b 029b 029b 029b 029b 029b 029b 029b 029b 029b 029b 029b 029b
+  - 029b 029b 029b 029b 029b 029b 029b 029b 029b 029b 029b 029b 029b 029b 029b 029b
+    029b 029b 029b 029b 029b 029b 029b 029b 029b 029b 029b 029b 029b 029b 029b 029b
+  - 029b 029b 029b 029b 029b 029b 029b 0280 0281 0281 0281 0281 0281 0281 0281 0281
+    0281 0281 0281 0281 0281 0281 0281 0281 0281 0282 029b 029b 029b 029b 029b 029b
+  - 029b 029b 029b 029b 029b 029b 029b 0288 0289 0289 0289 0289 0289 0289 0289 0289
+    0289 0289 0289 0289 0289 0289 0289 0289 0289 028a 029b 029b 029b 029b 029b 029b
+  - 029b 029b 029b 029b 029b 029b 029b 0290 02b9 02c1 02c1 02c1 02c1 02c1 02c1 02c1
+    02c1 02b9 02b9 02b9 02b9 02b9 02b9 02b9 02b9 0292 029b 029b 029b 029b 029b 029b
+  - 029b 029b 029b 029b 029b 029b 029b 0290 02b9 02b0 02b0 02b0 02b0 02b0 02b0 02b0
+    02b0 02c1 02c1 02c1 02c1 02c1 02c1 02c1 02c1 0292 029b 029b 029b 029b 029b 029b
+  - 029b 029b 029b 029b 029b 029b 029b 0290 02b9 02b0 02b0 02b0 02b0 02b0 02b0 02b0
+    02b0 02b0 02b0 02b0 02b0 02b0 02b0 02b0 02b0 0292 029b 029b 029b 029b 029b 029b
+  - 029b 029b 029b 029b 029b 029b 029b 0290 02b9 02b0 02b0 02b0 02b0 02b0 02b0 02b0
+    02b0 02b0 02b0 02b0 02b0 02b0 02b0 02b0 02b0 0292 029b 029b 029b 029b 029b 029b
+  - 029b 029b 029b 029b 029b 029b 029b 0290 02b9 02b0 02b0 02b0 02b0 02b0 02b0 02b0
+    02b0 02b0 02b0 02b0 02b0 02b0 02b0 02b0 02b0 0292 029b 029b 029b 029b 029b 029b
+  - 029b 029b 029b 029b 029b 029b 029b 0298 02b9 02b0 02b0 02b0 02b0 02b0 02b0 02b0
+    02b0 02b0 02b0 02b0 02b0 02b0 02b0 02b0 02b0 029a 029b 029b 029b 029b 029b 029b
+  - 029b 029b 029b 029b 029b 029b 029b 02a0 02a1 02a1 02a1 02a1 02a1 02a1 02a1 02a1
+    02a1 02a1 02a1 02a1 02a1 02a1 02a1 02a1 02a1 02a2 029b 029b 029b 029b 029b 029b
+  - 029b 029b 029b 029b 029b 029b 029b 02a8 02a9 02a9 02a9 02a9 02a9 02a9 02a9 02a9
+    02a9 02a9 02a9 02a9 02a9 02a9 02a9 02a9 02a9 02aa 029b 029b 029b 029b 029b 029b
+  - 029b 029b 029b 029b 029b 029b 029b 02a8 02a9 02a3 02a4 02a5 02a3 02a4 02a5 02a3
+    02a4 02a5 02a3 02a4 02a5 02a3 02a4 02a5 02a9 02aa 029b 029b 029b 029b 029b 029b
+  - 029b 029b 029b 029b 029b 029b 029b 02a8 02a9 02ab 02ac 02ad 02ab 02ac 02ad 02ab
+    02ac 02ad 02ab 02ac 02ad 02ab 02ac 02ad 02a9 02aa 029b 029b 029b 029b 029b 029b
+  - 029b 029b 029b 029b 029b 029b 029b 02a8 02a9 02a9 02a9 02a9 02a9 02a9 02a9 02a9
+    02a9 02a9 02a9 02a9 02a9 02a9 02a9 02a9 02a9 02aa 029b 029b 029b 029b 029b 029b
+  - 029b 029b 029b 029b 029b 029b 029b 02a8 02a9 02a3 02a4 02a5 02a3 02a4 02a5 02a3
+    02a4 02a5 02a3 02a4 02a5 02a3 02a4 02a5 02a9 02aa 029b 029b 029b 029b 029b 029b
+  - 029b 029b 029b 029b 029b 029b 029b 02a8 02a9 02ab 02ac 02ad 02ab 02ac 02ad 02ab
+    02ac 02ad 02ab 02ac 02ad 02ab 02ac 02ad 02a9 02aa 029b 029b 029b 029b 029b 029b
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000 0284 0285 0285 0285 0286 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000 028c 028d 028d 028d 028e 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 02d3 02d3 02d3 0294 0295 0295 028c 028e 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    02d4 02db 02db 02db 029c 029d 029d 028c 028e 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 02b5 02b6 02b6 02b7 0000 0000
+    0000 0000 0000 0000 0000 0000 0000 028c 028e 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 02bd 02be 02be 02bf 0000 0000
+    0000 0000 0000 0000 0000 0000 02b5 028c 028e 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 02bd 02be 02be 02bf 0000 0000
+    0000 0000 0000 0000 0000 0000 02bd 028c 028e 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 02c5 02c6 02c6 02c7 0000 0000
+    0000 0000 0000 0000 0000 0000 02cd 0294 0296 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0299 0299 0299 0299 0299 0299 0299 0299
+    0299 0299 0299 0299 0299 0299 0299 029c 029e 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000 0000 0216 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000 0000 021e 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000 0000 0000 0283 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 02cc 02c8 02c9 02cb 0000 0000
+    0000 0000 0000 0000 0000 0000 028b 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 02cc 02d0 02d1 02cb 0000 0000
+    0000 0000 0000 0000 0000 0000 0293 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 02d8 02d9 0000 0000 0000
+    0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000 0000 0000 0000 0299 0299 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+encounter_list: []
+encounter_step: 30
+events:
+  1: !ruby/object:RPG::Event
+    id: 1
+    name: Exit
+    pages:
+    - !ruby/object:RPG::Event::Page
+      always_on_top: false
+      condition: !ruby/object:RPG::Event::Page::Condition
+        self_switch_ch: A
+        self_switch_valid: false
+        switch1_id: 1
+        switch1_valid: false
+        switch2_id: 1
+        switch2_valid: false
+        variable_id: 1
+        variable_valid: false
+        variable_value: 0
+      direction_fix: false
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        blend_type: 0
+        character_hue: 0
+        character_name: ''
+        direction: 2
+        opacity: 255
+        pattern: 0
+        tile_id: 0
+      list:
+      - !ruby/object:RPG::EventCommand {c: 250, i: 0, p: [!ruby/object:RPG::AudioFile {
+            name: Door exit, pitch: 100, volume: 80}]}
+      - !ruby/object:RPG::EventCommand {c: 223, i: 0, p: [!ruby/object:Tone {blue: -255.0,
+            gray: 0.0, green: -255.0, red: -255.0}, 6]}
+      - !ruby/object:RPG::EventCommand {c: 106, i: 0, p: [8]}
+      - !ruby/object:RPG::EventCommand {c: 201, i: 0, p: [0, 18, 3, 2, 0, 1]}
+      - !ruby/object:RPG::EventCommand {c: 223, i: 0, p: [!ruby/object:Tone {blue: 0.0,
+            gray: 0.0, green: 0.0, red: 0.0}, 6]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 0, p: []}
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+        repeat: true
+        skippable: false
+      move_speed: 3
+      move_type: 0
+      step_anime: false
+      through: false
+      trigger: 1
+      walk_anime: true
+    x: 23
+    y: 10
+  2: !ruby/object:RPG::Event
+    id: 2
+    name: Vending machine size(3,1)
+    pages:
+    - !ruby/object:RPG::Event::Page
+      always_on_top: false
+      condition: !ruby/object:RPG::Event::Page::Condition
+        self_switch_ch: A
+        self_switch_valid: false
+        switch1_id: 1
+        switch1_valid: false
+        switch2_id: 1
+        switch2_valid: false
+        variable_id: 1
+        variable_valid: false
+        variable_value: 0
+      direction_fix: false
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        blend_type: 0
+        character_hue: 0
+        character_name: ''
+        direction: 2
+        opacity: 255
+        pattern: 0
+        tile_id: 0
+      list:
+      - !ruby/object:RPG::EventCommand {c: 111, i: 0, p: [6, -1, 8]}
+      - !ruby/object:RPG::EventCommand {c: 118, i: 1, p: [Start]}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 1, p: ['It''s a vending machine.\nWhich
+            drink would you like?']}
+      - !ruby/object:RPG::EventCommand {c: 401, i: 1, p: [\G]}
+      - !ruby/object:RPG::EventCommand {c: 102, i: 1, p: [[Fresh Water - $200, Soda
+              Pop - $300, Lemonade - $350, Cancel], 4]}
+      - !ruby/object:RPG::EventCommand {c: 402, i: 1, p: [0, Fresh Water - $200]}
+      - !ruby/object:RPG::EventCommand {c: 111, i: 2, p: [7, 200, 0]}
+      - !ruby/object:RPG::EventCommand {c: 111, i: 3, p: [12, '$bag.can_add?(:FRESHWATER)']}
+      - !ruby/object:RPG::EventCommand {c: 125, i: 4, p: [1, 0, 200]}
+      - !ruby/object:RPG::EventCommand {c: 355, i: 4, p: [$stats.drinks_bought +=
+            1]}
+      - !ruby/object:RPG::EventCommand {c: 355, i: 4, p: ['$bag.add(:FRESHWATER)']}
+      - !ruby/object:RPG::EventCommand {c: 250, i: 4, p: [!ruby/object:RPG::AudioFile {
+            name: Vending machine dispense, pitch: 100, volume: 80}]}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 4, p: [\GA Fresh Water dropped
+            down!]}
+      - !ruby/object:RPG::EventCommand {c: 122, i: 4, p: [1, 1, 0, 2, 0, 10]}
+      - !ruby/object:RPG::EventCommand {c: 111, i: 4, p: [1, 1, 0, 0, 0]}
+      - !ruby/object:RPG::EventCommand {c: 111, i: 5, p: [12, '$bag.can_add?(:FRESHWATER)']}
+      - !ruby/object:RPG::EventCommand {c: 355, i: 6, p: [$stats.drinks_won += 1]}
+      - !ruby/object:RPG::EventCommand {c: 355, i: 6, p: ['$bag.add(:FRESHWATER)']}
+      - !ruby/object:RPG::EventCommand {c: 250, i: 6, p: [!ruby/object:RPG::AudioFile {
+            name: Vending machine dispense, pitch: 100, volume: 80}]}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 6, p: [\GBonus! Another Fresh Water
+            dropped down.]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 6, p: []}
+      - !ruby/object:RPG::EventCommand {c: 412, i: 5, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 5, p: []}
+      - !ruby/object:RPG::EventCommand {c: 412, i: 4, p: []}
+      - !ruby/object:RPG::EventCommand {c: 119, i: 4, p: [Start]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 4, p: []}
+      - !ruby/object:RPG::EventCommand {c: 411, i: 3, p: []}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 4, p: [\GYou have no room left
+            in the Bag.]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 4, p: []}
+      - !ruby/object:RPG::EventCommand {c: 412, i: 3, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 3, p: []}
+      - !ruby/object:RPG::EventCommand {c: 411, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 3, p: [\GYou don't have enough
+            money.]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 3, p: []}
+      - !ruby/object:RPG::EventCommand {c: 412, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 402, i: 1, p: [1, Soda Pop - $300]}
+      - !ruby/object:RPG::EventCommand {c: 111, i: 2, p: [7, 300, 0]}
+      - !ruby/object:RPG::EventCommand {c: 111, i: 3, p: [12, '$bag.can_add?(:SODAPOP)']}
+      - !ruby/object:RPG::EventCommand {c: 125, i: 4, p: [1, 0, 300]}
+      - !ruby/object:RPG::EventCommand {c: 355, i: 4, p: [$stats.drinks_bought +=
+            1]}
+      - !ruby/object:RPG::EventCommand {c: 355, i: 4, p: ['$bag.add(:SODAPOP)']}
+      - !ruby/object:RPG::EventCommand {c: 250, i: 4, p: [!ruby/object:RPG::AudioFile {
+            name: Vending machine dispense, pitch: 100, volume: 80}]}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 4, p: [\GA Soda Pop dropped down!]}
+      - !ruby/object:RPG::EventCommand {c: 122, i: 4, p: [1, 1, 0, 2, 0, 10]}
+      - !ruby/object:RPG::EventCommand {c: 111, i: 4, p: [1, 1, 0, 0, 0]}
+      - !ruby/object:RPG::EventCommand {c: 111, i: 5, p: [12, '$bag.can_add?(:SODAPOP)']}
+      - !ruby/object:RPG::EventCommand {c: 355, i: 6, p: [$stats.drinks_won += 1]}
+      - !ruby/object:RPG::EventCommand {c: 355, i: 6, p: ['$bag.add(:SODAPOP)']}
+      - !ruby/object:RPG::EventCommand {c: 250, i: 6, p: [!ruby/object:RPG::AudioFile {
+            name: Vending machine dispense, pitch: 100, volume: 80}]}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 6, p: [\GBonus! Another Soda Pop
+            dropped down.]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 6, p: []}
+      - !ruby/object:RPG::EventCommand {c: 412, i: 5, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 5, p: []}
+      - !ruby/object:RPG::EventCommand {c: 412, i: 4, p: []}
+      - !ruby/object:RPG::EventCommand {c: 119, i: 4, p: [Start]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 4, p: []}
+      - !ruby/object:RPG::EventCommand {c: 411, i: 3, p: []}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 4, p: [\GYou have no room left
+            in the Bag.]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 4, p: []}
+      - !ruby/object:RPG::EventCommand {c: 412, i: 3, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 3, p: []}
+      - !ruby/object:RPG::EventCommand {c: 411, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 3, p: [\GYou don't have enough
+            money.]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 3, p: []}
+      - !ruby/object:RPG::EventCommand {c: 412, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 402, i: 1, p: [2, Lemonade - $350]}
+      - !ruby/object:RPG::EventCommand {c: 111, i: 2, p: [7, 350, 0]}
+      - !ruby/object:RPG::EventCommand {c: 111, i: 3, p: [12, '$bag.can_add?(:LEMONADE)']}
+      - !ruby/object:RPG::EventCommand {c: 125, i: 4, p: [1, 0, 350]}
+      - !ruby/object:RPG::EventCommand {c: 355, i: 4, p: [$stats.drinks_bought +=
+            1]}
+      - !ruby/object:RPG::EventCommand {c: 355, i: 4, p: ['$bag.add(:LEMONADE)']}
+      - !ruby/object:RPG::EventCommand {c: 250, i: 4, p: [!ruby/object:RPG::AudioFile {
+            name: Vending machine dispense, pitch: 100, volume: 80}]}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 4, p: [\GA Lemonade dropped down!]}
+      - !ruby/object:RPG::EventCommand {c: 122, i: 4, p: [1, 1, 0, 2, 0, 10]}
+      - !ruby/object:RPG::EventCommand {c: 111, i: 4, p: [1, 1, 0, 0, 0]}
+      - !ruby/object:RPG::EventCommand {c: 111, i: 5, p: [12, '$bag.can_add?(:LEMONADE)']}
+      - !ruby/object:RPG::EventCommand {c: 355, i: 6, p: [$stats.drinks_won += 1]}
+      - !ruby/object:RPG::EventCommand {c: 355, i: 6, p: ['$bag.add(:LEMONADE)']}
+      - !ruby/object:RPG::EventCommand {c: 250, i: 6, p: [!ruby/object:RPG::AudioFile {
+            name: Vending machine dispense, pitch: 100, volume: 80}]}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 6, p: [\GBonus! Another Lemonade
+            dropped down.]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 6, p: []}
+      - !ruby/object:RPG::EventCommand {c: 412, i: 5, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 5, p: []}
+      - !ruby/object:RPG::EventCommand {c: 412, i: 4, p: []}
+      - !ruby/object:RPG::EventCommand {c: 119, i: 4, p: [Start]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 4, p: []}
+      - !ruby/object:RPG::EventCommand {c: 411, i: 3, p: []}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 4, p: [\GYou have no room left
+            in the Bag.]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 4, p: []}
+      - !ruby/object:RPG::EventCommand {c: 412, i: 3, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 3, p: []}
+      - !ruby/object:RPG::EventCommand {c: 411, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 3, p: [\GYou don't have enough
+            money.]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 3, p: []}
+      - !ruby/object:RPG::EventCommand {c: 412, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 402, i: 1, p: [3, Cancel]}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 2, p: [\GDecided not to buy a drink.]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 404, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 411, i: 0, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 412, i: 0, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 0, p: []}
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+        repeat: true
+        skippable: false
+      move_speed: 3
+      move_type: 0
+      step_anime: false
+      through: false
+      trigger: 0
+      walk_anime: true
+    x: 17
+    y: 7
+  5: !ruby/object:RPG::Event
+    id: 5
+    name: Floor sign
+    pages:
+    - !ruby/object:RPG::Event::Page
+      always_on_top: false
+      condition: !ruby/object:RPG::Event::Page::Condition
+        self_switch_ch: A
+        self_switch_valid: false
+        switch1_id: 1
+        switch1_valid: false
+        switch2_id: 1
+        switch2_valid: false
+        variable_id: 1
+        variable_valid: false
+        variable_value: 0
+      direction_fix: false
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        blend_type: 0
+        character_hue: 0
+        character_name: ''
+        direction: 2
+        opacity: 255
+        pattern: 0
+        tile_id: 0
+      list:
+      - !ruby/object:RPG::EventCommand {c: 101, i: 0, p: ['\sign[signskin]Rooftop
+            Square: Vending Machines']}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 0, p: []}
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+        repeat: true
+        skippable: false
+      move_speed: 3
+      move_type: 0
+      step_anime: false
+      through: false
+      trigger: 0
+      walk_anime: true
+    x: 21
+    y: 7
+height: 20
+tileset_id: 10
+width: 32

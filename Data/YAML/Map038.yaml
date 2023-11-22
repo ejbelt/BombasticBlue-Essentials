@@ -1,0 +1,219 @@
+--- !ruby/object:RPG::Map
+autoplay_bgm: true
+autoplay_bgs: false
+bgm: !ruby/object:RPG::AudioFile
+  name: ''
+  pitch: 100
+  volume: 80
+bgs: !ruby/object:RPG::AudioFile
+  name: ''
+  pitch: 100
+  volume: 80
+data: !ruby/object:Table
+  dim: 3
+  x: 20
+  y: 15
+  z: 3
+  data:
+  - 0578 0579 057a 057b 057c 057d 057e 057f 05a0 0579 05a2 0180 0180 0180 0180 0180
+    0180 0180 0180 0180
+  - 0580 0581 0582 0583 0584 0585 0586 0587 05a8 0581 05aa 0180 0180 0180 0180 0180
+    0180 0180 0180 0180
+  - 0588 0589 058a 058b 058c 058d 058e 058f 05b0 05b1 05b2 0180 0180 0180 0180 0180
+    0180 0180 0180 0180
+  - 0590 0591 059f 0593 0594 0595 0596 0597 059f 05b9 05ba 0180 0180 0180 0180 0180
+    0180 0180 0180 0180
+  - 0590 0592 05a7 0592 059c 059d 059e 0592 05a7 0592 05c2 0180 0180 0180 0180 0180
+    0180 0180 0180 0180
+  - 0590 0592 05af 0592 0592 0592 0592 0592 05af 0592 05c2 0180 0180 0180 0180 0180
+    0180 0180 0180 0180
+  - 0590 0592 059f 0592 05a4 05a5 05a6 0592 059f 0592 05c2 0180 0180 0180 0180 0180
+    0180 0180 0180 0180
+  - 0590 0592 05a7 0592 05ac 05ad 05ae 0592 05a7 0592 05c2 0180 0180 0180 0180 0180
+    0180 0180 0180 0180
+  - 0590 0592 05af 0592 05b4 05b5 05b6 0592 05af 0592 05c2 0180 0180 0180 0180 0180
+    0180 0180 0180 0180
+  - 0590 0592 059f 0592 0592 0592 0592 0592 059f 0592 05c2 0180 0180 0180 0180 0180
+    0180 0180 0180 0180
+  - 0590 0592 05a7 0592 0592 0592 0592 0592 05a7 0592 05c2 0180 0180 0180 0180 0180
+    0180 0180 0180 0180
+  - 0598 0592 05af 0592 0592 0592 0592 0592 05af 0592 05ca 0180 0180 0180 0180 0180
+    0180 0180 0180 0180
+  - 0180 0180 0180 0180 05bc 0592 05be 0180 0180 0180 0180 0180 0180 0180 0180 0180
+    0180 0180 0180 0180
+  - 0180 0180 0180 0180 0180 0180 0180 0180 0180 0180 0180 0180 0180 0180 0180 0180
+    0180 0180 0180 0180
+  - 0180 0180 0180 0180 0180 0180 0180 0180 0180 0180 0180 0180 0180 0180 0180 0180
+    0180 0180 0180 0180
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+encounter_list: []
+encounter_step: 30
+events:
+  1: !ruby/object:RPG::Event
+    id: 1
+    name: Hall of Fame autorun
+    pages:
+    - !ruby/object:RPG::Event::Page
+      always_on_top: false
+      condition: !ruby/object:RPG::Event::Page::Condition
+        self_switch_ch: A
+        self_switch_valid: false
+        switch1_id: 1
+        switch1_valid: false
+        switch2_id: 1
+        switch2_valid: false
+        variable_id: 1
+        variable_valid: false
+        variable_value: 0
+      direction_fix: false
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        blend_type: 0
+        character_hue: 0
+        character_name: ''
+        direction: 2
+        opacity: 255
+        pattern: 0
+        tile_id: 0
+      list:
+      - !ruby/object:RPG::EventCommand {c: 108, i: 0, p: [Set various switches and
+            counters.]}
+      - !ruby/object:RPG::EventCommand {c: 408, i: 0, p: [!binary "QWxzbyByZXNldCBzdGF0aW9uYXJ5IFBva8OpbW9uIHRoYXQgcmVhcHBlYXIg\nZWFjaCA="]}
+      - !ruby/object:RPG::EventCommand {c: 408, i: 0, p: [time the player defeats
+            the Elite Four.]}
+      - !ruby/object:RPG::EventCommand {c: 121, i: 0, p: [12, 12, 0]}
+      - !ruby/object:RPG::EventCommand {c: 122, i: 0, p: [13, 13, 1, 0, 1]}
+      - !ruby/object:RPG::EventCommand {c: 355, i: 0, p: [$stats.hall_of_fame_entry_count
+            += 1]}
+      - !ruby/object:RPG::EventCommand {c: 121, i: 0, p: [56, 56, 0]}
+      - !ruby/object:RPG::EventCommand {c: 108, i: 0, p: [!binary "SGVhbCB0aGUgcGxheWVyJ3MgcGFydHksIGFuZCBnaXZlIHRoZSBwYXJ0eSBQ\nb2vDqW1vbiA="]}
+      - !ruby/object:RPG::EventCommand {c: 408, i: 0, p: [ribbons for defeating the
+            Elite Four.]}
+      - !ruby/object:RPG::EventCommand {c: 314, i: 0, p: [0]}
+      - !ruby/object:RPG::EventCommand {c: 355, i: 0, p: [$player.pokemon_party.each
+            do |pkmn|]}
+      - !ruby/object:RPG::EventCommand {c: 655, i: 0, p: ['  pkmn.giveRibbon(:CHAMPION)']}
+      - !ruby/object:RPG::EventCommand {c: 655, i: 0, p: [end]}
+      - !ruby/object:RPG::EventCommand {c: 108, i: 0, p: ['Make the player walk up
+            to the recording station, ']}
+      - !ruby/object:RPG::EventCommand {c: 408, i: 0, p: [and fade to black.]}
+      - !ruby/object:RPG::EventCommand {c: 106, i: 0, p: [8]}
+      - !ruby/object:RPG::EventCommand
+        c: 209
+        i: 0
+        p:
+        - -1
+        - !ruby/object:RPG::MoveRoute
+          list:
+          - &1 !ruby/object:RPG::MoveCommand {code: 19, parameters: []}
+          - &2 !ruby/object:RPG::MoveCommand {code: 4, parameters: []}
+          - &3 !ruby/object:RPG::MoveCommand {code: 4, parameters: []}
+          - &4 !ruby/object:RPG::MoveCommand {code: 4, parameters: []}
+          - &5 !ruby/object:RPG::MoveCommand {code: 4, parameters: []}
+          - &6 !ruby/object:RPG::MoveCommand {code: 4, parameters: []}
+          - &7 !ruby/object:RPG::MoveCommand {code: 4, parameters: []}
+          - &8 !ruby/object:RPG::MoveCommand {code: 4, parameters: []}
+          - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+          repeat: false
+          skippable: true
+      - !ruby/object:RPG::EventCommand {c: 509, i: 0, p: [*1]}
+      - !ruby/object:RPG::EventCommand {c: 509, i: 0, p: [*2]}
+      - !ruby/object:RPG::EventCommand {c: 509, i: 0, p: [*3]}
+      - !ruby/object:RPG::EventCommand {c: 509, i: 0, p: [*4]}
+      - !ruby/object:RPG::EventCommand {c: 509, i: 0, p: [*5]}
+      - !ruby/object:RPG::EventCommand {c: 509, i: 0, p: [*6]}
+      - !ruby/object:RPG::EventCommand {c: 509, i: 0, p: [*7]}
+      - !ruby/object:RPG::EventCommand {c: 509, i: 0, p: [*8]}
+      - !ruby/object:RPG::EventCommand {c: 210, i: 0, p: []}
+      - !ruby/object:RPG::EventCommand {c: 106, i: 0, p: [8]}
+      - !ruby/object:RPG::EventCommand {c: 223, i: 0, p: [!ruby/object:Tone {blue: -255.0,
+            gray: 0.0, green: -255.0, red: -255.0}, 6]}
+      - !ruby/object:RPG::EventCommand {c: 106, i: 0, p: [8]}
+      - !ruby/object:RPG::EventCommand {c: 108, i: 0, p: [Record an entry in the Hall
+            of Fame.]}
+      - !ruby/object:RPG::EventCommand {c: 355, i: 0, p: [$stats.set_time_to_hall_of_fame]}
+      - !ruby/object:RPG::EventCommand {c: 355, i: 0, p: [pbHallOfFameEntry]}
+      - !ruby/object:RPG::EventCommand {c: 108, i: 0, p: [Play the credits.]}
+      - !ruby/object:RPG::EventCommand {c: 355, i: 0, p: [$scene = Scene_Credits.new]}
+      - !ruby/object:RPG::EventCommand {c: 106, i: 0, p: [8]}
+      - !ruby/object:RPG::EventCommand {c: 108, i: 0, p: [Return the player to the
+            entrance of the League.]}
+      - !ruby/object:RPG::EventCommand {c: 201, i: 0, p: [0, 36, 13, 12, 2, 1]}
+      - !ruby/object:RPG::EventCommand {c: 223, i: 0, p: [!ruby/object:Tone {blue: 0.0,
+            gray: 0.0, green: 0.0, red: 0.0}, 6]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 0, p: []}
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+        repeat: true
+        skippable: false
+      move_speed: 3
+      move_type: 0
+      step_anime: false
+      through: false
+      trigger: 3
+      walk_anime: true
+    x: 2
+    y: 13
+height: 15
+tileset_id: 14
+width: 20

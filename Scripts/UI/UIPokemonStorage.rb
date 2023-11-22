@@ -1467,7 +1467,7 @@ class PokemonStorageScene
       typebitmap = AnimatedBitmap.new(_INTL("Graphics/UI/types"))
       pokemon.types.each_with_index do |type, i|
         type_number = GameData::Type.get(type).icon_position
-        type_rect = Rect.new(0, type_number * 28, 64, 28)
+        type_rect = Rect.new(0, type_number * 16, 24, 16)
         type_x = (pokemon.types.length == 1) ? 52 : 18 + (70 * i)
         overlay.blt(type_x, 272, typebitmap.bitmap, type_rect)
       end

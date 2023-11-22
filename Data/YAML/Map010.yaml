@@ -1,0 +1,456 @@
+--- !ruby/object:RPG::Map
+autoplay_bgm: true
+autoplay_bgs: false
+bgm: !ruby/object:RPG::AudioFile
+  name: Gym
+  pitch: 100
+  volume: 100
+bgs: !ruby/object:RPG::AudioFile
+  name: ''
+  pitch: 100
+  volume: 80
+data: !ruby/object:Table
+  dim: 3
+  x: 20
+  y: 17
+  z: 3
+  data:
+  - 0190 0191 0192 0192 0192 0192 0193 0192 0192 0192 0192 0195 0196 0180 0180 0180
+    0180 0180 0180 0180
+  - 0198 0199 019a 019a 019c 019c 019b 019c 019c 019a 019a 019d 019e 0180 0180 0180
+    0180 0180 0180 0180
+  - 0198 01a1 01a2 01a2 01a2 01a2 01a2 01a2 01a2 01a2 01a2 01a5 019e 0180 0180 0180
+    0180 0180 0180 0180
+  - 0198 01a9 01aa 01ab 01ab 01b3 01ab 01b3 01ab 01ab 01ac 01ad 019e 0180 0180 0180
+    0180 0180 0180 0180
+  - 0198 01b1 01b2 01ba 01ba 01ba 01cb 01ba 01ba 01ba 01b2 01b5 019e 0180 0180 0180
+    0180 0180 0180 0180
+  - 0198 01b9 01ba 01ba 01c2 01d2 01d3 01d4 01c2 01ba 01ba 01b2 019e 0180 0180 0180
+    0180 0180 0180 0180
+  - 0198 01c1 01ba 01ba 01d2 01d3 01d3 01d3 01d4 01ba 01ba 01ba 019e 0180 0180 0180
+    0180 0180 0180 0180
+  - 0198 01c1 01ba 01c2 01b2 01b4 01cb 01b4 01b2 01c2 01ba 01ba 019e 0180 0180 0180
+    0180 0180 0180 0180
+  - 0198 01c9 01ba 01c3 01c4 01c4 01c4 01c4 01c4 01c5 01ba 01c2 019e 0180 0180 0180
+    0180 0180 0180 0180
+  - 0198 01c1 01ba 01b2 01b4 01b2 01bc 01b2 01b4 01b2 01ba 01ba 019e 0180 0180 0180
+    0180 0180 0180 0180
+  - 0198 01c9 01ba 01ba 01c3 01c4 01c4 01c4 01c5 01ba 01ba 01c2 019e 0180 0180 0180
+    0180 0180 0180 0180
+  - 0198 01c1 01ba 01ba 01b2 01b2 01bc 01b2 01b2 01ba 01ba 01ba 019e 0180 0180 0180
+    0180 0180 0180 0180
+  - 01a0 01bf 01c4 01c4 01be 01bf 01c4 01c4 01be 01bf 01c4 01c4 01a6 0180 0180 0180
+    0180 0180 0180 0180
+  - 01a8 01bf 01c4 01c4 01c6 01c7 01c4 01c4 01c6 01c7 01c4 01c4 01ae 0180 0180 0180
+    0180 0180 0180 0180
+  - 01b0 01bf 01c4 01c4 01c4 01c4 01c4 01c4 01c4 01c4 01c4 01c4 01b6 0180 0180 0180
+    0180 0180 0180 0180
+  - 0180 0180 0180 0180 0180 0180 0180 0180 0180 0180 0180 0180 0180 0180 0180 0180
+    0180 0180 0180 0180
+  - 0180 0180 0180 0180 0180 0180 0180 0180 0180 0180 0180 0180 0180 0180 0180 0180
+    0180 0180 0180 0180
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 01cd 01ce 01cf 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 01d5 01d6 01d7 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0181 0000 0000 0000 0181 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0189 0000 0000 0000 0189 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0182 0183 0184 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 018a 018b 018c 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+encounter_list: []
+encounter_step: 30
+events:
+  1: !ruby/object:RPG::Event
+    id: 1
+    name: Exit
+    pages:
+    - !ruby/object:RPG::Event::Page
+      always_on_top: false
+      condition: !ruby/object:RPG::Event::Page::Condition
+        self_switch_ch: A
+        self_switch_valid: false
+        switch1_id: 1
+        switch1_valid: false
+        switch2_id: 1
+        switch2_valid: false
+        variable_id: 1
+        variable_valid: false
+        variable_value: 0
+      direction_fix: false
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        blend_type: 0
+        character_hue: 0
+        character_name: ''
+        direction: 2
+        opacity: 255
+        pattern: 0
+        tile_id: 0
+      list:
+      - !ruby/object:RPG::EventCommand {c: 250, i: 0, p: [!ruby/object:RPG::AudioFile {
+            name: Door exit, pitch: 100, volume: 80}]}
+      - !ruby/object:RPG::EventCommand {c: 223, i: 0, p: [!ruby/object:Tone {blue: -255.0,
+            gray: 0.0, green: -255.0, red: -255.0}, 6]}
+      - !ruby/object:RPG::EventCommand {c: 106, i: 0, p: [8]}
+      - !ruby/object:RPG::EventCommand {c: 201, i: 0, p: [0, 7, 11, 29, 0, 1]}
+      - !ruby/object:RPG::EventCommand {c: 223, i: 0, p: [!ruby/object:Tone {blue: 0.0,
+            gray: 0.0, green: 0.0, red: 0.0}, 6]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 0, p: []}
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+        repeat: true
+        skippable: false
+      move_speed: 3
+      move_type: 0
+      step_anime: false
+      through: false
+      trigger: 1
+      walk_anime: true
+    x: 6
+    y: 15
+  2: !ruby/object:RPG::Event
+    id: 2
+    name: Gym Guy
+    pages:
+    - !ruby/object:RPG::Event::Page
+      always_on_top: false
+      condition: !ruby/object:RPG::Event::Page::Condition
+        self_switch_ch: A
+        self_switch_valid: false
+        switch1_id: 1
+        switch1_valid: false
+        switch2_id: 1
+        switch2_valid: false
+        variable_id: 1
+        variable_valid: false
+        variable_value: 0
+      direction_fix: false
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        blend_type: 0
+        character_hue: 0
+        character_name: NPC 15
+        direction: 2
+        opacity: 255
+        pattern: 0
+        tile_id: 0
+      list:
+      - !ruby/object:RPG::EventCommand {c: 101, i: 0, p: [\bThis is an example of
+            a Pokémon Gym.]}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 0, p: ['\bThe only differences
+            are that the trainers become ']}
+      - !ruby/object:RPG::EventCommand {c: 401, i: 0, p: ['inactive when the Leader
+            is defeated, and the']}
+      - !ruby/object:RPG::EventCommand {c: 401, i: 0, p: [Leader gives you a Gym Badge
+            and TM as a reward.]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 0, p: []}
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+        repeat: true
+        skippable: false
+      move_speed: 3
+      move_type: 0
+      step_anime: false
+      through: false
+      trigger: 0
+      walk_anime: true
+    x: 7
+    y: 12
+  3: !ruby/object:RPG::Event
+    id: 3
+    name: Brock
+    pages:
+    - !ruby/object:RPG::Event::Page
+      always_on_top: false
+      condition: !ruby/object:RPG::Event::Page::Condition
+        self_switch_ch: A
+        self_switch_valid: false
+        switch1_id: 1
+        switch1_valid: false
+        switch2_id: 1
+        switch2_valid: false
+        variable_id: 1
+        variable_valid: false
+        variable_value: 0
+      direction_fix: false
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        blend_type: 0
+        character_hue: 0
+        character_name: trainer_LEADER_Brock
+        direction: 2
+        opacity: 255
+        pattern: 0
+        tile_id: 0
+      list:
+      - !ruby/object:RPG::EventCommand {c: 355, i: 0, p: ['$stats.gym_leader_attempts[0]
+            += 1']}
+      - !ruby/object:RPG::EventCommand {c: 355, i: 0, p: ['pbTrainerIntro(:LEADER_Brock)']}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 0, p: ['\bYou''ve made it this
+            far, but can you beat me?']}
+      - !ruby/object:RPG::EventCommand {c: 111, i: 0, p: [12, 'TrainerBattle.start(:LEADER_Brock,
+            "Brock")']}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 1, p: ['\me[Badge get]\bYou''ve
+            earned the Boulder Badge.']}
+      - !ruby/object:RPG::EventCommand {c: 401, i: 1, p: ['\wtnp[110]']}
+      - !ruby/object:RPG::EventCommand {c: 355, i: 1, p: [$stats.set_time_to_badge(0)]}
+      - !ruby/object:RPG::EventCommand {c: 655, i: 1, p: ['$player.badges[0] = true']}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 1, p: ['\bHere, have this TM too.']}
+      - !ruby/object:RPG::EventCommand {c: 355, i: 1, p: ['pbReceiveItem(:TM80)']}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 1, p: ['\bYou may find the Pokémon
+            on Route 1 are a little ']}
+      - !ruby/object:RPG::EventCommand {c: 401, i: 1, p: [tougher now.]}
+      - !ruby/object:RPG::EventCommand {c: 355, i: 1, p: [$PokemonGlobal.encounter_version
+            = 1]}
+      - !ruby/object:RPG::EventCommand {c: 121, i: 1, p: [4, 4, 0]}
+      - !ruby/object:RPG::EventCommand {c: 123, i: 1, p: [A, 0]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 412, i: 0, p: []}
+      - !ruby/object:RPG::EventCommand {c: 355, i: 0, p: [pbTrainerEnd]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 0, p: []}
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+        repeat: true
+        skippable: false
+      move_speed: 3
+      move_type: 0
+      step_anime: false
+      through: false
+      trigger: 0
+      walk_anime: true
+    - !ruby/object:RPG::Event::Page
+      always_on_top: false
+      condition: !ruby/object:RPG::Event::Page::Condition
+        self_switch_ch: A
+        self_switch_valid: true
+        switch1_id: 1
+        switch1_valid: false
+        switch2_id: 1
+        switch2_valid: false
+        variable_id: 1
+        variable_valid: false
+        variable_value: 0
+      direction_fix: false
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        blend_type: 0
+        character_hue: 0
+        character_name: trainer_LEADER_Brock
+        direction: 2
+        opacity: 255
+        pattern: 0
+        tile_id: 0
+      list:
+      - !ruby/object:RPG::EventCommand {c: 101, i: 0, p: ['\bI often work in the caves
+            on Route 7, digging up ']}
+      - !ruby/object:RPG::EventCommand {c: 401, i: 0, p: [fossils.]}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 0, p: ['\bThere''s a man in the
+            Pokémon Institute who can ']}
+      - !ruby/object:RPG::EventCommand {c: 401, i: 0, p: [revive fossils into living
+            Pokémon.]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 0, p: []}
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+        repeat: true
+        skippable: false
+      move_speed: 3
+      move_type: 0
+      step_anime: false
+      through: false
+      trigger: 0
+      walk_anime: true
+    x: 6
+    y: 5
+  4: !ruby/object:RPG::Event
+    id: 4
+    name: Trainer(3)
+    pages:
+    - !ruby/object:RPG::Event::Page
+      always_on_top: false
+      condition: !ruby/object:RPG::Event::Page::Condition
+        self_switch_ch: A
+        self_switch_valid: false
+        switch1_id: 1
+        switch1_valid: false
+        switch2_id: 1
+        switch2_valid: false
+        variable_id: 1
+        variable_valid: false
+        variable_value: 0
+      direction_fix: false
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        blend_type: 0
+        character_hue: 0
+        character_name: trainer_CAMPER
+        direction: 6
+        opacity: 255
+        pattern: 0
+        tile_id: 0
+      list:
+      - !ruby/object:RPG::EventCommand {c: 355, i: 0, p: ['pbTrainerIntro(:CAMPER)']}
+      - !ruby/object:RPG::EventCommand {c: 355, i: 0, p: [pbNoticePlayer(get_self)]}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 0, p: [\bBattle me now!]}
+      - !ruby/object:RPG::EventCommand {c: 111, i: 0, p: [12, 'TrainerBattle.start(:CAMPER,
+            "Liam")']}
+      - !ruby/object:RPG::EventCommand {c: 123, i: 1, p: [A, 0]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 412, i: 0, p: []}
+      - !ruby/object:RPG::EventCommand {c: 355, i: 0, p: [pbTrainerEnd]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 0, p: []}
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+        repeat: true
+        skippable: false
+      move_speed: 3
+      move_type: 0
+      step_anime: false
+      through: false
+      trigger: 2
+      walk_anime: true
+    - !ruby/object:RPG::Event::Page
+      always_on_top: false
+      condition: !ruby/object:RPG::Event::Page::Condition
+        self_switch_ch: A
+        self_switch_valid: true
+        switch1_id: 1
+        switch1_valid: false
+        switch2_id: 1
+        switch2_valid: false
+        variable_id: 1
+        variable_valid: false
+        variable_value: 0
+      direction_fix: false
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        blend_type: 0
+        character_hue: 0
+        character_name: trainer_CAMPER
+        direction: 6
+        opacity: 255
+        pattern: 0
+        tile_id: 0
+      list:
+      - !ruby/object:RPG::EventCommand {c: 101, i: 0, p: [\bYou're pretty hot. But
+            not as hot as]}
+      - !ruby/object:RPG::EventCommand {c: 401, i: 0, p: [Brock!]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 0, p: []}
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+        repeat: true
+        skippable: false
+      move_speed: 3
+      move_type: 0
+      step_anime: false
+      through: false
+      trigger: 0
+      walk_anime: true
+    - !ruby/object:RPG::Event::Page
+      always_on_top: false
+      condition: !ruby/object:RPG::Event::Page::Condition
+        self_switch_ch: A
+        self_switch_valid: false
+        switch1_id: 4
+        switch1_valid: true
+        switch2_id: 1
+        switch2_valid: false
+        variable_id: 1
+        variable_valid: false
+        variable_value: 0
+      direction_fix: false
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        blend_type: 0
+        character_hue: 0
+        character_name: trainer_CAMPER
+        direction: 6
+        opacity: 255
+        pattern: 0
+        tile_id: 0
+      list:
+      - !ruby/object:RPG::EventCommand {c: 101, i: 0, p: [\bYou're pretty hot. But
+            not as hot as]}
+      - !ruby/object:RPG::EventCommand {c: 401, i: 0, p: [Brock!]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 0, p: []}
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+        repeat: true
+        skippable: false
+      move_speed: 3
+      move_type: 0
+      step_anime: false
+      through: false
+      trigger: 0
+      walk_anime: true
+    x: 3
+    y: 8
+height: 17
+tileset_id: 14
+width: 20

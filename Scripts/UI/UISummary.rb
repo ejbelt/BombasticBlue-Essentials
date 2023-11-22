@@ -79,7 +79,7 @@ class RibbonSelectionSprite < MoveSelectionSprite
     w = @movesel.width
     h = @movesel.height / 2
     self.x = 228 + ((self.index % 4) * 68)
-    self.y = 76 + ((self.index / 4).floor * 68)
+    self.y = 76 + ((self.index / 4).floor * 68) # /
     self.bitmap = @movesel.bitmap
     if self.preselected
       self.src_rect.set(0, h, w, h)
@@ -465,9 +465,9 @@ class PokemonSummary_Scene
     # Draw Pokémon type(s)
     @pokemon.types.each_with_index do |type, i|
       type_number = GameData::Type.get(type).icon_position
-      type_rect = Rect.new(0, type_number * 28, 64, 28)
-      type_x = (@pokemon.types.length == 1) ? 402 : 370 + (66 * i)
-      overlay.blt(type_x, 146, @typebitmap.bitmap, type_rect)
+      type_rect = Rect.new(0, type_number * 16, 24, 16)
+      type_x = (@pokemon.types.length == 1) ? 402 : 402 + (28 * i)
+      overlay.blt(type_x, 150, @typebitmap.bitmap, type_rect)
     end
     # Draw Exp bar
     if @pokemon.level < GameData::GrowthRate.max_level
@@ -712,7 +712,7 @@ class PokemonSummary_Scene
       move = @pokemon.moves[i]
       if move
         type_number = GameData::Type.get(move.display_type(@pokemon)).icon_position
-        imagepos.push([_INTL("Graphics/UI/types"), 248, yPos - 4, 0, type_number * 28, 64, 28])
+        imagepos.push([_INTL("Graphics/UI/types"), 248, yPos - 4, 0, type_number * 16, 24, 16])
         textpos.push([move.name, 316, yPos, :left, moveBase, moveShadow])
         if move.total_pp > 0
           textpos.push([_INTL("PP"), 342, yPos + 32, :left, moveBase, moveShadow])
@@ -778,7 +778,7 @@ class PokemonSummary_Scene
       end
       if move
         type_number = GameData::Type.get(move.display_type(@pokemon)).icon_position
-        imagepos.push([_INTL("Graphics/UI/types"), 248, yPos - 4, 0, type_number * 28, 64, 28])
+        imagepos.push([_INTL("Graphics/UI/types"), 248, yPos - 4, 0, type_number * 16, 24, 16])
         textpos.push([move.name, 316, yPos, :left, moveBase, moveShadow])
         if move.total_pp > 0
           textpos.push([_INTL("PP"), 342, yPos + 32, :left, moveBase, moveShadow])
@@ -805,8 +805,8 @@ class PokemonSummary_Scene
     # Draw Pokémon's type icon(s)
     @pokemon.types.each_with_index do |type, i|
       type_number = GameData::Type.get(type).icon_position
-      type_rect = Rect.new(0, type_number * 28, 64, 28)
-      type_x = (@pokemon.types.length == 1) ? 130 : 96 + (70 * i)
+      type_rect = Rect.new(0, type_number * 16, 24, 16)
+      type_x = (@pokemon.types.length == 1) ? 130 : 96 + (28 * i)
       overlay.blt(type_x, 78, @typebitmap.bitmap, type_rect)
     end
   end

@@ -1,0 +1,941 @@
+--- !ruby/object:RPG::Map
+autoplay_bgm: true
+autoplay_bgs: false
+bgm: !ruby/object:RPG::AudioFile
+  name: Poke Center
+  pitch: 100
+  volume: 80
+bgs: !ruby/object:RPG::AudioFile
+  name: ''
+  pitch: 100
+  volume: 80
+data: !ruby/object:Table
+  dim: 3
+  x: 20
+  y: 15
+  z: 3
+  data:
+  - 0180 0181 0181 0181 0181 0181 0181 0181 0181 0181 0181 0181 0181 0181 0182 0183
+    0183 0183 0183 0183
+  - 0188 0189 0189 0189 0189 0189 0189 0189 0189 0189 0189 0189 0189 0189 018a 0183
+    0183 0183 0183 0183
+  - 0190 01c9 01c9 01c9 01c9 01c9 01c9 01db 01d1 01c9 01c9 01c9 01db 01d1 0192 0183
+    0183 0183 0183 0183
+  - 01c9 01c0 01c0 01c0 01c9 01c9 01c9 01c9 01c9 01c9 01c9 01ca 01c0 01c0 01d8 0183
+    0183 0183 0183 0183
+  - 01c9 01c0 01c0 01c0 01d9 01d1 01d1 01d1 01d1 01d1 01d1 01d2 01c0 01c0 01c0 0183
+    0183 0183 0183 0183
+  - 01c9 01c0 01c0 01c0 01c0 01c0 01e5 01e6 01e7 01c0 01c0 01c0 01c0 01c0 01c0 0183
+    0183 0183 0183 0183
+  - 01c9 01c0 01c0 01c0 01c3 01c0 01ed 01ee 01ef 01c0 01c0 01c0 01c0 01c3 01c0 0183
+    0183 0183 0183 0183
+  - 01c9 01c0 01c9 01c9 01ca 01c0 01f5 01f6 01f7 01c0 01c0 01c9 01c9 01ca 01c0 0183
+    0183 0183 0183 0183
+  - 01c9 01c0 01d9 01d1 01d2 01c0 01c0 01c0 01c0 01c0 01c0 01d9 01d1 01d2 01c0 0183
+    0183 0183 0183 0183
+  - 0183 0183 0183 0183 0183 0183 0183 0183 0183 0183 0183 0183 0183 0183 0183 0183
+    0183 0183 0183 0183
+  - 0183 0183 0183 0183 0183 0183 0183 0183 0183 0183 0183 0183 0183 0183 0183 0183
+    0183 0183 0183 0183
+  - 0183 0183 0183 0183 0183 0183 0183 0183 0183 0183 0183 0183 0183 0183 0183 0183
+    0183 0183 0183 0183
+  - 0183 0183 0183 0183 0183 0183 0183 0183 0183 0183 0183 0183 0183 0183 0183 0183
+    0183 0183 0183 0183
+  - 0183 0183 0183 0183 0183 0183 0183 0183 0183 0183 0183 0183 0183 0183 0183 0183
+    0183 0183 0183 0183
+  - 0183 0183 0183 0183 0183 0183 0183 0183 0183 0183 0183 0183 0183 0183 0183 0183
+    0183 0183 0183 0183
+  - 0000 0296 027c 027d 0000 0000 0000 01b0 01b1 0000 0000 027e 01b2 01b3 0000 0000
+    0000 0000 0000 0000
+  - 0000 029e 0284 0285 0238 0245 0246 01b8 01b9 0247 0238 0286 01ba 01bb 0000 0000
+    0000 0000 0000 0000
+  - 0000 02a6 028c 028d 0249 024d 024e 0259 023a 024f 024b 028e 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0251 0252 0252 0261 0252 0252 0253 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 026f 0277 0000 0000 0000 0000 0000 0000 0000 026f 0277 0000 0000 0000
+    0000 0000 0000 0000
+  - 026f 0000 026d 026e 0000 0000 0000 0000 0000 0000 0000 026d 026e 0000 026f 0000
+    0000 0000 0000 0000
+  - 0277 0000 0275 0276 0000 0000 0000 0000 0000 0000 0000 0275 0276 0000 0277 0000
+    0000 0000 0000 0000
+  - 01e1 0000 0000 0000 0000 0000 0228 0229 022a 0000 0000 0000 0000 0000 01e2 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0230 0231 0232 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 025e 0000 0000 0000 0000 0000 025e 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0266 0000 0000 0000 0000 0000 0266 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+    0000 0000 0000 0000
+encounter_list: []
+encounter_step: 30
+events:
+  1: !ruby/object:RPG::Event
+    id: 1
+    name: Nurse
+    pages:
+    - !ruby/object:RPG::Event::Page
+      always_on_top: false
+      condition: !ruby/object:RPG::Event::Page::Condition
+        self_switch_ch: A
+        self_switch_valid: false
+        switch1_id: 1
+        switch1_valid: false
+        switch2_id: 1
+        switch2_valid: false
+        variable_id: 1
+        variable_valid: false
+        variable_value: 0
+      direction_fix: false
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        blend_type: 0
+        character_hue: 0
+        character_name: NPC 16
+        direction: 2
+        opacity: 255
+        pattern: 0
+        tile_id: 0
+      list:
+      - !ruby/object:RPG::EventCommand {c: 108, i: 0, p: ['This line of code sets
+            the player''s current position as ']}
+      - !ruby/object:RPG::EventCommand {c: 408, i: 0, p: ['the spot they will return
+            to after they lose a battle ']}
+      - !ruby/object:RPG::EventCommand {c: 408, i: 0, p: [and lack out.]}
+      - !ruby/object:RPG::EventCommand {c: 408, i: 0, p: ['Page 2 of this event detects
+            when this happens, and ']}
+      - !ruby/object:RPG::EventCommand {c: 408, i: 0, p: ['heals the player''s Pokémon
+            and wishes them better ']}
+      - !ruby/object:RPG::EventCommand {c: 408, i: 0, p: [luck in future.]}
+      - !ruby/object:RPG::EventCommand {c: 355, i: 0, p: [pbSetPokemonCenter]}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 0, p: ['\rHello, and welcome to
+            the Pokémon Center.']}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 0, p: [\rWe restore your tired
+            Pokémon to full health.]}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 0, p: ['\rWould you like to rest
+            your Pokémon?']}
+      - !ruby/object:RPG::EventCommand {c: 102, i: 0, p: [['Yes', 'No'], 2]}
+      - !ruby/object:RPG::EventCommand {c: 402, i: 0, p: [0, 'Yes']}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 1, p: ['\rOK, I''ll take your Pokémon
+            for a few seconds.']}
+      - !ruby/object:RPG::EventCommand {c: 355, i: 1, p: [$stats.poke_center_count
+            += 1]}
+      - !ruby/object:RPG::EventCommand {c: 314, i: 1, p: [0]}
+      - !ruby/object:RPG::EventCommand {c: 108, i: 1, p: [Nurse turns to face the
+            healing machine.]}
+      - !ruby/object:RPG::EventCommand
+        c: 209
+        i: 1
+        p:
+        - 0
+        - !ruby/object:RPG::MoveRoute
+          list:
+          - &1 !ruby/object:RPG::MoveCommand {code: 17, parameters: []}
+          - &2 !ruby/object:RPG::MoveCommand {code: 15, parameters: [2]}
+          - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+          repeat: false
+          skippable: false
+      - !ruby/object:RPG::EventCommand {c: 509, i: 1, p: [*1]}
+      - !ruby/object:RPG::EventCommand {c: 509, i: 1, p: [*2]}
+      - !ruby/object:RPG::EventCommand {c: 210, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 108, i: 1, p: [!binary "TnVyc2UgcGxhY2VzIFBva8OpIEJhbGxzIG9uIHRoZSBoZWFsaW5nIG1hY2hp\nbmUgb25lIGF0IA=="]}
+      - !ruby/object:RPG::EventCommand {c: 408, i: 1, p: [a time.]}
+      - !ruby/object:RPG::EventCommand {c: 122, i: 1, p: [1, 1, 0, 7, 1]}
+      - !ruby/object:RPG::EventCommand {c: 122, i: 1, p: [6, 6, 0, 0, 0]}
+      - !ruby/object:RPG::EventCommand {c: 118, i: 1, p: [Place ball]}
+      - !ruby/object:RPG::EventCommand {c: 122, i: 1, p: [6, 6, 1, 0, 1]}
+      - !ruby/object:RPG::EventCommand {c: 250, i: 1, p: [!ruby/object:RPG::AudioFile {
+            name: Battle ball shake, pitch: 100, volume: 80}]}
+      - !ruby/object:RPG::EventCommand {c: 106, i: 1, p: [8]}
+      - !ruby/object:RPG::EventCommand {c: 111, i: 1, p: [1, 6, 1, 1, 4]}
+      - !ruby/object:RPG::EventCommand {c: 119, i: 2, p: [Place ball]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 412, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 108, i: 1, p: [Healing animation and ME
+            jingle.]}
+      - !ruby/object:RPG::EventCommand
+        c: 209
+        i: 1
+        p:
+        - 4
+        - !ruby/object:RPG::MoveRoute
+          list:
+          - &3 !ruby/object:RPG::MoveCommand {code: 33, parameters: []}
+          - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+          repeat: false
+          skippable: false
+      - !ruby/object:RPG::EventCommand {c: 509, i: 1, p: [*3]}
+      - !ruby/object:RPG::EventCommand {c: 249, i: 1, p: [!ruby/object:RPG::AudioFile {
+            name: Pkmn healing, pitch: 100, volume: 100}]}
+      - !ruby/object:RPG::EventCommand {c: 106, i: 1, p: [58]}
+      - !ruby/object:RPG::EventCommand {c: 108, i: 1, p: [!binary "UG9rw6kgQmFsbHMgYXJlIHJlbW92ZWQgZnJvbSBoZWFsaW5nIG1hY2hpbmUs\nIG51cnNlIA=="]}
+      - !ruby/object:RPG::EventCommand {c: 408, i: 1, p: [turns to face the player.]}
+      - !ruby/object:RPG::EventCommand {c: 122, i: 1, p: [6, 6, 0, 0, 0]}
+      - !ruby/object:RPG::EventCommand {c: 355, i: 1, p: [get_character(4).pattern
+            = 0]}
+      - !ruby/object:RPG::EventCommand
+        c: 209
+        i: 1
+        p:
+        - 4
+        - !ruby/object:RPG::MoveRoute
+          list:
+          - &4 !ruby/object:RPG::MoveCommand {code: 34, parameters: []}
+          - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+          repeat: false
+          skippable: false
+      - !ruby/object:RPG::EventCommand {c: 509, i: 1, p: [*4]}
+      - !ruby/object:RPG::EventCommand
+        c: 209
+        i: 1
+        p:
+        - 0
+        - !ruby/object:RPG::MoveRoute
+          list:
+          - &5 !ruby/object:RPG::MoveCommand {code: 15, parameters: [15]}
+          - &6 !ruby/object:RPG::MoveCommand {code: 16, parameters: []}
+          - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+          repeat: false
+          skippable: false
+      - !ruby/object:RPG::EventCommand {c: 509, i: 1, p: [*5]}
+      - !ruby/object:RPG::EventCommand {c: 509, i: 1, p: [*6]}
+      - !ruby/object:RPG::EventCommand {c: 210, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 108, i: 1, p: [!binary "UG9rw6lydXMgY2hlY2su"]}
+      - !ruby/object:RPG::EventCommand {c: 111, i: 1, p: [12, 'pbPokerus?']}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 2, p: [!binary "XHJZb3VyIFBva8OpbW9uIG1heSBiZSBpbmZlY3RlZCBieSBQb2vDqXJ1cy4="]}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 2, p: [!binary "XHJMaXR0bGUgaXMga25vd24gYWJvdXQgdGhlIFBva8OpcnVzIGV4Y2VwdCB0\naGF0IHRoZXkg"]}
+      - !ruby/object:RPG::EventCommand {c: 401, i: 2, p: [!binary "YXJlIG1pY3Jvc2NvcGljIGxpZmUtZm9ybXMgdGhhdCBhdHRhY2ggdG8gUG9r\nw6ltb24u"]}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 2, p: ['\rWhile infected, Pokémon
+            are said to grow ']}
+      - !ruby/object:RPG::EventCommand {c: 401, i: 2, p: [exceptionally well.]}
+      - !ruby/object:RPG::EventCommand {c: 121, i: 2, p: [2, 2, 0]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 411, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 2, p: [\rThank you for waiting.]}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 2, p: [\rWe've restored your Pokémon
+            to full health.]}
+      - !ruby/object:RPG::EventCommand {c: 108, i: 2, p: [Nurse bows.]}
+      - !ruby/object:RPG::EventCommand
+        c: 209
+        i: 2
+        p:
+        - 0
+        - !ruby/object:RPG::MoveRoute
+          list:
+          - &7 !ruby/object:RPG::MoveCommand {code: 41, parameters: [NPC 16, 0, 2,
+              1]}
+          - &8 !ruby/object:RPG::MoveCommand {code: 15, parameters: [10]}
+          - &9 !ruby/object:RPG::MoveCommand {code: 41, parameters: [NPC 16, 0, 2,
+              0]}
+          - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+          repeat: false
+          skippable: false
+      - !ruby/object:RPG::EventCommand {c: 509, i: 2, p: [*7]}
+      - !ruby/object:RPG::EventCommand {c: 509, i: 2, p: [*8]}
+      - !ruby/object:RPG::EventCommand {c: 509, i: 2, p: [*9]}
+      - !ruby/object:RPG::EventCommand {c: 210, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 2, p: [\rWe hope to see you again!]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 2, p: []}
+      - !ruby/object:RPG::EventCommand {c: 412, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 402, i: 0, p: [1, 'No']}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 1, p: [\rWe hope to see you again!]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 404, i: 0, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 0, p: []}
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+        repeat: true
+        skippable: false
+      move_speed: 3
+      move_type: 0
+      step_anime: false
+      through: false
+      trigger: 0
+      walk_anime: true
+    - !ruby/object:RPG::Event::Page
+      always_on_top: false
+      condition: !ruby/object:RPG::Event::Page::Condition
+        self_switch_ch: A
+        self_switch_valid: false
+        switch1_id: 1
+        switch1_valid: true
+        switch2_id: 1
+        switch2_valid: false
+        variable_id: 1
+        variable_valid: false
+        variable_value: 0
+      direction_fix: false
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        blend_type: 0
+        character_hue: 0
+        character_name: NPC 16
+        direction: 2
+        opacity: 255
+        pattern: 0
+        tile_id: 0
+      list:
+      - !ruby/object:RPG::EventCommand {c: 108, i: 0, p: ['Every map you can end up
+            in after having all your ']}
+      - !ruby/object:RPG::EventCommand {c: 408, i: 0, p: ['Pokémon faint (typically
+            Poké Centers and home) ']}
+      - !ruby/object:RPG::EventCommand {c: 408, i: 0, p: [must have an Autorun event
+            in it like this one.]}
+      - !ruby/object:RPG::EventCommand {c: 408, i: 0, p: ['This event fully heals
+            all the player''s Pokémon, says ']}
+      - !ruby/object:RPG::EventCommand {c: 408, i: 0, p: ['something to that effect,
+            and turns the "Starting ']}
+      - !ruby/object:RPG::EventCommand {c: 408, i: 0, p: [over" switch OFF again.]}
+      - !ruby/object:RPG::EventCommand {c: 108, i: 0, p: ['For convenience, this can
+            be a single page in an ']}
+      - !ruby/object:RPG::EventCommand {c: 408, i: 0, p: ['NPC''s event (e.g. Mom,
+            a nurse).']}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 0, p: ['\rFirst, you should restore
+            your Pokémon to full ']}
+      - !ruby/object:RPG::EventCommand {c: 401, i: 0, p: [health.]}
+      - !ruby/object:RPG::EventCommand {c: 355, i: 0, p: [$stats.poke_center_count
+            += 1]}
+      - !ruby/object:RPG::EventCommand {c: 314, i: 0, p: [0]}
+      - !ruby/object:RPG::EventCommand {c: 108, i: 0, p: [Nurse turns to face the
+            healing machine.]}
+      - !ruby/object:RPG::EventCommand
+        c: 209
+        i: 0
+        p:
+        - 0
+        - !ruby/object:RPG::MoveRoute
+          list:
+          - &10 !ruby/object:RPG::MoveCommand {code: 17, parameters: []}
+          - &11 !ruby/object:RPG::MoveCommand {code: 15, parameters: [2]}
+          - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+          repeat: false
+          skippable: false
+      - !ruby/object:RPG::EventCommand {c: 509, i: 0, p: [*10]}
+      - !ruby/object:RPG::EventCommand {c: 509, i: 0, p: [*11]}
+      - !ruby/object:RPG::EventCommand {c: 210, i: 0, p: []}
+      - !ruby/object:RPG::EventCommand {c: 108, i: 0, p: [!binary "TnVyc2UgcGxhY2VzIFBva8OpIEJhbGxzIG9uIHRoZSBoZWFsaW5nIG1hY2hp\nbmUgb25lIGF0IA=="]}
+      - !ruby/object:RPG::EventCommand {c: 408, i: 0, p: [a time.]}
+      - !ruby/object:RPG::EventCommand {c: 122, i: 0, p: [1, 1, 0, 7, 1]}
+      - !ruby/object:RPG::EventCommand {c: 122, i: 0, p: [6, 6, 0, 0, 0]}
+      - !ruby/object:RPG::EventCommand {c: 118, i: 0, p: [Place ball]}
+      - !ruby/object:RPG::EventCommand {c: 122, i: 0, p: [6, 6, 1, 0, 1]}
+      - !ruby/object:RPG::EventCommand {c: 250, i: 0, p: [!ruby/object:RPG::AudioFile {
+            name: Battle ball shake, pitch: 100, volume: 80}]}
+      - !ruby/object:RPG::EventCommand {c: 106, i: 0, p: [8]}
+      - !ruby/object:RPG::EventCommand {c: 111, i: 0, p: [1, 6, 1, 1, 4]}
+      - !ruby/object:RPG::EventCommand {c: 119, i: 1, p: [Place ball]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 412, i: 0, p: []}
+      - !ruby/object:RPG::EventCommand {c: 108, i: 0, p: [Healing animation and ME
+            jingle.]}
+      - !ruby/object:RPG::EventCommand
+        c: 209
+        i: 0
+        p:
+        - 4
+        - !ruby/object:RPG::MoveRoute
+          list:
+          - &12 !ruby/object:RPG::MoveCommand {code: 33, parameters: []}
+          - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+          repeat: false
+          skippable: false
+      - !ruby/object:RPG::EventCommand {c: 509, i: 0, p: [*12]}
+      - !ruby/object:RPG::EventCommand {c: 249, i: 0, p: [!ruby/object:RPG::AudioFile {
+            name: Pkmn healing, pitch: 100, volume: 100}]}
+      - !ruby/object:RPG::EventCommand {c: 106, i: 0, p: [58]}
+      - !ruby/object:RPG::EventCommand {c: 108, i: 0, p: [!binary "UG9rw6kgQmFsbHMgYXJlIHJlbW92ZWQgZnJvbSBoZWFsaW5nIG1hY2hpbmUs\nIG51cnNlIA=="]}
+      - !ruby/object:RPG::EventCommand {c: 408, i: 0, p: [turns to face the player.]}
+      - !ruby/object:RPG::EventCommand {c: 122, i: 0, p: [6, 6, 0, 0, 0]}
+      - !ruby/object:RPG::EventCommand {c: 355, i: 0, p: [get_character(4).pattern
+            = 0]}
+      - !ruby/object:RPG::EventCommand
+        c: 209
+        i: 0
+        p:
+        - 4
+        - !ruby/object:RPG::MoveRoute
+          list:
+          - &13 !ruby/object:RPG::MoveCommand {code: 34, parameters: []}
+          - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+          repeat: false
+          skippable: false
+      - !ruby/object:RPG::EventCommand {c: 509, i: 0, p: [*13]}
+      - !ruby/object:RPG::EventCommand
+        c: 209
+        i: 0
+        p:
+        - 0
+        - !ruby/object:RPG::MoveRoute
+          list:
+          - &14 !ruby/object:RPG::MoveCommand {code: 15, parameters: [15]}
+          - &15 !ruby/object:RPG::MoveCommand {code: 16, parameters: []}
+          - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+          repeat: false
+          skippable: false
+      - !ruby/object:RPG::EventCommand {c: 509, i: 0, p: [*14]}
+      - !ruby/object:RPG::EventCommand {c: 509, i: 0, p: [*15]}
+      - !ruby/object:RPG::EventCommand {c: 210, i: 0, p: []}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 0, p: [\rYour Pokémon have been
+            healed to perfect health.]}
+      - !ruby/object:RPG::EventCommand {c: 108, i: 0, p: [Nurse bows.]}
+      - !ruby/object:RPG::EventCommand
+        c: 209
+        i: 0
+        p:
+        - 0
+        - !ruby/object:RPG::MoveRoute
+          list:
+          - &16 !ruby/object:RPG::MoveCommand {code: 41, parameters: [NPC 16, 0, 2,
+              1]}
+          - &17 !ruby/object:RPG::MoveCommand {code: 15, parameters: [10]}
+          - &18 !ruby/object:RPG::MoveCommand {code: 41, parameters: [NPC 16, 0, 2,
+              0]}
+          - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+          repeat: false
+          skippable: false
+      - !ruby/object:RPG::EventCommand {c: 509, i: 0, p: [*16]}
+      - !ruby/object:RPG::EventCommand {c: 509, i: 0, p: [*17]}
+      - !ruby/object:RPG::EventCommand {c: 509, i: 0, p: [*18]}
+      - !ruby/object:RPG::EventCommand {c: 210, i: 0, p: []}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 0, p: [\rWe hope you excel!]}
+      - !ruby/object:RPG::EventCommand {c: 121, i: 0, p: [1, 1, 1]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 0, p: []}
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+        repeat: true
+        skippable: false
+      move_speed: 3
+      move_type: 0
+      step_anime: false
+      through: false
+      trigger: 3
+      walk_anime: true
+    x: 7
+    y: 2
+  2: !ruby/object:RPG::Event
+    id: 2
+    name: Exit
+    pages:
+    - !ruby/object:RPG::Event::Page
+      always_on_top: false
+      condition: !ruby/object:RPG::Event::Page::Condition
+        self_switch_ch: A
+        self_switch_valid: false
+        switch1_id: 1
+        switch1_valid: false
+        switch2_id: 1
+        switch2_valid: false
+        variable_id: 1
+        variable_valid: false
+        variable_value: 0
+      direction_fix: false
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        blend_type: 0
+        character_hue: 0
+        character_name: ''
+        direction: 2
+        opacity: 255
+        pattern: 0
+        tile_id: 0
+      list:
+      - !ruby/object:RPG::EventCommand {c: 250, i: 0, p: [!ruby/object:RPG::AudioFile {
+            name: Door exit, pitch: 100, volume: 80}]}
+      - !ruby/object:RPG::EventCommand {c: 223, i: 0, p: [!ruby/object:Tone {blue: -255.0,
+            gray: 0.0, green: -255.0, red: -255.0}, 6]}
+      - !ruby/object:RPG::EventCommand {c: 106, i: 0, p: [8]}
+      - !ruby/object:RPG::EventCommand {c: 201, i: 0, p: [0, 52, 17, 13, 0, 1]}
+      - !ruby/object:RPG::EventCommand {c: 223, i: 0, p: [!ruby/object:Tone {blue: 0.0,
+            gray: 0.0, green: 0.0, red: 0.0}, 6]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 0, p: []}
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+        repeat: true
+        skippable: false
+      move_speed: 3
+      move_type: 0
+      step_anime: false
+      through: false
+      trigger: 1
+      walk_anime: true
+    x: 7
+    y: 9
+  3: !ruby/object:RPG::Event
+    id: 3
+    name: PC
+    pages:
+    - !ruby/object:RPG::Event::Page
+      always_on_top: false
+      condition: !ruby/object:RPG::Event::Page::Condition
+        self_switch_ch: A
+        self_switch_valid: false
+        switch1_id: 1
+        switch1_valid: false
+        switch2_id: 1
+        switch2_valid: false
+        variable_id: 1
+        variable_valid: false
+        variable_value: 0
+      direction_fix: false
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        blend_type: 0
+        character_hue: 0
+        character_name: ''
+        direction: 2
+        opacity: 255
+        pattern: 0
+        tile_id: 0
+      list:
+      - !ruby/object:RPG::EventCommand {c: 355, i: 0, p: [pbPokeCenterPC]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 0, p: []}
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+        repeat: true
+        skippable: false
+      move_speed: 3
+      move_type: 0
+      step_anime: false
+      through: false
+      trigger: 0
+      walk_anime: true
+    x: 11
+    y: 1
+  4: !ruby/object:RPG::Event
+    id: 4
+    name: Healing balls
+    pages:
+    - !ruby/object:RPG::Event::Page
+      always_on_top: false
+      condition: !ruby/object:RPG::Event::Page::Condition
+        self_switch_ch: A
+        self_switch_valid: false
+        switch1_id: 1
+        switch1_valid: false
+        switch2_id: 1
+        switch2_valid: false
+        variable_id: 43
+        variable_valid: false
+        variable_value: 0
+      direction_fix: false
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        blend_type: 0
+        character_hue: 0
+        character_name: ''
+        direction: 2
+        opacity: 255
+        pattern: 0
+        tile_id: 0
+      list:
+      - !ruby/object:RPG::EventCommand {c: 0, i: 0, p: []}
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+        repeat: true
+        skippable: false
+      move_speed: 4
+      move_type: 0
+      step_anime: false
+      through: false
+      trigger: 0
+      walk_anime: false
+    - !ruby/object:RPG::Event::Page
+      always_on_top: false
+      condition: !ruby/object:RPG::Event::Page::Condition
+        self_switch_ch: A
+        self_switch_valid: false
+        switch1_id: 1
+        switch1_valid: false
+        switch2_id: 1
+        switch2_valid: false
+        variable_id: 6
+        variable_valid: true
+        variable_value: 1
+      direction_fix: false
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        blend_type: 0
+        character_hue: 0
+        character_name: Healing balls 1
+        direction: 4
+        opacity: 255
+        pattern: 0
+        tile_id: 0
+      list:
+      - !ruby/object:RPG::EventCommand {c: 0, i: 0, p: []}
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+        repeat: true
+        skippable: false
+      move_speed: 3
+      move_type: 0
+      step_anime: false
+      through: false
+      trigger: 0
+      walk_anime: false
+    - !ruby/object:RPG::Event::Page
+      always_on_top: false
+      condition: !ruby/object:RPG::Event::Page::Condition
+        self_switch_ch: A
+        self_switch_valid: false
+        switch1_id: 1
+        switch1_valid: false
+        switch2_id: 1
+        switch2_valid: false
+        variable_id: 6
+        variable_valid: true
+        variable_value: 2
+      direction_fix: false
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        blend_type: 0
+        character_hue: 0
+        character_name: Healing balls 1
+        direction: 6
+        opacity: 255
+        pattern: 0
+        tile_id: 0
+      list:
+      - !ruby/object:RPG::EventCommand {c: 0, i: 0, p: []}
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+        repeat: true
+        skippable: false
+      move_speed: 3
+      move_type: 0
+      step_anime: false
+      through: false
+      trigger: 0
+      walk_anime: false
+    - !ruby/object:RPG::Event::Page
+      always_on_top: false
+      condition: !ruby/object:RPG::Event::Page::Condition
+        self_switch_ch: A
+        self_switch_valid: false
+        switch1_id: 1
+        switch1_valid: false
+        switch2_id: 1
+        switch2_valid: false
+        variable_id: 6
+        variable_valid: true
+        variable_value: 3
+      direction_fix: false
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        blend_type: 0
+        character_hue: 0
+        character_name: Healing balls 1
+        direction: 8
+        opacity: 255
+        pattern: 0
+        tile_id: 0
+      list:
+      - !ruby/object:RPG::EventCommand {c: 0, i: 0, p: []}
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+        repeat: true
+        skippable: false
+      move_speed: 3
+      move_type: 0
+      step_anime: false
+      through: false
+      trigger: 0
+      walk_anime: false
+    - !ruby/object:RPG::Event::Page
+      always_on_top: false
+      condition: !ruby/object:RPG::Event::Page::Condition
+        self_switch_ch: A
+        self_switch_valid: false
+        switch1_id: 1
+        switch1_valid: false
+        switch2_id: 1
+        switch2_valid: false
+        variable_id: 6
+        variable_valid: true
+        variable_value: 4
+      direction_fix: false
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        blend_type: 0
+        character_hue: 0
+        character_name: Healing balls 2
+        direction: 4
+        opacity: 255
+        pattern: 0
+        tile_id: 0
+      list:
+      - !ruby/object:RPG::EventCommand {c: 0, i: 0, p: []}
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+        repeat: true
+        skippable: false
+      move_speed: 3
+      move_type: 0
+      step_anime: false
+      through: false
+      trigger: 0
+      walk_anime: false
+    - !ruby/object:RPG::Event::Page
+      always_on_top: false
+      condition: !ruby/object:RPG::Event::Page::Condition
+        self_switch_ch: A
+        self_switch_valid: false
+        switch1_id: 1
+        switch1_valid: false
+        switch2_id: 1
+        switch2_valid: false
+        variable_id: 6
+        variable_valid: true
+        variable_value: 5
+      direction_fix: false
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        blend_type: 0
+        character_hue: 0
+        character_name: Healing balls 2
+        direction: 6
+        opacity: 255
+        pattern: 0
+        tile_id: 0
+      list:
+      - !ruby/object:RPG::EventCommand {c: 0, i: 0, p: []}
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+        repeat: true
+        skippable: false
+      move_speed: 3
+      move_type: 0
+      step_anime: false
+      through: false
+      trigger: 0
+      walk_anime: false
+    - !ruby/object:RPG::Event::Page
+      always_on_top: false
+      condition: !ruby/object:RPG::Event::Page::Condition
+        self_switch_ch: A
+        self_switch_valid: false
+        switch1_id: 1
+        switch1_valid: false
+        switch2_id: 1
+        switch2_valid: false
+        variable_id: 6
+        variable_valid: true
+        variable_value: 6
+      direction_fix: false
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        blend_type: 0
+        character_hue: 0
+        character_name: Healing balls 2
+        direction: 8
+        opacity: 255
+        pattern: 0
+        tile_id: 0
+      list:
+      - !ruby/object:RPG::EventCommand {c: 0, i: 0, p: []}
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+        repeat: true
+        skippable: false
+      move_speed: 3
+      move_type: 0
+      step_anime: false
+      through: false
+      trigger: 0
+      walk_anime: false
+    x: 5
+    y: 2
+  5: !ruby/object:RPG::Event
+    id: 5
+    name: Bill
+    pages:
+    - !ruby/object:RPG::Event::Page
+      always_on_top: false
+      condition: !ruby/object:RPG::Event::Page::Condition
+        self_switch_ch: A
+        self_switch_valid: false
+        switch1_id: 1
+        switch1_valid: false
+        switch2_id: 1
+        switch2_valid: false
+        variable_id: 1
+        variable_valid: false
+        variable_value: 0
+      direction_fix: false
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        blend_type: 0
+        character_hue: 0
+        character_name: NPC 25
+        direction: 4
+        opacity: 255
+        pattern: 0
+        tile_id: 0
+      list:
+      - !ruby/object:RPG::EventCommand {c: 355, i: 0, p: ['pbSet(2, pbGetStorageCreator)']}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 0, p: ['\bBill: Hello! I''m \v[2].']}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 0, p: [\bI invented the Pokémon
+            Storage System.]}
+      - !ruby/object:RPG::EventCommand {c: 355, i: 0, p: [$player.seen_storage_creator
+            = true]}
+      - !ruby/object:RPG::EventCommand {c: 118, i: 0, p: [Choices]}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 0, p: ['\bWhat do you want to know?']}
+      - !ruby/object:RPG::EventCommand {c: 102, i: 0, p: [[Wallpapers, Cancel], 2]}
+      - !ruby/object:RPG::EventCommand {c: 402, i: 0, p: [0, Wallpapers]}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 1, p: ['\bAll storage box wallpapers
+            need to be listed in ']}
+      - !ruby/object:RPG::EventCommand {c: 401, i: 1, p: ['class PokemonStorage, in
+            def allWallpapers.']}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 1, p: ['\bThey correspond to box_0.png,
+            box_1.png, etc. in ']}
+      - !ruby/object:RPG::EventCommand {c: 401, i: 1, p: [order without gaps. These
+            images are in the folder]}
+      - !ruby/object:RPG::EventCommand {c: 401, i: 1, p: [Graphics/Pictures/Storage.]}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 1, p: ['\bStorage wallpapers are
+            split into two categories: ']}
+      - !ruby/object:RPG::EventCommand {c: 401, i: 1, p: [basic and special.All basic
+            wallpapers are listed]}
+      - !ruby/object:RPG::EventCommand {c: 401, i: 1, p: [before the special wallpapers.]}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 1, p: ['\bBasic wallpapers are
+            always accessible, and ']}
+      - !ruby/object:RPG::EventCommand {c: 401, i: 1, p: [boxes use these wallpapers
+            by default. Numbers 0]}
+      - !ruby/object:RPG::EventCommand {c: 401, i: 1, p: [to 15 inclusive are basic
+            wallpapers.]}
+      - !ruby/object:RPG::EventCommand {c: 101, i: 1, p: ['\bSpecial wallpapers start
+            off locked and unavailable. ']}
+      - !ruby/object:RPG::EventCommand {c: 401, i: 1, p: ['You can unlock them with
+            pbUnlockWallpaper(id),']}
+      - !ruby/object:RPG::EventCommand {c: 401, i: 1, p: [where id is the wallpaper's
+            number.]}
+      - !ruby/object:RPG::EventCommand {c: 119, i: 1, p: [Choices]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 402, i: 0, p: [1, Cancel]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 1, p: []}
+      - !ruby/object:RPG::EventCommand {c: 404, i: 0, p: []}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 0, p: []}
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+        repeat: true
+        skippable: false
+      move_speed: 3
+      move_type: 0
+      step_anime: false
+      through: false
+      trigger: 0
+      walk_anime: true
+    x: 12
+    y: 5
+  6: !ruby/object:RPG::Event
+    id: 6
+    name: Town Map, size(2,1)
+    pages:
+    - !ruby/object:RPG::Event::Page
+      always_on_top: false
+      condition: !ruby/object:RPG::Event::Page::Condition
+        self_switch_ch: A
+        self_switch_valid: false
+        switch1_id: 1
+        switch1_valid: false
+        switch2_id: 1
+        switch2_valid: false
+        variable_id: 1
+        variable_valid: false
+        variable_value: 0
+      direction_fix: false
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        blend_type: 0
+        character_hue: 0
+        character_name: ''
+        direction: 2
+        opacity: 255
+        pattern: 0
+        tile_id: 0
+      list:
+      - !ruby/object:RPG::EventCommand {c: 108, i: 0, p: ['This event is size 2x1.
+            It is 2 tiles wide and 1 tile tall. ']}
+      - !ruby/object:RPG::EventCommand {c: 408, i: 0, p: ['An event''s size can be
+            set by adding "size(x,y)" in the ']}
+      - !ruby/object:RPG::EventCommand {c: 408, i: 0, p: ['event''s name, where x
+            and y are numbers.']}
+      - !ruby/object:RPG::EventCommand {c: 108, i: 0, p: ['The event''s placed position
+            determines the bottom ']}
+      - !ruby/object:RPG::EventCommand {c: 408, i: 0, p: [left tile occupied by the
+            event in-game.]}
+      - !ruby/object:RPG::EventCommand {c: 108, i: 0, p: ['There are a lot of reasons
+            to change an event''s size. ']}
+      - !ruby/object:RPG::EventCommand {c: 408, i: 0, p: ['Here, it is covering the
+            whole wall map with just one ']}
+      - !ruby/object:RPG::EventCommand {c: 408, i: 0, p: ['event, rather than needing
+            two events that do the ']}
+      - !ruby/object:RPG::EventCommand {c: 408, i: 0, p: [same thing.]}
+      - !ruby/object:RPG::EventCommand {c: 355, i: 0, p: [pbShowMap]}
+      - !ruby/object:RPG::EventCommand {c: 0, i: 0, p: []}
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+        repeat: true
+        skippable: false
+      move_speed: 3
+      move_type: 0
+      step_anime: false
+      through: false
+      trigger: 0
+      walk_anime: true
+    x: 12
+    y: 1
+height: 15
+tileset_id: 4
+width: 20
