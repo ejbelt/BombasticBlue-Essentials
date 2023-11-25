@@ -269,68 +269,56 @@ class Game_Character
   end
 
   def can_move_from_coordinate?(start_x, start_y, dir, strict = false)
+
+
     case dir
     when 2, 8   # Down, up
       y_diff = (dir == 8) ? @height - 1 : 0
       (start_x...(start_x + @width)).each do |i|
+        
         return false if !passable?(i, start_y - y_diff, dir, strict)
       end
       return true
     when 4, 6   # Left, right
       x_diff = (dir == 6) ? @width - 1 : 0
       ((start_y - @height + 1)..start_y).each do |i|
+        
         return false if !passable?(start_x + x_diff, i, dir, strict)
       end
+
       return true
     when 1, 3   # Down diagonals
       # Rework: We can move diagonally. We should treat it as such.
 
-      passable_x = true
-      passable_y = true
+      passable_all = true
 
       (start_x...(start_x + @width)).each do |i|
-        passable_x = false if !passable?(i, start_y, 2, strict)
+        ((start_y - @height + 1)..start_y).each do |j|
+          if passable_all == true
+            passable_all = false if !passable?(i, j, dir, strict)
+          end
+        end
       end
-      x_diff = (dir == 3) ? @width - 1 : 0
-      ((start_y - @height + 1)..start_y).each do |i|
-        passable_y = false if !passable?(start_x + x_diff, i + 1, dir + 3, strict)
-      end
-
       
-
-      puts "Down Diags"
-      puts passable_x
-      puts passable_y
-      puts "\n"
-
-      return (passable_x & passable_y)
+      return passable_all
     when 7, 9   # Up diagonals
       # Rework: We can move diagonally. We should treat it as such.
 
-      passable_x = true
-      passable_y = true
-
-      puts dir
+      passable_all = true
 
       x_diff = (dir == 9) ? @width - 1 : 0
+
       x_tile_offset = (dir == 9) ? 1 : -1
+
+
       (start_x...(start_x + @width)).each do |i|
-        ((start_y - @height + 1)..start_y).each do |i|
-          if passable_y == true
-            passable_y = false if !passable?(start_x + x_diff, i, dir - 3, strict)
+        ((start_y - @height + 1)..start_y).each do |j|
+          if passable_all == true
+            passable_all = false if !passable?(i, j, dir, strict)
           end
         end
-        if passable_x == true
-          passable_x = false if !passable?(i + x_tile_offset, start_y - @height + 1, 8, strict)
-        end
       end
-
-      puts "Up Diags"
-      puts passable_x
-      puts passable_y
-      puts "\n"
-
-      return (passable_x & passable_y)
+      return passable_all
     end
     return false
   end
@@ -591,22 +579,26 @@ class Game_Character
   end
 
   def move_generic(dir, turn_enabled = true)
+
     turn_generic(dir) if turn_enabled
-    if can_move_in_direction?(dir)
-      turn_generic(dir)
+
+    real_dir = @is_diagonal ? @diag_dir : dir
+
+    if can_move_in_direction?(real_dir)
+      turn_generic(real_dir)
       @move_initial_x = @x
       @move_initial_y = @y
-      if (dir % 2 == 0)
-        @x += (dir == 4) ? -1 : (dir == 6) ? 1 : 0
-        @y += (dir == 8) ? -1 : (dir == 2) ? 1 : 0
+      if (real_dir % 2 == 0)
+        @x += (real_dir == 4) ? -1 : (real_dir == 6) ? 1 : 0
+        @y += (real_dir == 8) ? -1 : (real_dir == 2) ? 1 : 0
       else
-        @x += (dir == 1 || dir == 7) ? -1 : (dir % 3 == 0) ? 1 : 0
-        @y += (dir == 9 || dir == 7) ? -1 : (dir == 1 || dir == 3) ? 1 : 0
+        @x += (real_dir == 1 || dir == 7) ? -1 : (real_dir % 3 == 0) ? 1 : 0
+        @y += (real_dir == 9 || real_dir == 7) ? -1 : (real_dir == 1 || real_dir == 3) ? 1 : 0
       end
       @move_timer = 0.0
       increase_steps
     else
-      check_event_trigger_touch(dir)
+      check_event_trigger_touch(real_dir)
     end
   end
 
@@ -853,10 +845,14 @@ class Game_Character
     old_x = @x
     old_y = @y
     case self.direction
-    when 1, 2, 3 then jump(0, distance)    # down
-    when 3, 4, 7 then jump(-distance, 0)   # left
-    when 1, 5, 6 then jump(distance, 0)    # right
-    when 5, 7, 8 then jump(0, -distance)   # up
+    when 1 then jump(-distance, distance)   # down/left
+    when 2 then jump(0, distance)           # down
+    when 3 then jump(distance, distance)    # down/right
+    when 4 then jump(-distance, 0)          # left
+    when 6 then jump(distance, 0)           # right
+    when 7 then jump(distance, -distance)   # up/right
+    when 8 then jump(0, -distance)          # up
+    when 9 then jump(-distance, -distance)  # up/left
     end
     return @x != old_x || @y != old_y
   end
@@ -866,10 +862,14 @@ class Game_Character
     old_x = @x
     old_y = @y
     case self.direction
-    when 1, 2, 3 then jump(0, -distance)   # down
-    when 3, 4, 7 then jump(distance, 0)    # left
-    when 1, 5, 6 then jump(-distance, 0)   # right
-    when 5, 7, 8 then jump(0, distance)    # up
+    when 1 then jump(distance, -distance)   # down/left
+    when 2 then jump(0, -distance)   # down
+    when 3 then jump(-distance, -distance)    # down/right
+    when 4 then jump(distance, 0)    # left
+    when 6 then jump(-distance, 0)   # right
+    when 7 then jump(-distance, distance)   # up/right
+    when 8 then jump(0, distance)    # up
+    when 9 then jump(distance, distance)  # up/left
     end
     return @x != old_x || @y != old_y
   end
@@ -886,16 +886,16 @@ class Game_Character
     return if @direction_fix
     
     oldDirection = @direction
+    turned_diagonal = false
 
     if @is_diagonal == true && dir % 2 == 0
       @is_diagonal = false
     end
 
-    
-
     if (dir % 2 != 0 && (oldDirection == 2 || oldDirection == 8))    
       @is_diagonal = true
-      @diag_dir = dir
+      @diag_dir = dir    
+      turned_diagonal = true
       case dir
         when 1
           dir = 2
@@ -910,7 +910,8 @@ class Game_Character
 
     if (dir % 2 != 0 && (oldDirection == 4 || oldDirection == 6))    
       @is_diagonal = true
-      @diag_dir = dir
+      @diag_dir = dir    
+      turned_diagonal = true
       case dir
         when 1
           dir = 4
@@ -926,7 +927,7 @@ class Game_Character
     @direction = dir
     @stop_count = 0
 
-    pbCheckEventTriggerAfterTurning if dir != oldDirection
+    pbCheckEventTriggerAfterTurning if (dir != oldDirection || turned_diagonal == true)
   end
 
   def turn_down;  turn_generic(2); end

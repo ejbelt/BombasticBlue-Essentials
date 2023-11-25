@@ -222,7 +222,7 @@ module RPG
         sprite.bitmap = nil
         return
       end
-      if @weatherTypes[weather_type][0].category == :Rain
+      if @weatherTypes[weather_type][0].category == :Rain || @weatherTypes[weather_type][0].category == :CherryBlossum
         last_index = weatherBitmaps.length - 1   # Last sprite is a splash
         if index.even?
           sprite.bitmap = weatherBitmaps[index % last_index]
@@ -300,7 +300,7 @@ module RPG
         dist_y = @weatherTypes[weather_type][0].particle_delta_y * delta_t
         sprite.x += dist_x
         sprite.y += dist_y
-        if weather_type == :Snow
+        if weather_type == :Snow || weather_type == :Blossum
           sprite.x += dist_x * (sprite.y - @oy - @oy_offset) / (Graphics.height * 3)   # Faster when further down screen
           sprite.x += [2, 1, 0, -1][rand(4)] * dist_x / 8   # Random movement
           sprite.y += [2, 1, 1, 0, 0, -1][index % 6] * dist_y / 10   # Variety
@@ -374,6 +374,7 @@ module RPG
       tone_green = 0
       tone_blue = 0
       tone_gray = 0
+
       # Get base tone
       if @fading
         if @type == @target_type   # Just changing max
@@ -416,7 +417,7 @@ module RPG
         tone_gray = base_tone.gray
       end
       # Modify base tone
-      if weather_type == :Sun
+      if weather_type == :Sun || weather_type == :Blossum
         @sun_magnitude = weather_max if @sun_magnitude != weather_max && @sun_magnitude != -weather_max
         @sun_magnitude *= -1 if (@sun_magnitude > 0 && @sun_strength > @sun_magnitude) ||
                                 (@sun_magnitude < 0 && @sun_strength < 0)
@@ -435,8 +436,19 @@ module RPG
       old_fade_time = @fade_time
       @fade_time += Graphics.delta
       # Change tile bitmaps
+
+      #puts @fade_time
+      #puts @type
+      #puts @target_type
+      #puts @time_shift
+
+
       if @type != @target_type
         tile_change_threshold = [FADE_OLD_TONE_END - @time_shift, 0].max
+
+        #puts tile_change_threshold
+        #puts old_fade_time
+
         if old_fade_time <= tile_change_threshold && @fade_time > tile_change_threshold
           @tile_x = @tile_y = 0.0
           if @weatherTypes[@target_type] && @weatherTypes[@target_type][2].length > 0
@@ -465,8 +477,9 @@ module RPG
         @new_sprites.each_with_index { |sprite, i| sprite.visible = (i < @new_max) if sprite }
       end
       # End fading
+
       if @fade_time >= ((@target_type == :None) ? FADE_OLD_PARTICLES_END : FADE_NEW_TILES_END) - @time_shift &&
-         @sprites.none? { |sprite| sprite.visible }
+         ( @sprites.none? { |sprite| sprite.visible } || @type == :Blossum ) #Dumb special case cus this engine hates us
         @type                 = @target_type
         @max                  = @target_max
         @target_type          = nil
@@ -523,20 +536,17 @@ module RPG
         
         if @time_until_breeze <= 0
           @time_until_breeze = rand(8..25)
-          puts "Breeze"
-          pbSEPlay(@sound_breeze, 10)
+          pbSEPlay(@sound_breeze, 40)
         end
 
         if @time_until_brooze <= 0
           @time_until_brooze = rand(15, 45)
-          puts "brooze"
-          pbSEPlay(@sound_brooze, 20)
+          pbSEPlay(@sound_brooze, 40)
         end
 
         if @time_until_howl <= 0
           @time_until_howl = rand(50, 100)
-          puts "Howl"
-          pbSEPlay(@sound_howl, 50)
+          pbSEPlay(@sound_howl, 75)
         end
 
         @time_until_breeze -= Graphics.delta

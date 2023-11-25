@@ -6,13 +6,18 @@ class LocationWindow
   LINGER_TIME = 1.6   # In seconds; time during which self is fully visible
 
   def initialize(name)
-    @window = Window_AdvancedTextPokemon.new(name)
-    @window.resizeToFit(name, Graphics.width)
+    @currentmap = $game_map.map_id
+    @current_song = $game_map.bgm.name
+    #Reset each time, it's unpredictable it seems
+    @message = ""
+    @message << name
+    @message << "\n" << @current_song
+    @window = Window_AdvancedTextPokemon.new(@message)
+    @window.resizeToFit(@message, Graphics.width)
     @window.x        = 0
     @window.y        = -@window.height
     @window.viewport = Viewport.new(0, 0, Graphics.width, Graphics.height)
     @window.viewport.z = 99999
-    @currentmap = $game_map.map_id
     @timer_start = System.uptime
   end
 
@@ -27,7 +32,7 @@ class LocationWindow
   def update
     return if @window.disposed?
     @window.update
-    if $game_temp.message_window_showing || @currentmap != $game_map.map_id
+    if $game_temp.message_window_showing || (@currentmap != $game_map.map_id && @current_song != $game_map.bgm.name)
       @window.dispose
       return
     end

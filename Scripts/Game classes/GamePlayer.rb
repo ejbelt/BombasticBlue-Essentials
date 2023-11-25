@@ -139,7 +139,11 @@ class Game_Player < Game_Character
   end
 
   def move_generic(dir, turn_enabled = true)
-    turn_generic(dir, true) if turn_enabled
+
+    turn_generic(dir) if turn_enabled
+
+    real_dir = @is_diagonal ? @diag_dir : dir
+    
     if !$game_temp.encounter_triggered
       if can_move_in_direction?(dir)
         if (dir % 2 == 0)
@@ -244,6 +248,13 @@ class Game_Player < Game_Character
 
   def pbFacingTerrainTag(dir = nil)
     dir = self.direction if !dir
+
+    #if (dir % 2 != 0)
+    #  case dir
+    #  when 1, 3 then dir = 2    # down
+    #  when 5, 7 then dir = 8   # up
+    #   end
+    #end#>
 
     return $map_factory.getFacingTerrainTag(dir, self) if $map_factory
     facing = pbFacingTile(dir, self)

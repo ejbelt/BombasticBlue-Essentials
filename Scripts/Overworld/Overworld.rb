@@ -250,7 +250,7 @@ EventHandlers.add(:on_enter_map, :set_weather,
 
     if (new_map_metadata.outdoor_map == nil)
 
-      if ((old_weather == :HeavyRain) || (old_weather == :Storm))
+      if ((old_weather == :HeavyRain) || (old_weather == :Storm) || (old_weather == :Rain))
         pbBGSPlay("rain_indoors_2", 10)
       end
 
@@ -266,7 +266,7 @@ EventHandlers.add(:on_enter_map, :set_weather,
         pbBGSStop()
       end
 
-      if (((new_weather == :HeavyRain) || (new_weather == :Storm)))
+      if (((new_weather == :HeavyRain) || (new_weather == :Storm) || (new_weather == :Rain)))
         pbBGSPlay("rain_2", 30)
       end
 
@@ -340,6 +340,7 @@ EventHandlers.add(:on_map_or_spriteset_change, :show_location_window,
       nosignpost = true if $game_map.name == pbGetMapNameFromId($PokemonGlobal.mapTrail[1])
     end
     scene.spriteset.addUserSprite(LocationWindow.new($game_map.name)) if !nosignpost
+    #scene.spriteset.addUserSprite(MusicWindow.new($game_map.bgm.name))
   }
 )
 
@@ -673,6 +674,12 @@ def pbRegisterPartner(tr_type, tr_name, tr_id = 0)
     i.calc_stats
   end
   $PokemonGlobal.partner = [tr_type, tr_name, trainer.id, trainer.party]
+end
+
+def bbRegisterPokeFollower()
+
+
+  $player.party
 end
 
 def pbDeregisterPartner

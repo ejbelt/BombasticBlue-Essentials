@@ -7,7 +7,7 @@ Name = Intro
 Name = Test Town
 Outdoor = true
 ShowArea = true
-Weather = Storm,100
+Weather = Blossum,100
 MapPosition = 0,13,12
 BattleBack = field
 #-------------------------------
@@ -39,7 +39,7 @@ ShowArea = true
 MapPosition = 0,13,10
 MapSize = 2,11
 #-------------------------------
-[008]   # Daisy's house
+[008]   # Cunt's house
 Name = Lappet Town
 MapPosition = 0,13,12
 #-------------------------------

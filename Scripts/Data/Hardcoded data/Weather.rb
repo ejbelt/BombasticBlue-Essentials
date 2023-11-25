@@ -163,3 +163,16 @@ GameData::Weather.register({
   :tile_delta_y     => 0,
   :graphics         => [nil, ["fog_tile"]]
 })
+
+
+GameData::Weather.register({
+  :id               => :Blossum,
+  :category         => :CherryBlossum,
+  :id_number        => 9,
+  :graphics         => [["cherry_1", "cherry_2", "cherry_3"]],
+  :particle_delta_x => -24,
+  :particle_delta_y => 24,
+  :tone_proc        => proc { |strength|
+    next Tone.new(64, 64, 32, 0)
+  }
+})
