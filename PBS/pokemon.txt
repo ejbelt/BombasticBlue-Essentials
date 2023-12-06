@@ -1609,7 +1609,7 @@ Category = Tadpole
 Pokedex = Its body surface is always wet and slick with an oily fluid. Because of this greasy covering, it can easily slip and slide out of the clutches of any enemy in battle.
 Generation = 1
 WildItemUncommon = KINGSROCK
-Evolutions = POLIWRATH,Item,WATERSTONE,POLITOED,TradeItem,KINGSROCK
+Evolutions = POLIWRATH,Item,WATERSTONE,POLITOED,TradeItem,KINGSROCK,POLITOED,HoldItem,KINGSROCK
 #-------------------------------
 [POLIWRATH]
 Name = Poliwrath
@@ -2090,7 +2090,7 @@ Category = Dopey
 Pokedex = It catches prey by dipping its tail in water at the side of a river. But it often forgets what it is doing and spends whole days just loafing at the water's edge.
 Generation = 1
 WildItemUncommon = LAGGINGTAIL
-Evolutions = SLOWBRO,Level,37,SLOWKING,TradeItem,KINGSROCK
+Evolutions = SLOWBRO,Level,37,SLOWKING,TradeItem,KINGSROCK,SLOWKING,HoldItem,KINGSROCK
 #-------------------------------
 [SLOWBRO]
 Name = Slowbro
@@ -2516,7 +2516,7 @@ Habitat = Cave
 Category = Rock Snake
 Pokedex = There is a magnet in its brain that prevents an Onix from losing direction while tunneling. As it grows older, its body becomes steadily rounder and smoother.
 Generation = 1
-Evolutions = STEELIX,TradeItem,METALCOAT
+Evolutions = STEELIX,TradeItem,METALCOAT,STEELIX,HoldItem,METALCOAT
 #-------------------------------
 [DROWZEE]
 Name = Drowzee
@@ -2963,7 +2963,7 @@ Habitat = RoughTerrain
 Category = Drill
 Pokedex = Its horn, which rotates like a drill, destroys tall buildings with one strike. It stands on its hind legs, and its brain is well developed.
 Generation = 1
-Evolutions = RHYPERIOR,TradeItem,PROTECTOR
+Evolutions = RHYPERIOR,TradeItem,PROTECTOR,RHYPERIOR,HoldItem,PROTECTOR
 #-------------------------------
 [CHANSEY]
 Name = Chansey
@@ -3099,7 +3099,7 @@ Category = Dragon
 Pokedex = The poisonous barbs all over its body are highly valued as ingredients for making traditional herbal medicine. It shows no mercy to anything approaching its nest.
 Generation = 1
 WildItemUncommon = DRAGONSCALE
-Evolutions = KINGDRA,TradeItem,DRAGONSCALE
+Evolutions = KINGDRA,TradeItem,DRAGONSCALE,KINGDRA,HoldItem,DRAGONSCALE
 #-------------------------------
 [GOLDEEN]
 Name = Goldeen
@@ -3262,7 +3262,7 @@ Habitat = Grassland
 Category = Mantis
 Pokedex = Its blindingly fast speed adds to the sharpness of its twin forearm scythes. The scythes can slice through thick logs in one wicked stroke.
 Generation = 1
-Evolutions = SCIZOR,TradeItem,METALCOAT
+Evolutions = SCIZOR,TradeItem,METALCOAT,SCIZOR,HoldItem,METALCOAT
 #-------------------------------
 [JYNX]
 Name = Jynx
@@ -3314,7 +3314,7 @@ Category = Electric
 Pokedex = When a storm approaches, it competes with others to scale heights that are likely to be stricken by lightning. Some towns use Electabuzz as lightning rods.
 Generation = 1
 WildItemUncommon = ELECTIRIZER
-Evolutions = ELECTIVIRE,TradeItem,ELECTIRIZER
+Evolutions = ELECTIVIRE,TradeItem,ELECTIRIZER,ELECTIVIRE,HoldItem,ELECTIRIZER
 #-------------------------------
 [MAGMAR]
 Name = Magmar
@@ -3341,7 +3341,7 @@ Category = Spitfire
 Pokedex = In battle, it blows out intense flames from all over its body to intimidate its foe. These fiery bursts create heat waves that ignite grass and trees.
 Generation = 1
 WildItemUncommon = MAGMARIZER
-Evolutions = MAGMORTAR,TradeItem,MAGMARIZER
+Evolutions = MAGMORTAR,TradeItem,MAGMARIZER,MAGMORTAR,HoldItem,MAGMARIZER
 #-------------------------------
 [PINSIR]
 Name = Pinsir
@@ -3626,7 +3626,7 @@ Habitat = Urban
 Category = Virtual
 Pokedex = It is capable of reverting itself entirely back to program data in order to enter cyberspace. A Porygon is copy-protected so it cannot be duplicated.
 Generation = 1
-Evolutions = PORYGON2,TradeItem,UPGRADE
+Evolutions = PORYGON2,TradeItem,UPGRADE,PORYGON2,HoldItem,UPGRADE
 #-------------------------------
 [OMANYTE]
 Name = Omanyte
@@ -4055,7 +4055,7 @@ Evolutions = MEGANIUM,Level,32
 #-------------------------------
 [MEGANIUM]
 Name = Meganium
-Types = GRASS
+Types = WORTHLESS
 BaseStats = 80,82,100,80,83,100
 GenderRatio = FemaleOneEighth
 GrowthRate = Parabolic
@@ -5126,7 +5126,7 @@ Habitat = WatersEdge
 Category = Water Fish
 Pokedex = Wooper usually live in water but come out onto land seeking food occasionally. On land, they coat their bodies with a gooey, toxic film.
 Generation = 2
-Evolutions = QUAGSIRE,Level,20
+Evolutions = QUAGSIRE,Level,20,CLODSIRE,None,
 #-------------------------------
 [QUAGSIRE]
 Name = Quagsire
@@ -5567,6 +5567,7 @@ Category = Balloon
 Pokedex = A Qwilfish uses the pressure of water it swallows to shoot toxic quills all at once from all over its body. It finds swimming to be somewhat challenging.
 Generation = 2
 WildItemUncommon = POISONBARB
+Evolutions = OVERQWIL,None,
 #-------------------------------
 [SCIZOR]
 Name = Scizor
@@ -5674,7 +5675,7 @@ Category = Sharp Claw
 Pokedex = A Sneasel scales trees by punching its hooked claws into the bark. It seeks out unguarded nests and steals eggs for food while the parents are away.
 Generation = 2
 WildItemUncommon = QUICKCLAW
-Evolutions = WEAVILE,NightHoldItem,RAZORCLAW
+Evolutions = WEAVILE,NightHoldItem,RAZORCLAW,SNEASLER,None,
 #-------------------------------
 [TEDDIURSA]
 Name = Teddiursa
@@ -6146,7 +6147,7 @@ Habitat = Urban
 Category = Virtual
 Pokedex = It was created by humans using the power of science. It has been given artificial intelligence that enables it to learn new gestures and emotions on its own.
 Generation = 2
-Evolutions = PORYGONZ,TradeItem,DUBIOUSDISC
+Evolutions = PORYGONZ,TradeItem,DUBIOUSDISC,PORYGONZ,HoldItem,DUBIOUSDISC
 #-------------------------------
 [STANTLER]
 Name = Stantler
@@ -9220,7 +9221,7 @@ Habitat = WatersEdge
 Category = Fish
 Pokedex = Feebas live in ponds that are heavily infested with weeds. Because of its hopelessly shabby appearance, it seems as if few trainers raise it.
 Generation = 3
-Evolutions = MILOTIC,TradeItem,PRISMSCALE,MILOTIC,Beauty,170
+Evolutions = MILOTIC,TradeItem,PRISMSCALE,MILOTIC,Beauty,170,MILOTIC,HoldItem,PRISMSCALE
 #-------------------------------
 [MILOTIC]
 Name = Milotic
@@ -9382,7 +9383,7 @@ Category = Requiem
 Pokedex = A glare from its single scarlet eye makes even burly grown-ups freeze in utter fear. It is a nocturnal Pokémon that roams about under the cloak of darkness.
 Generation = 3
 WildItemUncommon = SPELLTAG
-Evolutions = DUSCLOPS,Level,37
+Evolutions = DUSCLOPS,Level,25
 #-------------------------------
 [DUSCLOPS]
 Name = Dusclops
@@ -9409,7 +9410,7 @@ Category = Beckon
 Pokedex = It is thought that its body is hollow with only a spectral ball of fire burning inside. However, no one has been able to confirm this theory as fact.
 Generation = 3
 WildItemUncommon = SPELLTAG
-Evolutions = DUSKNOIR,TradeItem,REAPERCLOTH
+Evolutions = DUSKNOIR,TradeItem,REAPERCLOTH,DUSKNOIR,HoldItem,REAPERCLOTH
 #-------------------------------
 [TROPIUS]
 Name = Tropius
@@ -9674,7 +9675,7 @@ Pokedex = A Clamperl slams its shell closed on prey to prevent escape. The pearl
 Generation = 3
 WildItemCommon = PEARL
 WildItemUncommon = BIGPEARL
-Evolutions = HUNTAIL,TradeItem,DEEPSEATOOTH,GOREBYSS,TradeItem,DEEPSEASCALE
+Evolutions = HUNTAIL,TradeItem,DEEPSEATOOTH,GOREBYSS,TradeItem,DEEPSEASCALE,HUNTAIL,HoldItem,DEEPSEATOOTH,GOREBYSS,HoldItem,DEEPSEASCALE
 #-------------------------------
 [HUNTAIL]
 Name = Huntail
@@ -10933,7 +10934,7 @@ Category = Tiny Bee
 Pokedex = A Pokémon formed by three others. It busily carries sweet floral honey to Vespiquen.
 Generation = 4
 WildItemUncommon = HONEY
-Evolutions = VESPIQUEN,LevelFemale,21
+Evolutions = VESPIQUEN,Level,21
 #-------------------------------
 [VESPIQUEN]
 Name = Vespiquen
@@ -11852,7 +11853,7 @@ Category = Scorpion
 Pokedex = It grips prey with its tail claws and injects poison. It tenaciously hangs on until the poison takes.
 Generation = 4
 WildItemUncommon = POISONBARB
-Evolutions = DRAPION,Level,40
+Evolutions = DRAPION,Level,30
 #-------------------------------
 [DRAPION]
 Name = Drapion
@@ -14339,6 +14340,7 @@ Pokedex = Savage, violent Pokémon, red and blue Basculin are always fighting ea
 Generation = 5
 Flags = InheritFormFromMother
 WildItemUncommon = DEEPSEATOOTH
+Evolutions = BASCULEGION,None,
 #-------------------------------
 [SANDILE]
 Name = Sandile
@@ -17661,7 +17663,7 @@ Shape = HeadArms
 Category = Perfume
 Pokedex = It emits a scent that enraptures those who smell it. This fragrance changes depending on what it has eaten.
 Generation = 6
-Evolutions = AROMATISSE,TradeItem,SACHET
+Evolutions = AROMATISSE,TradeItem,SACHET,AROMATISSE,HoldItem,SACHET
 #-------------------------------
 [AROMATISSE]
 Name = Aromatisse
@@ -17711,7 +17713,7 @@ Shape = HeadLegs
 Category = Cotton Candy
 Pokedex = To entangle its opponents in battle, it extrudes white threads as sweet and sticky as cotton candy.
 Generation = 6
-Evolutions = SLURPUFF,TradeItem,WHIPPEDDREAM
+Evolutions = SLURPUFF,TradeItem,WHIPPEDDREAM,SLURPUFF,HoldItem,WHIPPEDDREAM
 #-------------------------------
 [SLURPUFF]
 Name = Slurpuff
@@ -19557,7 +19559,7 @@ Category = Toxic Lizard
 Pokedex = It burns its bodily fluids to create a poisonous gas. When its enemies become disoriented from inhaling the gas, it attacks them.
 Generation = 7
 WildItemUncommon = SMOKEBALL
-Evolutions = SALAZZLE,LevelFemale,33
+Evolutions = SALAZZLE,Level,33
 #-------------------------------
 [SALAZZLE]
 Name = Salazzle

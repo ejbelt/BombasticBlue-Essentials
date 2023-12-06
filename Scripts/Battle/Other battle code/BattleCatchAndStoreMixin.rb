@@ -130,6 +130,7 @@ module Battle::CatchAndStoreMixin
     end
     # Animation of opposing trainer blocking Poké Balls (unless it's a Snag Ball
     # at a Shadow Pokémon)
+    # For Res: Add the stealing mechanics here!
     if trainerBattle? && !(GameData::Item.get(ball).is_snag_ball? && battler.shadowPokemon?)
       @scene.pbThrowAndDeflect(ball, 1)
       pbDisplay(_INTL("The Trainer blocked your Poké Ball! Don't be a thief!"))
@@ -191,6 +192,7 @@ module Battle::CatchAndStoreMixin
     if numShakes != 4
       @first_poke_ball = ball if !@poke_ball_failed
       @poke_ball_failed = true
+      @failed_catch_count += 1
     end
   end
 
@@ -208,6 +210,8 @@ module Battle::CatchAndStoreMixin
       catch_rate /= 10
     end
     # First half of the shakes calculation
+    puts ball
+    puts catch_rate
     a = battler.totalhp
     b = battler.hp
     x = (((3 * a) - (2 * b)) * catch_rate.to_f) / (3 * a)

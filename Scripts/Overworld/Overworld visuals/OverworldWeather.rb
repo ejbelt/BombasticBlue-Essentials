@@ -47,9 +47,9 @@ module RPG
       @time_until_breeze    = rand(1, 14)
       @time_until_brooze    = rand(5, 24)
       @time_until_howl      = rand(15, 45)
-      @sound_breeze         = AudioCache.GetCacheValue("Ambience/breeze.ogg")
-      @sound_brooze         = AudioCache.GetCacheValue("Ambience/brooze.ogg")
-      @sound_howl           = AudioCache.GetCacheValue("Ambience/howl.ogg")
+      @sound_breeze         = "Ambience/breeze"
+      @sound_brooze         = "Ambience/brooze"
+      @sound_howl           = "Ambience/howl"
       @sprites              = []
       @sprite_lifetimes     = []
       @tiles                = []
@@ -417,7 +417,7 @@ module RPG
         tone_gray = base_tone.gray
       end
       # Modify base tone
-      if weather_type == :Sun || weather_type == :Blossum
+      if weather_type == :Sun
         @sun_magnitude = weather_max if @sun_magnitude != weather_max && @sun_magnitude != -weather_max
         @sun_magnitude *= -1 if (@sun_magnitude > 0 && @sun_strength > @sun_magnitude) ||
                                 (@sun_magnitude < 0 && @sun_strength < 0)

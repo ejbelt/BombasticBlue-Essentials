@@ -1,7 +1,6 @@
 class Scene_DebugIntro
   def main
     Graphics.transition(0)
-    AudioPreloader.PreloadSounds()
     sscene = PokemonLoad_Scene.new
     sscreen = PokemonLoadScreen.new(sscene)
     sscreen.pbStartLoadScreen

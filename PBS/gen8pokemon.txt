@@ -11168,7 +11168,7 @@ WildItemUncommon=HONEY
 BattlerPlayerY=31
 BattlerEnemyY=25
 BattlerAltitude=13
-Evolutions=VESPIQUEN,LevelFemale,21
+Evolutions=VESPIQUEN,Level,21
 [416]
 Name=Vespiquen
 InternalName=VESPIQUEN
@@ -20001,14 +20001,14 @@ WildItemUncommon=SMOKEBALL
 BattlerPlayerY=21
 BattlerEnemyY=29
 BattlerAltitude=0
-Evolutions=SALAZZLE,LevelFemale,33
+Evolutions=SALAZZLE,Level,33
 [758]
 Name=Salazzle
 InternalName=SALAZZLE
 Type1=POISON
 Type2=FIRE
 BaseStats=68,64,60,117,111,60
-GenderRate=AlwaysFemale
+GenderRate=FemaleOneEighth
 GrowthRate=Medium
 BaseEXP=168
 EffortPoints=0,0,0,2,0,0

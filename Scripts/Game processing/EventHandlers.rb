@@ -296,3 +296,6 @@ end
 
 class MoveHandlerHash < HandlerHashSymbol
 end
+
+class CharmHandlerHash < HandlerHashSymbol
+end

@@ -83,6 +83,7 @@ class Battle
   attr_accessor :lastMoveUser     # Last move user
   attr_accessor :first_poke_ball  # ID of the first thrown Poké Ball that failed
   attr_accessor :poke_ball_failed # Set after first_poke_ball to prevent it being set again
+  attr_accessor :failed_catch_count
   attr_reader   :switching        # True if during the switching phase of the round
   attr_reader   :futureSight      # True if Future Sight is hitting
   attr_reader   :command_phase
@@ -171,6 +172,7 @@ class Battle
     @mega_rings        = []
     GameData::Item.each { |item| @mega_rings.push(item.id) if item.has_flag?("MegaRing") }
     @battleAI          = AI.new(self)
+    @failed_catch_count = 0
   end
 
   #=============================================================================

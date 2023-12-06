@@ -20,6 +20,7 @@ class Game_System
   attr_accessor :autoscroll_x_speed
   attr_accessor :autoscroll_y_speed
   attr_accessor :bgm_position
+  attr_accessor :bgm_length
   attr_accessor :audio_cache
 
   def initialize
@@ -38,6 +39,7 @@ class Game_System
     @autoscroll_y_speed = 0
     @bgm_position       = 0
     @bgs_position       = 0
+    @bgm_length         = 0
   end
 
   #-----------------------------------------------------------------------------
@@ -45,6 +47,8 @@ class Game_System
   def bgm_play(bgm, track = nil)
     old_pos = @bgm_position
     @bgm_position = 0
+    #@bgm_length = getPlayTime("Audio/BGM/" + bgm.name)
+    #puts @bgm_length
     bgm_play_internal(bgm, 0, track)
     @bgm_position = old_pos
   end

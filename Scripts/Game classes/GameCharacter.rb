@@ -30,6 +30,7 @@ class Game_Character
   attr_writer   :bob_height
   attr_accessor :is_diagonal
   attr_accessor :diag_dir
+  attr_accessor :amulet
 
   def initialize(map = nil)
     @map                       = map
@@ -88,6 +89,7 @@ class Game_Character
     @prelock_direction         = 0
     @is_diagonal               = false
     @diag_dir                  = 0
+    @amulet                    = BBAmulet.new()
   end
 
   def x_offset; return @x_offset || 0; end

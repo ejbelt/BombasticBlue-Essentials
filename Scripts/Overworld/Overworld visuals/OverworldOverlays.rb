@@ -11,7 +11,7 @@ class LocationWindow
     #Reset each time, it's unpredictable it seems
     @message = ""
     @message << name
-    @message << "\n" << @current_song
+    @message << "\n" << "♫ " << @current_song
     @window = Window_AdvancedTextPokemon.new(@message)
     @window.resizeToFit(@message, Graphics.width)
     @window.x        = 0

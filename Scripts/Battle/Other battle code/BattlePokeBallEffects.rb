@@ -52,6 +52,14 @@ Battle::PokeBallEffects::ModifyCatchRate.add(:SAFARIBALL, proc { |ball, catchRat
   next catchRate * 1.5
 })
 
+Battle::PokeBallEffects::ModifyCatchRate.add(:BOOTLEGBALL, proc { |ball, catchRate, battle, battler|
+  next catchRate * (30 + battle.failed_catch_count)
+})
+
+Battle::PokeBallEffects::ModifyCatchRate.add(:DETERMINEDBALL, proc { |ball, catchRate, battle, battler|
+  next catchRate * (battle.failed_catch_count + 1)
+})
+
 Battle::PokeBallEffects::ModifyCatchRate.add(:NETBALL, proc { |ball, catchRate, battle, battler|
   multiplier = (Settings::NEW_POKE_BALL_CATCH_RATES) ? 3.5 : 3
   catchRate *= multiplier if battler.pbHasType?(:BUG) || battler.pbHasType?(:WATER)
@@ -90,6 +98,7 @@ Battle::PokeBallEffects::ModifyCatchRate.add(:DUSKBALL, proc { |ball, catchRate,
 
 Battle::PokeBallEffects::ModifyCatchRate.add(:QUICKBALL, proc { |ball, catchRate, battle, battler|
   catchRate *= 5 if battle.turnCount == 0
+  catchRate = catchRate * 5 / (battle.turnCount+1) if battle.turnCount >= 1
   next catchRate
 })
 
@@ -195,4 +204,17 @@ Battle::PokeBallEffects::OnCatch.add(:HEALBALL, proc { |ball, battle, pkmn|
 
 Battle::PokeBallEffects::OnCatch.add(:FRIENDBALL, proc { |ball, battle, pkmn|
   pkmn.happiness = (Settings::APPLY_HAPPINESS_SOFT_CAP) ? 150 : 200
+})
+
+Battle::PokeBallEffects::OnCatch.add(:BOOTLEGBALL, proc { |ball, battle, pkmn|
+  pkmn.happiness = 1
+})
+
+
+#===============================================================================
+# OnFailCatch
+#===============================================================================
+
+Battle::PokeBallEffects::OnFailCatch.add(:QUICKBALL, proc { |ball, battle, battler|
+  battle.failed_catch_count += 9
 })

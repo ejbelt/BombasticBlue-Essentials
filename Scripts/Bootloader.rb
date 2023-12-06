@@ -45,6 +45,9 @@ SCRIPTS = [
   'Game classes/GamePicture',
   'Game classes/GameMap',
   'Game classes/GameMapFactory',
+
+  'Battle/Charms/Amulet',
+
   'Game classes/GameCharacter',
   'Game classes/GameEvent',
   'Game classes/GamePlayer',
@@ -346,7 +349,7 @@ SCRIPTS = [
   'Debug/Debug menus/DebugFilenameUpdater',
   'Debug/EditorListers',
 
-  'Audio/AudioCache',
+  #'Audio/AudioCache',
 
   'Compiler/Compiler',
   'Compiler/CompilerCompilePBS',

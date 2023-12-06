@@ -84,6 +84,12 @@ IsSpecialType = true
 Weaknesses = FLYING,POISON,BUG,FIRE,ICE
 Resistances = GROUND,WATER,GRASS,ELECTRIC
 #-------------------------------
+[WORTHLESS]
+Name = Worthless
+IconPosition = 12
+IsSpecialType = true
+Weaknesses = FLYING,POISON,BUG,FIRE,ICE,GROUND,WATER,GRASS,ELECTRIC,NORMAL,FIGHTING,ROCK,GHOST,STEEL,QMARKS,WORTHLESS,PSYCHIC,DRAGON,DARK,FAIRY
+#-------------------------------
 [ELECTRIC]
 Name = Electric
 IconPosition = 13

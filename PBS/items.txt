@@ -4035,6 +4035,24 @@ BattleUse = OnFoe
 Flags = PokeBall
 Description = A special Poké Ball designed to catch Ultra Beasts. It has a low success rate for catching others.
 #-------------------------------
+[BOOTLEGBALL]
+Name = Bootleg Master Ball
+NamePlural = Bootleg Master Balls
+Pocket = 3
+Price = 5000
+BattleUse = OnFoe
+Flags = PokeBall
+Description = A rather rugged recreation of the infamous Master Ball. While it's never guarunteed like the real deal, the catch rate is noticably higher than normal Poké Ball.
+#-------------------------------
+[DETERMINEDBALL]
+Name = Determination Ball
+NamePlural = Determination Balls
+Pocket = 3
+Price = 900
+BattleUse = OnFoe
+Flags = PokeBall
+Description = A special Poké Ball that is designed to increase the chance of catching a Pokémon for each failed catch.
+#-------------------------------
 [TM01]
 Name = TM01
 NamePlural = TM01s

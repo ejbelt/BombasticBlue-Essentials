@@ -173,6 +173,6 @@ GameData::Weather.register({
   :particle_delta_x => -24,
   :particle_delta_y => 24,
   :tone_proc        => proc { |strength|
-    next Tone.new(64, 64, 32, 0)
+    next Tone.new(38, 2, 23, 70)
   }
 })

@@ -287,6 +287,11 @@ module Battle::Scene::Animation::BallAnimationMixin
                      "particle", Tone.new(0, 0, 0), Tone.new(-48, -200, -56),   # White, magenta
                      "dazzle", Tone.new(0, 0, 0), Tone.new(0, 0, 0),   # White, white
                      "dazzle", Tone.new(-48, -200, -56), Tone.new(-48, -200, -56)],   # Magenta, magenta
+    :BOOTLEGBALL  => [Tone.new(0, 0, 0), Tone.new(-48, -200, -56),   # White, magenta
+                     "particle", Tone.new(0, 0, 0), Tone.new(0, 0, 0),   # White, white
+                     "particle", Tone.new(0, 0, 0), Tone.new(-48, -200, -56),   # White, magenta
+                     "dazzle", Tone.new(0, 0, 0), Tone.new(0, 0, 0),   # White, white
+                     "dazzle", Tone.new(-48, -200, -56), Tone.new(-48, -200, -56)],   # Magenta, magenta
     :NETBALL     => [Tone.new(0, 0, 0), Tone.new(0, -64, 0),   # White, lilac
                      "particle", Tone.new(0, 0, 0), Tone.new(0, -64, 0),   # White, lilac
                      "particle", Tone.new(0, 0, 0), Tone.new(0, -64, 0),   # White, lilac

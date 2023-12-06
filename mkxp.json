@@ -26,11 +26,11 @@
 
     // Enable F12 to make the game soft reset.
     //
-    // "enableReset": true,
+    "enableReset": true,
 
     // Enable F1 to open the keybinding menu.
     //
-    // "enableSettings": true,
+    "enableSettings": true,
 
     // The names of each input, as seen in the F1 keybinding menu. The names
     // have no other use.
@@ -69,13 +69,13 @@
     // audio, this should be set to as many available tracks as the game needs.
     // Maximum: 16.
     //
-    // "BGMTrackCount": 1,
+    "BGMTrackCount": 16,
 
     // Number of OpenAL sources to allocate for SE playback. If there are a lot
     // of sounds playing at the same time and audibly cutting each other off,
     // try increasing this number. Maximum: 64.
     //
-    // "SESourceCount": 6,
+    "SESourceCount": 64,
 
     // Index all accessible assets via their lower case path (emulates Windows
     // case insensitivity).
@@ -106,6 +106,8 @@
     // entire window.
     //
     // "fixedAspectRatio": true,
+
+    "debugMode": true,
 
     // When resizing the game screen to fit the window, whether to scale up the
     // game screen by an integer amount (as large as the current window size
