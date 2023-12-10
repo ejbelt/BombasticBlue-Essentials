@@ -143,11 +143,10 @@ class Battle::Battler
   # Mega Evolution, Primal Reversion, Shadow Pokémon
   #=============================================================================
   def hasMega?
-    return false if @effects[PBEffects::Transform]
-    return @pokemon&.hasMegaForm?
+    return false
   end
 
-  def mega?; return @pokemon&.mega?; end
+  def mega?; return false; end
 
   def hasPrimal?
     return false if @effects[PBEffects::Transform]

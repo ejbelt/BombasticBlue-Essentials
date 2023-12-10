@@ -203,6 +203,27 @@ MenuHandlers.add(:pause_menu, :bag, {
   }
 })
 
+
+MenuHandlers.add(:pause_menu, :amulet, {
+  "name"      => _INTL("Amulet"),
+  "order"     => 35,
+  "condition" => proc { next !pbInBugContest? },
+  "effect"    => proc { |menu|
+    pbPlayDecisionSE
+    item = nil
+    pbFadeOutIn do
+      scene = BBAmuletScene.new
+      screen = BBAmuletScene.new(scene, $bag, $amulet)
+      item = screen.pbStartScreen
+      (item) ? menu.pbEndScene : menu.pbRefresh
+    end
+    next false if !item
+    $game_temp.in_menu = false
+    pbUseKeyItemInField(item)
+    next true
+  }
+})
+
 MenuHandlers.add(:pause_menu, :pokegear, {
   "name"      => _INTL("Pokégear"),
   "order"     => 40,

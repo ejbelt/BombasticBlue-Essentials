@@ -76,12 +76,11 @@ class BBAmuletScene
         end
         @bag.last_viewed_pocket = lastpocket
         @sliderbitmap = AnimatedBitmap.new("Graphics/UI/Bag/icon_slider")
-        @slotbitmap = AnimatedBitmap.new("Graphics/UI/Amulet/icon_slot")
+        @slotbitmap = AnimatedBitmap.new("Graphics/UI/Amulet/window-charms")
         @sprites = {}
         @sprites["background"] = IconSprite.new(0, 0, @viewport)
         @sprites["overlay"] = BitmapSprite.new(Graphics.width, Graphics.height, @viewport)
         pbSetSystemFont(@sprites["overlay"].bitmap)
-        @sprites["bagsprite"] = IconSprite.new(30, 20, @viewport)
         @sprites["charmicon"] = BitmapSprite.new(186, 32, @viewport)
         @sprites["charmicon"].x = 0
         @sprites["charmicon"].y = 224
@@ -123,12 +122,9 @@ class BBAmuletScene
 
       def pbRefresh
         # Set the background image
-        @sprites["background"].setBitmap(sprintf("Graphics/UI/Amulet/bg_%d", @bag.last_viewed_pocket))
+        @sprites["background"].setBitmap(sprintf("Graphics/UI/Amulet/ui"))
         # Set the bag sprite
-        amuletscreenexists = pbResolveBitmap(sprintf("Graphics/UI/Amulet/amulet_%d_f", @bag.last_viewed_pocket))
-        if amuletscreenexists
-          @sprites["bagsprite"].setBitmap(sprintf("Graphics/UI/Amulet/amulet_%d", @bag.last_viewed_pocket))
-        end
+        
         # Draw the pocket icons
         @sprites["charmicon"].bitmap.clear
         if @choosing && @filterlist
@@ -223,94 +219,95 @@ class BBAmuletSceneScreen
         @scene = scene
     end
 
-    @scene.pbStartScene(@bag, @amulet)
-    charm = nil
-    loop do
-      item = @scene.bbChoseCharm
-      break if !item
-      charm = GameData::Charm.get(item)
-      cmdRead     = -1
-      cmdUse      = -1
-      cmdEquip    = -1
-      cmdGive     = -1
-      cmdToss     = -1
-      cmdDebug    = -1
-      commands = []
-      # Generate command list
-      commands[cmdEquip = commands.length]       = _INTL("Equip")
-      commands[cmdGive = commands.length]       = _INTL("Give") if $player.pokemon_party.length > 0 && itm.can_hold?
-      commands[cmdToss = commands.length]       = _INTL("Toss") if !charm.is_important? || $DEBUG
-      commands[cmdDebug = commands.length]      = _INTL("Debug") if $DEBUG
-      commands[commands.length]                 = _INTL("Cancel")
-      # Show commands generated above
-      itemname = charm.name
-      command = @scene.pbShowCommands(_INTL("{1} is selected.", itemname), commands)
+    def pbStartScreen
+      @scene.pbStartScene(@bag, @amulet)
+      charm = nil
+      loop do
+        item = @scene.bbChoseCharm
+        break if !item
+        charm = GameData::Charm.get(item)
+        cmdRead     = -1
+        cmdUse      = -1
+        cmdEquip    = -1
+        cmdGive     = -1
+        cmdToss     = -1
+        cmdDebug    = -1
+        commands = []
+        # Generate command list
+        commands[cmdEquip = commands.length]       = _INTL("Equip")
+        commands[cmdGive = commands.length]       = _INTL("Give") if $player.pokemon_party.length > 0 && itm.can_hold?
+        commands[cmdToss = commands.length]       = _INTL("Toss") if !charm.is_important? || $DEBUG
+        commands[cmdDebug = commands.length]      = _INTL("Debug") if $DEBUG
+        commands[commands.length]                 = _INTL("Cancel")
+        # Show commands generated above
+        itemname = charm.name
+        command = @scene.pbShowCommands(_INTL("{1} is selected.", itemname), commands)
 
-      if cmdEquip >= 0 && command == cmdEquip   # Use item
-        ret = bbEquipCharm(item)
-        # ret: 0=Item wasn't used; 1=Item used; 2=Close Bag to use in field
-        break if ret == 2   # End screen
-        @scene.pbRefresh
-        next
-      elsif cmdGive >= 0 && command == cmdGive   # Give item to Pokémon
-        if $player.pokemon_count == 0
-          @scene.pbDisplay(_INTL("There is no Pokémon."))
-        elsif charm.is_important?
-          @scene.pbDisplay(_INTL("The charm can't be held."))
-        else
-          pbFadeOutIn do
-            sscene = PokemonParty_Scene.new
-            sscreen = PokemonPartyScreen.new(sscene, $player.party)
-            sscreen.pbPokemonGiveScreen(item)
-            @scene.pbRefresh
-          end
-        end
-      elsif cmdToss >= 0 && command == cmdToss   # Toss item
-        qty = @bag.quantity(item)
-        if qty > 1
-          helptext = _INTL("Toss out how many {1}s?", charm.name)
-          qty = @scene.pbChooseNumber(helptext, qty)
-        end
-        if qty > 0
-          itemname = charm.name
-          if pbConfirm(_INTL("Is it OK to throw away {1} {2}?", qty, itemname))
-            pbDisplay(_INTL("Threw away {1} {2}.", qty, itemname))
-            qty.times { @bag.remove(item) }
-            @scene.pbRefresh
-          end
-        end
-      elsif cmdDebug >= 0 && command == cmdDebug   # Debug
-        command = 0
-        loop do
-          command = @scene.pbShowCommands(_INTL("Do what with {1}?", itemname),
-                                          [_INTL("Change quantity"),
-                                           _INTL("Cancel")], command)
-          case command
-          ### Cancel ###
-          when -1, 2
-            break
-          ### Change quantity ###
-          when 0
-            qty = @bag.quantity(item)
-            params = ChooseNumberParams.new
-            params.setRange(0, Settings::BAG_MAX_PER_SLOT)
-            params.setDefaultValue(qty)
-            newqty = pbMessageChooseNumber(
-              _INTL("Choose new quantity of {1} (max. {2}).", itemplural, Settings::BAG_MAX_PER_SLOT), params
-            ) { @scene.pbUpdate }
-            if newqty > qty
-              @bag.add(item, newqty - qty)
-            elsif newqty < qty
-              @bag.remove(item, qty - newqty)
+        if cmdEquip >= 0 && command == cmdEquip   # Use item
+          ret = bbEquipCharm(item)
+          # ret: 0=Item wasn't used; 1=Item used; 2=Close Bag to use in field
+          break if ret == 2   # End screen
+          @scene.pbRefresh
+          next
+        elsif cmdGive >= 0 && command == cmdGive   # Give item to Pokémon
+          if $player.pokemon_count == 0
+            @scene.pbDisplay(_INTL("There is no Pokémon."))
+          elsif charm.is_important?
+            @scene.pbDisplay(_INTL("The charm can't be held."))
+          else
+            pbFadeOutIn do
+              sscene = PokemonParty_Scene.new
+              sscreen = PokemonPartyScreen.new(sscene, $player.party)
+              sscreen.pbPokemonGiveScreen(item)
+              @scene.pbRefresh
             end
-            @scene.pbRefresh
-            break if newqty == 0
+          end
+        elsif cmdToss >= 0 && command == cmdToss   # Toss item
+          qty = @bag.quantity(item)
+          if qty > 1
+            helptext = _INTL("Toss out how many {1}s?", charm.name)
+            qty = @scene.pbChooseNumber(helptext, qty)
+          end
+          if qty > 0
+            itemname = charm.name
+            if pbConfirm(_INTL("Is it OK to throw away {1} {2}?", qty, itemname))
+              pbDisplay(_INTL("Threw away {1} {2}.", qty, itemname))
+              qty.times { @bag.remove(item) }
+              @scene.pbRefresh
+            end
+          end
+        elsif cmdDebug >= 0 && command == cmdDebug   # Debug
+          command = 0
+          loop do
+            command = @scene.pbShowCommands(_INTL("Do what with {1}?", itemname),
+                                            [_INTL("Change quantity"),
+                                            _INTL("Cancel")], command)
+            case command
+            ### Cancel ###
+            when -1, 2
+              break
+            ### Change quantity ###
+            when 0
+              qty = @bag.quantity(item)
+              params = ChooseNumberParams.new
+              params.setRange(0, Settings::BAG_MAX_PER_SLOT)
+              params.setDefaultValue(qty)
+              newqty = pbMessageChooseNumber(
+                _INTL("Choose new quantity of {1} (max. {2}).", itemplural, Settings::BAG_MAX_PER_SLOT), params
+              ) { @scene.pbUpdate }
+              if newqty > qty
+                @bag.add(item, newqty - qty)
+              elsif newqty < qty
+                @bag.remove(item, qty - newqty)
+              end
+              @scene.pbRefresh
+              break if newqty == 0
+            end
           end
         end
       end
-    end
-    ($game_temp.fly_destination) ? @scene.dispose : @scene.pbEndScene
-    return item
+      ($game_temp.fly_destination) ? @scene.dispose : @scene.pbEndScene
+      return item
   end
 
     def pbDisplay(text)

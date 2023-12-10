@@ -298,6 +298,7 @@ SCRIPTS = [
   'UI/UIPurifyChamber',
   'UI/UIMysteryGift',
   'UI/UITextEntry',
+  'UI/UICharms',
 
   'Minigames/MinigameDuel',
   'Minigames/MinigameTripleTriad',

@@ -90,6 +90,26 @@ def pbAddPokemonSilent(pkmn, level = 1, see_form = true)
   return true
 end
 
+def pbAddPartnerPokemon(pkmn, level = 1, see_form = true, event = 6)
+
+  return false if !pkmn || pbBoxesFull?
+  pkmn = Pokemon.new(pkmn, level) if !pkmn.is_a?(Pokemon)
+  $player.pokedex.set_seen(pkmn.species)
+  $player.pokedex.set_owned(pkmn.species)
+  $player.pokedex.register(pkmn) if see_form
+  pkmn.record_first_moves
+  if $player.has_partner_pokemon?
+    $PokemonStorage.pbStoreCaught(pkmn)
+  else
+    $player.partner = pkmn
+
+    FollowingPkmn.start_following(event)
+
+  end
+  return true
+
+end
+
 #===============================================================================
 # Giving Pokémon/eggs to the player (can only add to party)
 #===============================================================================

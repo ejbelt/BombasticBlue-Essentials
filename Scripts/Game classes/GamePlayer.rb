@@ -491,26 +491,53 @@ class Game_Player < Game_Character
       # Move player in the direction the directional button is being pressed
       if @moved_last_frame ||
          (dir > 0 && dir == @lastdir && System.uptime - @lastdirframe >= 0.075)
-        case dir
-        when 2 then move_down
-        when 4 then move_left
-        when 6 then move_right
-        when 8 then move_up
-        when 1 then move_downleft
-        when 3 then move_downright
-        when 7 then move_upleft
-        when 9 then move_upright
+        
+        if (Input.press?(Input::CTRL))
+          case dir
+          when 2 then turn_down
+          when 4 then turn_left
+          when 6 then turn_right
+          when 8 then turn_up
+          when 1 then turn_downleft
+          when 3 then turn_downright
+          when 7 then turn_upleft
+          when 9 then turn_upright
+          end
+        else
+          case dir
+          when 2 then move_down
+          when 4 then move_left
+          when 6 then move_right
+          when 8 then move_up
+          when 1 then move_downleft
+          when 3 then move_downright
+          when 7 then move_upleft
+          when 9 then move_upright
+          end
         end
       elsif dir != @lastdir
-        case dir
-        when 2 then move_down
-        when 4 then move_left
-        when 6 then move_right
-        when 8 then move_up
-        when 1 then move_downleft
-        when 3 then move_downright
-        when 7 then move_upleft
-        when 9 then move_upright
+        if (Input.press?(Input::CTRL))
+          case dir
+          when 2 then turn_down
+          when 4 then turn_left
+          when 6 then turn_right
+          when 8 then turn_up
+          when 1 then turn_downleft
+          when 3 then turn_downright
+          when 7 then turn_upleft
+          when 9 then turn_upright
+          end
+        else
+          case dir
+          when 2 then move_down
+          when 4 then move_left
+          when 6 then move_right
+          when 8 then move_up
+          when 1 then move_downleft
+          when 3 then move_downright
+          when 7 then move_upleft
+          when 9 then move_upright
+          end
         end
       end
       # Record last direction input if last was a dir 4 movement

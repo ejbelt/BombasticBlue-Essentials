@@ -854,7 +854,9 @@ def getLineBrokenChunks(bitmap, value, width, dims, plain = false)
   re = /<c=([^>]+)>/
   reNoMatch = /<c=[^>]+>/
   return ret if !bitmap || bitmap.disposed? || width <= 0
+  puts value == nil
   textmsg = value.clone
+  puts textmsg
   color = Font.default_color
   while (c = textmsg.slice!(/\n|[^ \r\t\f\n\-]*\-+|(\S*([ \r\t\f]?))/)) != nil
     break if c == ""

@@ -33,6 +33,8 @@ class Window_UnformattedTextPokemon < SpriteWindow_Base
     colors = getDefaultTextColors(self.windowskin)
     @baseColor = colors[0]
     @shadowColor = colors[1]
+    puts "Initialize"
+    puts text
     resizeToFit(text)
   end
 
@@ -51,6 +53,8 @@ class Window_UnformattedTextPokemon < SpriteWindow_Base
   def resizeToFitInternal(text, maxwidth)
     dims = [0, 0]
     cwidth = maxwidth < 0 ? Graphics.width : maxwidth
+    puts "Resize"
+    puts text
     getLineBrokenChunks(self.contents, text,
                         cwidth - self.borderX - SpriteWindow_Base::TEXT_PADDING, dims, true)
     return dims
@@ -63,6 +67,8 @@ class Window_UnformattedTextPokemon < SpriteWindow_Base
 
   # maxwidth is maximum acceptable window width.
   def resizeToFit(text, maxwidth = -1)
+    puts "Resize to fit"
+    puts text
     dims = resizeToFitInternal(text, maxwidth)
     self.width = dims[0] + self.borderX + SpriteWindow_Base::TEXT_PADDING
     self.height = dims[1] + self.borderY

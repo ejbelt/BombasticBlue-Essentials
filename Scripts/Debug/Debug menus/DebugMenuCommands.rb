@@ -590,6 +590,19 @@ MenuHandlers.add(:debug_menu, :add_pokemon, {
   }
 })
 
+MenuHandlers.add(:debug_menu, :givepartner, {
+  "name"        => _INTL("Give Poipole Partner"),
+  "parent"      => :pokemon_menu,
+  "description" => _INTL("Give yourself Poipole"),
+  "effect"      => proc {
+    if pbAddPartnerPokemon(:POIPOLE, 1)
+      pbMessage(_INTL("Gave you Poipole Partner."))
+    else
+      pbMessage(_INTL("Couldn't add Poipole for some reason."))
+    end
+  }
+})
+
 MenuHandlers.add(:debug_menu, :fill_boxes, {
   "name"        => _INTL("Fill storage boxes"),
   "parent"      => :pokemon_menu,

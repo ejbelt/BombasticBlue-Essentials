@@ -125,6 +125,7 @@ class Battle
     @ally_items        = nil        # Array of items held by ally. This is just used for Mega Evolution for now.
     @party1            = p1
     @party2            = p2
+    @partner1          = $player.partner
     @party1order       = Array.new(@party1.length) { |i| i }
     @party2order       = Array.new(@party2.length) { |i| i }
     @party1starts      = [0]
@@ -304,6 +305,10 @@ class Battle
   #=============================================================================
   def pbParty(idxBattler)
     return (opposes?(idxBattler)) ? @party2 : @party1
+  end
+
+  def pbPartner(idxBattler)
+    return @partner1
   end
 
   def pbOpposingParty(idxBattler)

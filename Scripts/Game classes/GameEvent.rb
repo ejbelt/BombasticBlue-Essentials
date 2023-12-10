@@ -153,14 +153,22 @@ class Game_Event < Game_Character
     return if $game_system.map_interpreter.running?
     return if @trigger != 2   # Event touch
     case dir
+    when 1
+      return if (($game_player.x != @x - 1) && ($game_player.y != @y + 1))
     when 2
       return if $game_player.y != @y + 1
+    when 3
+      return if (($game_player.x != @x + @width) && ($game_player.y != @y + 1))
     when 4
       return if $game_player.x != @x - 1
     when 6
       return if $game_player.x != @x + @width
+    when 7
+      return if (($game_player.x != @x - 1) && ($game_player.y != @y - @height))
     when 8
       return if $game_player.y != @y - @height
+    when 9
+      return if (($game_player.x != @x + 1) && ($game_player.y != @y - @height))
     end
     return if !in_line_with_coordinate?($game_player.x, $game_player.y)
     return if jumping? || over_trigger?

@@ -37,22 +37,26 @@ class Game_Follower < Game_Event
     old_through = @through
     @through = true
     case direction
+    when 1 then move_downleft
     when 2 then move_down
+    when 3 then move_downright
     when 4 then move_left
     when 6 then move_right
+    when 7 then move_upleft
     when 8 then move_up
+    when 9 then move_upright
     end
     @through = old_through
   end
 
   def move_fancy(direction)
 
-    if (d % 2 == 0)
-      delta_x = (d == 4) ? -1 : (d == 6) ? 1 : 0
-      delta_y = (d == 8) ? -1 : (d == 2) ? 1 : 0
+    if (direction % 2 == 0)
+      delta_x = (direction == 4) ? -1 : (direction == 6) ? 1 : 0
+      delta_y = (direction == 8) ? -1 : (direction == 2) ? 1 : 0
     else
-      delta_x = (d == 1 || d == 7) ? -1 : (d % 3 == 0) ? 1 : 0
-      delta_y = (d == 9 || d == 7) ? -1 : (d == 1 || d == 3) ? 1 : 0
+      delta_x = (direction == 1 || direction == 7) ? -1 : (direction % 3 == 0) ? 1 : 0
+      delta_y = (direction == 9 || direction == 7) ? -1 : (direction == 1 || direction == 3) ? 1 : 0
     end
 
     new_x = self.x + delta_x
@@ -97,13 +101,21 @@ class Game_Follower < Game_Event
 
   def fancy_moveto(new_x, new_y, leader)
     if self.x - new_x == 1 && self.y == new_y
-      move_fancy(4)
+      move_fancy(4) #Left
     elsif self.x - new_x == -1 && self.y == new_y
-      move_fancy(6)
+      move_fancy(6) #Right
     elsif self.x == new_x && self.y - new_y == 1
-      move_fancy(8)
+      move_fancy(8) #Up
     elsif self.x == new_x && self.y - new_y == -1
-      move_fancy(2)
+      move_fancy(2) #Down
+    elsif self.x - new_x == 1 && self.y - new_y == -1
+      move_fancy(1) #Down Left
+    elsif self.x - new_x == -1 && self.y - new_y == -1
+      move_fancy(3) #Down right
+    elsif self.x - new_x == 1 && self.y - new_y == 1
+      move_fancy(7) #Up left
+    elsif self.x - new_x == -1 && self.y - new_y == 1
+      move_fancy(9) # Up Right
     elsif self.x - new_x == 2 && self.y == new_y
       jump_fancy(4, leader)
     elsif self.x - new_x == -2 && self.y == new_y
@@ -112,6 +124,14 @@ class Game_Follower < Game_Event
       jump_fancy(8, leader)
     elsif self.x == new_x && self.y - new_y == -2
       jump_fancy(2, leader)
+    elsif self.x - new_x == 2 && self.y - new_y == -2
+      move_fancy(1) #Down Left
+    elsif self.x - new_x == -2 && self.y - new_y == -2
+      move_fancy(3) #Down right
+    elsif self.x - new_x == 2 && self.y - new_y == 2
+      move_fancy(7) #Up left
+    elsif self.x - new_x == -2 && self.y - new_y == 2
+      move_fancy(9) # Up Right
     elsif self.x != new_x || self.y != new_y
       moveto(new_x, new_y)
     end

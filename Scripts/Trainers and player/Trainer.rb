@@ -7,6 +7,8 @@ class Trainer
   attr_accessor :id
   attr_accessor :language
   attr_accessor :party
+  attr_accessor :partner # Different from normal Pokemon, they're like Miraidon/Koraidon from Gen 9. There but not apart of the battle party unless told to.
+  attr_accessor :battle_mode
 
   def inspect
     str = super.chop
@@ -74,6 +76,9 @@ class Trainer
   def able_pokemon_count
     ret = 0
     @party.each { |p| ret += 1 if p && !p.egg? && !p.fainted? }
+
+    ret += 1 if @partner && !@partner.fainted?
+
     return ret
   end
 
@@ -95,6 +100,11 @@ class Trainer
   end
 
   def first_able_pokemon
+
+    if has_partner_pokemon?
+      return @partner
+    end
+
     return able_party[0]
   end
 
@@ -110,6 +120,10 @@ class Trainer
   def last_able_pokemon
     p = able_party
     return (p.length > 0) ? p[p.length - 1] : nil
+  end
+
+  def partner_pokemon
+    return @partner if @partner && !@partner.fainted?
   end
 
   def remove_pokemon_at_index(index)
@@ -128,6 +142,11 @@ class Trainer
   # Pokémon given by _index_ were removed from the party.
   def has_other_able_pokemon?(index)
     @party.each_with_index { |pkmn, i| return true if i != index && pkmn.able? }
+    return false
+  end
+
+  def has_partner_pokemon?()
+    return true if @partner
     return false
   end
 
@@ -171,6 +190,7 @@ class Trainer
     @id           = rand(2**16) | (rand(2**16) << 16)
     @language     = pbGetLanguage
     @party        = []
+    @partner      = nil
   end
 end
 

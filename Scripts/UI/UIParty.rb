@@ -138,8 +138,8 @@ class PokemonPartyBlankPanel < Sprite
 
   def initialize(_pokemon, index, viewport = nil)
     super(viewport)
-    self.x = (index % 2) * Graphics.width / 2
-    self.y = (16 * (index % 2)) + (96 * (index / 2))
+    self.x = 0
+    self.y = (63 * index)
     @panelbgsprite = AnimatedBitmap.new("Graphics/UI/Party/panel_blank")
     self.bitmap = @panelbgsprite.bitmap
     @text = nil
@@ -165,6 +165,7 @@ end
 class PokemonPartyPanel < Sprite
   attr_reader :pokemon
   attr_reader :active
+  attr_reader :is_partner
   attr_reader :selected
   attr_reader :preselected
   attr_reader :switching
@@ -172,20 +173,29 @@ class PokemonPartyPanel < Sprite
 
   TEXT_BASE_COLOR    = Color.new(248, 248, 248)
   TEXT_SHADOW_COLOR  = Color.new(40, 40, 40)
-  HP_BAR_WIDTH       = 96
+  HP_BAR_WIDTH       = 60
   STATUS_ICON_WIDTH  = 44
-  STATUS_ICON_HEIGHT = 16
+  STATUS_ICON_HEIGHT = 12
 
   def initialize(pokemon, index, viewport = nil)
     super(viewport)
     @pokemon = pokemon
-    @active = (index == 0)   # true = rounded panel, false = rectangular panel
+    @active = false  # true = rounded panel, false = rectangular panel
     @refreshing = true
-    self.x = (index % 2) * Graphics.width / 2
-    self.y = (16 * (index % 2)) + (96 * (index / 2))
+
+    if (index >= 0)
+      self.x = 0
+      self.y = (63 * index) + 2
+      @is_partner = false
+    else
+      self.x = Graphics.width / 2
+      self.y = (63*3)+2
+      @is_partner = true
+    end
     @panelbgsprite = ChangelingSprite.new(0, 0, viewport)
     @panelbgsprite.z = self.z
-    if @active   # Rounded panel
+    #  Save this for partner
+    if @is_partner == true
       @panelbgsprite.addBitmap("able", "Graphics/UI/Party/panel_round")
       @panelbgsprite.addBitmap("ablesel", "Graphics/UI/Party/panel_round_sel")
       @panelbgsprite.addBitmap("fainted", "Graphics/UI/Party/panel_round_faint")
@@ -207,10 +217,6 @@ class PokemonPartyPanel < Sprite
     @hpbgsprite.addBitmap("able", _INTL("Graphics/UI/Party/overlay_hp_back"))
     @hpbgsprite.addBitmap("fainted", _INTL("Graphics/UI/Party/overlay_hp_back_faint"))
     @hpbgsprite.addBitmap("swap", _INTL("Graphics/UI/Party/overlay_hp_back_swap"))
-    @ballsprite = ChangelingSprite.new(0, 0, viewport)
-    @ballsprite.z = self.z + 1
-    @ballsprite.addBitmap("desel", "Graphics/UI/Party/icon_ball")
-    @ballsprite.addBitmap("sel", "Graphics/UI/Party/icon_ball_sel")
     @pkmnsprite = PokemonIconSprite.new(pokemon, viewport)
     @pkmnsprite.setOffset(PictureOrigin::CENTER)
     @pkmnsprite.active = @active
@@ -234,7 +240,6 @@ class PokemonPartyPanel < Sprite
   def dispose
     @panelbgsprite.dispose
     @hpbgsprite.dispose
-    @ballsprite.dispose
     @pkmnsprite.dispose
     @helditemsprite.dispose
     @overlaysprite.bitmap.dispose
@@ -332,22 +337,14 @@ class PokemonPartyPanel < Sprite
       @hpbgsprite.changeBitmap("able")
     end
     @hpbgsprite.x     = self.x + 96
-    @hpbgsprite.y     = self.y + 50
+    @hpbgsprite.y     = self.y + 40
     @hpbgsprite.color = self.color
-  end
-
-  def refresh_ball_graphic
-    return if !@ballsprite || @ballsprite.disposed?
-    @ballsprite.changeBitmap((self.selected) ? "sel" : "desel")
-    @ballsprite.x     = self.x + 10
-    @ballsprite.y     = self.y
-    @ballsprite.color = self.color
   end
 
   def refresh_pokemon_icon
     return if !@pkmnsprite || @pkmnsprite.disposed?
     @pkmnsprite.x        = self.x + 60
-    @pkmnsprite.y        = self.y + 40
+    @pkmnsprite.y        = self.y + 36
     @pkmnsprite.color    = self.color
     @pkmnsprite.selected = self.selected
   end
@@ -355,7 +352,7 @@ class PokemonPartyPanel < Sprite
   def refresh_held_item_icon
     return if !@helditemsprite || @helditemsprite.disposed? || !@helditemsprite.visible
     @helditemsprite.x     = self.x + 62
-    @helditemsprite.y     = self.y + 48
+    @helditemsprite.y     = self.y + 34
     @helditemsprite.color = self.color
   end
 
@@ -373,18 +370,18 @@ class PokemonPartyPanel < Sprite
 
   def draw_name
     pbDrawTextPositions(@overlaysprite.bitmap,
-                        [[@pokemon.name, 96, 22, :left, TEXT_BASE_COLOR, TEXT_SHADOW_COLOR]])
+                        [[@pokemon.name, 96, 5, :left, TEXT_BASE_COLOR, TEXT_SHADOW_COLOR]])
   end
 
   def draw_level
     return if @pokemon.egg?
     # "Lv" graphic
     pbDrawImagePositions(@overlaysprite.bitmap,
-                         [[_INTL("Graphics/UI/Party/overlay_lv"), 20, 70, 0, 0, 22, 14]])
+                         [[_INTL("Graphics/UI/Party/overlay_lv"), 96, 24, 0, 0, 20, 12]])
     # Level number
     pbSetSmallFont(@overlaysprite.bitmap)
     pbDrawTextPositions(@overlaysprite.bitmap,
-                        [[@pokemon.level.to_s, 42, 68, :left, TEXT_BASE_COLOR, TEXT_SHADOW_COLOR]])
+                        [[@pokemon.level.to_s, 142, 24, :left, TEXT_BASE_COLOR, TEXT_SHADOW_COLOR]])
     pbSetSystemFont(@overlaysprite.bitmap)
   end
 
@@ -394,15 +391,12 @@ class PokemonPartyPanel < Sprite
     base_color   = (@pokemon.male?) ? Color.new(0, 112, 248) : Color.new(232, 32, 16)
     shadow_color = (@pokemon.male?) ? Color.new(120, 184, 232) : Color.new(248, 168, 184)
     pbDrawTextPositions(@overlaysprite.bitmap,
-                        [[gender_text, 224, 22, :left, base_color, shadow_color]])
+                        [[gender_text, 68, 26, :left, base_color, shadow_color]])
   end
 
   def draw_hp
     return if @pokemon.egg? || (@text && @text.length > 0)
     # HP numbers
-    hp_text = sprintf("% 3d /% 3d", @pokemon.hp, @pokemon.totalhp)
-    pbDrawTextPositions(@overlaysprite.bitmap,
-                        [[hp_text, 224, 66, :right, TEXT_BASE_COLOR, TEXT_SHADOW_COLOR]])
     # HP bar
     if @pokemon.able?
       w = @pokemon.hp * HP_BAR_WIDTH / @pokemon.totalhp.to_f
@@ -412,7 +406,7 @@ class PokemonPartyPanel < Sprite
       hpzone = 1 if @pokemon.hp <= (@pokemon.totalhp / 2).floor
       hpzone = 2 if @pokemon.hp <= (@pokemon.totalhp / 4).floor
       hprect = Rect.new(0, hpzone * 8, w, 8)
-      @overlaysprite.bitmap.blt(128, 52, @hpbar.bitmap, hprect)
+      @overlaysprite.bitmap.blt(128, 40, @hpbar.bitmap, hprect)
     end
   end
 
@@ -428,7 +422,7 @@ class PokemonPartyPanel < Sprite
     end
     return if status < 0
     statusrect = Rect.new(0, STATUS_ICON_HEIGHT * status, STATUS_ICON_WIDTH, STATUS_ICON_HEIGHT)
-    @overlaysprite.bitmap.blt(78, 68, @statuses.bitmap, statusrect)
+    @overlaysprite.bitmap.blt(10, 34, @statuses.bitmap, statusrect)
   end
 
   def draw_shiny_icon
@@ -440,7 +434,7 @@ class PokemonPartyPanel < Sprite
   def draw_annotation
     return if !@text || @text.length == 0
     pbDrawTextPositions(@overlaysprite.bitmap,
-                        [[@text, 96, 62, :left, TEXT_BASE_COLOR, TEXT_SHADOW_COLOR]])
+                        [[@text, 10, 62, :left, TEXT_BASE_COLOR, TEXT_SHADOW_COLOR]])
   end
 
   def refresh
@@ -449,7 +443,6 @@ class PokemonPartyPanel < Sprite
     @refreshing = true
     refresh_panel_graphic
     refresh_hp_bar_graphic
-    refresh_ball_graphic
     refresh_pokemon_icon
     refresh_held_item_icon
     if @overlaysprite && !@overlaysprite.disposed?
@@ -466,7 +459,6 @@ class PokemonPartyPanel < Sprite
     super
     @panelbgsprite.update if @panelbgsprite && !@panelbgsprite.disposed?
     @hpbgsprite.update if @hpbgsprite && !@hpbgsprite.disposed?
-    @ballsprite.update if @ballsprite && !@ballsprite.disposed?
     @pkmnsprite.update if @pkmnsprite && !@pkmnsprite.disposed?
     @helditemsprite.update if @helditemsprite && !@helditemsprite.disposed?
   end
@@ -505,6 +497,7 @@ class PokemonParty_Scene
     @sprites["helpwindow"].visible  = true
     pbBottomLeftLines(@sprites["helpwindow"], 1)
     pbSetHelpText(starthelptext)
+    @partner_selected = false
     # Add party Pokémon sprites
     Settings::MAX_PARTY_SIZE.times do |i|
       if @party[i]
@@ -514,15 +507,25 @@ class PokemonParty_Scene
       end
       @sprites["pokemon#{i}"].text = annotations[i] if annotations
     end
+
     if @multiselect
       @sprites["pokemon#{Settings::MAX_PARTY_SIZE}"] = PokemonPartyConfirmSprite.new(@viewport)
       @sprites["pokemon#{Settings::MAX_PARTY_SIZE + 1}"] = PokemonPartyCancelSprite2.new(@viewport)
     else
       @sprites["pokemon#{Settings::MAX_PARTY_SIZE}"] = PokemonPartyCancelSprite.new(@viewport)
     end
+
+    if ($player.partner) 
+      @sprites["pokemonpartner"] = PokemonPartyPanel.new($player.partner, -1, @viewport)
+    else
+      @sprites["pokemonpartner"] = PokemonPartyBlankPanel.new($player.partner, -1, @viewport)
+    end
+    @sprites["pokemonpartner"].text = annotations[i] if annotations
+
     # Select first Pokémon
     @activecmd = 0
     @sprites["pokemon0"].selected = true
+    @partner_selected = false
     pbFadeInAndShow(@sprites) { update }
   end
 
@@ -624,7 +627,9 @@ class PokemonParty_Scene
     helpwindow = @sprites["helpwindow"]
     pbBottomLeftLines(helpwindow, 1)
     helpwindow.text = helptext
-    helpwindow.width = 398
+    helpwindow.width = 240
+    helpwindow.x = Graphics.width / 2
+    helpwindow.y = 0
     helpwindow.visible = true
   end
 
@@ -803,6 +808,16 @@ class PokemonParty_Scene
     numsprites = Settings::MAX_PARTY_SIZE + ((@multiselect) ? 2 : 1)
     case key
     when Input::LEFT
+      #if (!partner_selected)
+      #  partner_selected = true
+      #end
+      #currentsel = -1
+    when Input::RIGHT
+      #if (partner_selected)
+      #  partner_selected = false
+      #end
+      #currentsel = 0
+    when Input::UP
       loop do
         currentsel -= 1
         break unless currentsel > 0 && currentsel < Settings::MAX_PARTY_SIZE && !@party[currentsel]
@@ -811,41 +826,12 @@ class PokemonParty_Scene
         currentsel = @party.length - 1
       end
       currentsel = numsprites - 1 if currentsel < 0
-    when Input::RIGHT
+    when Input::DOWN
       loop do
         currentsel += 1
         break unless currentsel < Settings::MAX_PARTY_SIZE && !@party[currentsel]
       end
       if currentsel == numsprites
-        currentsel = (@party.length == 0) ? Settings::MAX_PARTY_SIZE : 0
-      end
-    when Input::UP
-      if currentsel >= Settings::MAX_PARTY_SIZE
-        currentsel -= 1
-        while currentsel > 0 && currentsel < Settings::MAX_PARTY_SIZE && !@party[currentsel]
-          currentsel -= 1
-        end
-        currentsel = numsprites - 1 if currentsel < Settings::MAX_PARTY_SIZE && currentsel >= @party.length
-      else
-        loop do
-          currentsel -= 2
-          break unless currentsel > 0 && !@party[currentsel]
-        end
-      end
-      if currentsel >= @party.length && currentsel < Settings::MAX_PARTY_SIZE
-        currentsel = @party.length - 1
-      end
-      currentsel = numsprites - 1 if currentsel < 0
-    when Input::DOWN
-      if currentsel >= Settings::MAX_PARTY_SIZE - 1
-        currentsel += 1
-      else
-        currentsel += 2
-        currentsel = Settings::MAX_PARTY_SIZE if currentsel < Settings::MAX_PARTY_SIZE && !@party[currentsel]
-      end
-      if currentsel >= @party.length && currentsel < Settings::MAX_PARTY_SIZE
-        currentsel = Settings::MAX_PARTY_SIZE
-      elsif currentsel >= numsprites
         currentsel = (@party.length == 0) ? Settings::MAX_PARTY_SIZE : 0
       end
     end
@@ -870,6 +856,14 @@ class PokemonParty_Scene
       end
       @sprites["pokemon#{i}"].text = oldtext[i]
     end
+
+    if ($player.partner) 
+      @sprites["pokemonpartner"] = PokemonPartyPanel.new($player.partner, -1, @viewport)
+    else
+      @sprites["pokemonpartner"] = PokemonPartyBlankPanel.new($player.partner, -1, @viewport)
+    end
+    @sprites["pokemonpartner"].text = annotations[i] if annotations
+
     pbSelect(lastselected)
   end
 
@@ -884,15 +878,41 @@ class PokemonParty_Scene
         end
       end
     end
+
+    if ($player.partner) 
+      sprite =  @sprites["pokemonpartner"]
+      if sprite
+        if sprite.is_a?(PokemonPartyPanel)
+          sprite.pokemon = sprite.pokemon
+        else
+          sprite.refresh
+        end
+      end
+    end
+
   end
 
   def pbRefreshSingle(i)
-    sprite = @sprites["pokemon#{i}"]
-    if sprite
-      if sprite.is_a?(PokemonPartyPanel)
-        sprite.pokemon = sprite.pokemon
-      else
-        sprite.refresh
+    
+    if i >= 0
+      sprite = @sprites["pokemon#{i}"]
+      if sprite
+        if sprite.is_a?(PokemonPartyPanel)
+          sprite.pokemon = sprite.pokemon
+        else
+          sprite.refresh
+        end
+      end
+    else
+      if ($player.partner) 
+        sprite =  @sprites["pokemonpartner"]
+        if sprite
+          if sprite.is_a?(PokemonPartyPanel)
+            sprite.pokemon = sprite.pokemon
+          else
+            sprite.refresh
+          end
+        end
       end
     end
   end
@@ -908,8 +928,9 @@ end
 class PokemonPartyScreen
   attr_reader :scene
   attr_reader :party
+  attr_reader :partner_selected
 
-  def initialize(scene, party)
+  def initialize(scene, party, partner = nil)
     @scene = scene
     @party = party
   end
