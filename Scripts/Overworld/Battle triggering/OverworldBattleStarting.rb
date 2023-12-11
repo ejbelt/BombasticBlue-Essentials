@@ -629,7 +629,6 @@ EventHandlers.add(:on_end_battle, :evolve_and_black_out,
       end
     when 2, 5   # Lose, draw
       if !canLose
-        pbFadeOut
         pbDisplayRestartMessage("Press Enter to return to main menu.")
         $game_system.bgm_unpause
         $game_system.bgs_unpause
@@ -637,6 +636,10 @@ EventHandlers.add(:on_end_battle, :evolve_and_black_out,
     end
   }
 )
+
+def pbDisplayRestartMessage(msg)
+  pbMessageForReset(_INTL(msg))
+end
 
 def pbEvolutionCheck
   $player.party.each_with_index do |pkmn, i|

@@ -273,7 +273,6 @@ def pbDisplayPausedMessageAndRestart(msg)
     loop do
       pbUpdate(cw)
       if !cw.busy?
-        System.reset_game
         if !yielded
           yield if block_given?   # For playing SE as soon as the message is all shown
           yielded = true
@@ -405,7 +404,6 @@ def pbDisplayPausedMessageAndRestart(msg)
     pbBGMFade(1.0)
     pbFadeOutAndHide(@sprites)
     pbDisposeSprites
-    System.reset_game
   end
 
   #=============================================================================

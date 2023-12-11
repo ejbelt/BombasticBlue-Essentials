@@ -291,9 +291,5 @@ class Game_System
       event.start
     end
 
-    if (@pending_restart == true)
-      System.reset_game
-    end
-
   end
 end

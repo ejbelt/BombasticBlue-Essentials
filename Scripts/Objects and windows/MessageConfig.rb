@@ -567,7 +567,6 @@ def pbFadeOut(z = 99999, duration = 0.4)
     break if col.alpha == 255
   end
   pbPushFade
-  System.reset_game
 end
 
 # pbFadeOutIn(z) { block }

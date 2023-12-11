@@ -818,6 +818,22 @@ def pbMessageWaitForInput(msgwindow, frames, showPause = false)
   msgwindow.stopPause if msgwindow && showPause
 end
 
+def pbMessageForReset(message, commands = nil, cmdIfCancel = 0, skin = nil, defaultCmd = 0, &block)
+  ret = 0
+  msgwindow = pbCreateMessageWindow(nil, skin)
+  if commands
+    ret = pbMessageDisplay(msgwindow, message, true,
+                           proc { |msgwndw|
+                             next Kernel.pbShowCommands(msgwndw, commands, cmdIfCancel, defaultCmd, &block)
+                           }, &block)
+  else
+    pbMessageDisplay(msgwindow, message, &block)
+  end
+  pbDisposeMessageWindow(msgwindow)
+  Input.update
+  System.reset_game
+end
+
 def pbFreeText(msgwindow, currenttext, passwordbox, maxlength, width = 240)
   window = Window_TextEntry_Keyboard.new(currenttext, 0, 0, width, 64)
   ret = ""
