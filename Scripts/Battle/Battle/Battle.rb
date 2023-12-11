@@ -831,6 +831,10 @@ class Battle
     @scene.pbDisplayPausedMessage(msg, &block)
   end
 
+  def pbDisplayRestartMessage(msg, &block)
+    @scene.pbDisplayPausedMessageAndRestart(msg, &block)
+  end
+
   def pbDisplayConfirm(msg)
     return @scene.pbDisplayConfirmMessage(msg)
   end

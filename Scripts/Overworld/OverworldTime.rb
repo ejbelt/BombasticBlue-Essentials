@@ -24,6 +24,7 @@ module PBDayNight
     Tone.new(  0,   0,   0,  0),   # Day
     Tone.new(  0,   0,   0,  0),   # Day             # Noon
     Tone.new(  0,   0,   0,  0),   # Day
+    Tone.new(  0,   0,   0,  0),   # Day
     Tone.new(  0,   0,   0,  0),   # Day/afternoon
     Tone.new(  0,   0,   0,  0),   # Day/afternoon
     Tone.new(  0,   0,   0,  0),   # Day/afternoon
@@ -31,50 +32,56 @@ module PBDayNight
     Tone.new( -5, -30, -20,  0),   # Day/evening     # 6PM
     Tone.new(-15, -60, -10, 20),   # Day/evening
     Tone.new(-15, -60, -10, 20),   # Day/evening
+    Tone.new(-15, -60, -10, 20),   # Day/evening
+    Tone.new(-15, -60, -10, 20),   # Day/evening
+    Tone.new(-15, -60, -10, 20),   # Day/evening
     Tone.new(-40, -75,   5, 40),   # Night
     Tone.new(-70, -90,  15, 55),   # Night
-    Tone.new(-70, -90,  15, 55)    # Night
+    Tone.new(-70, -90,  15, 55),   # Night
+    Tone.new(-70, -90,  15, 55),   # Night
+    Tone.new(-70, -90,  15, 55),   # Night
   ]
   CACHED_TONE_LIFETIME = 30   # In seconds; recalculates overworld tone once per this time
   @cachedTone = nil
   @dayNightToneLastUpdate = nil
-  @oneOverSixty = 1 / 60.0
+  @oneOverSixty = 1 / 30.0
 
   # Returns true if it's day.
   def self.isDay?(time = nil)
     time = pbGetTimeNow if !time
-    return (time.hour >= 5 && time.hour < 20)
+    return (time.min % 30 >= 5 && time.min % 30 < 20)
   end
 
   # Returns true if it's night.
   def self.isNight?(time = nil)
     time = pbGetTimeNow if !time
-    return (time.hour >= 20 || time.hour < 5)
+    return (time.min % 30 >= 26 || time.min % 30 < 5)
   end
 
   # Returns true if it's morning.
   def self.isMorning?(time = nil)
     time = pbGetTimeNow if !time
-    return (time.hour >= 5 && time.hour < 10)
+    return (time.min % 30 >= 6 && time.min % 30 < 11)
   end
 
   # Returns true if it's the afternoon.
   def self.isAfternoon?(time = nil)
     time = pbGetTimeNow if !time
-    return (time.hour >= 14 && time.hour < 17)
+    return (time.min % 30 >= 15 && time.min % 30 < 18)
   end
 
   # Returns true if it's the evening.
   def self.isEvening?(time = nil)
     time = pbGetTimeNow if !time
-    return (time.hour >= 17 && time.hour < 20)
+    return (time.min % 30 >= 20 && time.min % 30 < 25)
   end
 
   # Gets a number representing the amount of daylight (0=full night, 255=full day).
   def self.getShade
     time = pbGetDayNightMinutes
-    time = (24 * 60) - time if time > (12 * 60)
-    return 255 * time / (12 * 60)
+#    time = (24 * 60) - time if time > (12 * 60)
+    puts time
+    return 255 * time / (12 * 30)
   end
 
   # Gets a Tone object representing a suggested shading
@@ -91,14 +98,14 @@ module PBDayNight
 
   def self.pbGetDayNightMinutes
     now = pbGetTimeNow   # Get the current in-game time
-    return (now.hour * 60) + now.min
+    return (now.min % 30) #Hopefully this can make for good fake time. 30 minutes = 1 day?
   end
 
   def self.getToneInternal
     # Calculates the tone for the current frame, used for day/night effects
     realMinutes = pbGetDayNightMinutes
-    hour   = realMinutes / 60
-    minute = realMinutes % 60
+    hour   = realMinutes % 30
+    minute = realMinutes % 30
     tone         = PBDayNight::HOURLY_TONES[hour]
     nexthourtone = PBDayNight::HOURLY_TONES[(hour + 1) % 24]
     # Calculate current tint according to current and next hour's tint and
@@ -127,6 +134,7 @@ end
 # Days of the week
 #===============================================================================
 def pbIsWeekday(wdayVariable, *arg)
+  
   timenow = pbGetTimeNow
   wday = timenow.wday
   ret = false

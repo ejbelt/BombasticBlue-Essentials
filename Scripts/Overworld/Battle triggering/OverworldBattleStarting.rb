@@ -317,11 +317,13 @@ module BattleCreationHelperMethods
       end
     end
     if [2, 5].include?(outcome) && can_lose   # if loss or draw
+      puts "When?"
       $player.party.each { |pkmn| pkmn.heal }
       timer_start = System.uptime
       until System.uptime - timer_start >= 0.25
         Graphics.update
       end
+      $game_system.pending_restart = true
     end
     EventHandlers.trigger(:on_end_battle, outcome, can_lose)
     $game_player.straighten
@@ -486,6 +488,12 @@ class TrainerBattle
       outcome = TrainerBattle.start_core(*args)
     end
     # Return true if the player won the battle, and false if any other result
+
+    if outcome == 2
+      $game_system.pending_restart = true
+      # $game.pending_restart
+    end
+
     return outcome == 1
   end
 
@@ -621,9 +629,10 @@ EventHandlers.add(:on_end_battle, :evolve_and_black_out,
       end
     when 2, 5   # Lose, draw
       if !canLose
+        pbFadeOut
+        pbDisplayRestartMessage("Press Enter to return to main menu.")
         $game_system.bgm_unpause
         $game_system.bgs_unpause
-        pbStartOver
       end
     end
   }

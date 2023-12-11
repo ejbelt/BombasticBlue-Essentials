@@ -13,6 +13,10 @@ def pbCallTitle
   return Scene_Intro.new
 end
 
+def pbResetGame
+  
+end
+
 def mainFunction
   if $DEBUG
     pbCriticalCode { mainFunctionDebug }

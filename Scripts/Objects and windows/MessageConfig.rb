@@ -553,6 +553,23 @@ def pbIsFaded?
   return ($game_temp) ? $game_temp.fadestate > 0 : false
 end
 
+def pbFadeOut(z = 99999, duration = 0.4)
+  duration = 0.4   # In seconds
+  col = Color.new(0, 0, 0, 0)
+  viewport = Viewport.new(0, 0, Graphics.width, Graphics.height)
+  viewport.z = z
+  timer_start = System.uptime
+  loop do
+    col.set(0, 0, 0, lerp(0, 255, duration, timer_start, System.uptime))
+    viewport.color = col
+    Graphics.update
+    Input.update
+    break if col.alpha == 255
+  end
+  pbPushFade
+  System.reset_game
+end
+
 # pbFadeOutIn(z) { block }
 # Fades out the screen before a block is run and fades it back in after the
 # block exits.  z indicates the z-coordinate of the viewport used for this effect

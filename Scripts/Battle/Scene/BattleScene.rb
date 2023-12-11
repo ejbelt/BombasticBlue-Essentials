@@ -262,6 +262,44 @@ class Battle::Scene
     end
   end
 
+def pbDisplayPausedMessageAndRestart(msg)
+    pbWaitMessage
+    pbShowWindow(MESSAGE_BOX)
+    cw = @sprites["messageWindow"]
+    cw.text = msg + "\1"
+    PBDebug.log_message(msg)
+    yielded = false
+    timer_start = nil
+    loop do
+      pbUpdate(cw)
+      if !cw.busy?
+        System.reset_game
+        if !yielded
+          yield if block_given?   # For playing SE as soon as the message is all shown
+          yielded = true
+        end
+        if !@battleEnd
+          timer_start = System.uptime if !timer_start
+          if System.uptime - timer_start >= MESSAGE_PAUSE_TIME * 3   # Autoclose after 3 seconds
+            cw.text = ""
+            cw.visible = false
+            break
+          end
+        end
+      end
+      if Input.trigger?(Input::BACK) || Input.trigger?(Input::USE) || @abortable
+        if cw.busy?
+          pbPlayDecisionSE if cw.pausing? && !@abortable
+          cw.skipAhead
+        elsif !@abortable
+          cw.text = ""
+          pbPlayDecisionSE 
+          break
+        end
+      end
+    end
+  end
+
   def pbDisplayConfirmMessage(msg)
     return pbShowCommands(msg, [_INTL("Yes"), _INTL("No")], 1) == 0
   end
@@ -367,6 +405,7 @@ class Battle::Scene
     pbBGMFade(1.0)
     pbFadeOutAndHide(@sprites)
     pbDisposeSprites
+    System.reset_game
   end
 
   #=============================================================================

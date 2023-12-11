@@ -54,6 +54,14 @@ EventHandlers.add(:on_frame_update, :low_battery_warning,
   }
 )
 
+EventHandlers.add(:on_frame_update, :no_more_pokemon,
+  proc {
+    if $player.able_pokemon_count == 0  
+      $game_system.pending_restart = true
+    end
+  }
+)
+
 EventHandlers.add(:on_frame_update, :cue_bgm_after_delay,
   proc {
     next if $game_temp.cue_bgm_delay.nil?
@@ -118,7 +126,6 @@ def pbCheckAllFainted
     pbMessage(_INTL("You blacked out!"))
     pbBGMFade(1.0)
     pbBGSFade(1.0)
-    pbFadeOutIn { pbStartOver }
   end
 end
 

@@ -456,7 +456,7 @@ class Battle
           end
         end
         # Lose money from losing a battle
-        pbLoseMoney
+        #pbLoseMoney
         pbDisplayPaused(_INTL("You blacked out!")) if !@canLose
       elsif @decision == 2   # Lost in a Battle Frontier battle
         if @opponent
@@ -508,6 +508,7 @@ class Battle
       @peer.pbOnLeavingBattle(self, pkmn, @usedInBattle[0][i], true)   # Reset form
       pkmn.item = @initialItems[0][i]
     end
+    
     return @decision
   end
 

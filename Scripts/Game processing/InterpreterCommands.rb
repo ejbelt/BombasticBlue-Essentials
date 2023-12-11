@@ -1151,7 +1151,7 @@ class Interpreter
   def command_353
     pbBGMFade(1.0)
     pbBGSFade(1.0)
-    pbFadeOutIn { pbStartOver(true) }
+    pbFadeOutIn { pbResetGame }
   end
 
   #-----------------------------------------------------------------------------

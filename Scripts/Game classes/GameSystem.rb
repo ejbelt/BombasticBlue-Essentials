@@ -22,6 +22,7 @@ class Game_System
   attr_accessor :bgm_position
   attr_accessor :bgm_length
   attr_accessor :audio_cache
+  attr_accessor :pending_restart
 
   def initialize
     @map_interpreter    = Interpreter.new(0, true)
@@ -40,6 +41,7 @@ class Game_System
     @bgm_position       = 0
     @bgs_position       = 0
     @bgm_length         = 0
+    @pending_restart    = false
   end
 
   #-----------------------------------------------------------------------------
@@ -288,5 +290,10 @@ class Game_System
       @map_interpreter.command_end
       event.start
     end
+
+    if (@pending_restart == true)
+      System.reset_game
+    end
+
   end
 end
